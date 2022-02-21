@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+         body{
+             font: bold;
+         }
+        .sec{
+            margin-top: 0px;
+        }
+        .row {
+	  display: flex;
+      
+	}
+	.column {
+	  flex: 50%;
+	  padding: 0px;
+	  height: 550px;
+	}
+    .product{
+            flex: 50%;
+            height: 500px;
+            width: 80%;
+            background-color: whitesmoke;
+        
+            margin-left: 40px;
+            margin-top: 10px;
+           
+            border: 1px solid wheat;
+            padding: 10px;
+            box-shadow: 5px 10px 8px wheat;
+        }
+        .primary-btn{
+            height: 30px;
+            width: 80px;
+            background-color: purple;
+            color: whitesmoke;
+           
+            
+        }
+        img{
+            height: 250px;
+            width: 300px;
+        }
+        .item{
+            padding: 5px;
+            height: 150px;
+        }
+        .sec1{
+            
+            width: 100%;
+        }
+        .price{
+            height: 15%;
+            width: 45%;
+        }
+        .btn{
+            height: 15%;
+            width: 45%;
+            margin-left: 45%;
+            margin-top: -15%;
+        }
+        .head{
+            background-color: brown;
+            width: 100%;
+            
+        }
+        .sec1{
+            background-color: rgb(129, 115, 90);
+            width: 100%; height: 550px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        /* .desc{
+            width: 50%;
+            background-color: chartreuse;
+            float: left;
+        } */
+        .productdesc{
+            background-color: blanchedalmond;
+            margin-left:50%;
+            width: 50%;
+            float: left;
+            margin-top:-30%;
+            height: 60%;
+            
+            
+        }
+        .line{
+            width: 90%;
+            background-color: blueviolet;
+            height: 0.5%;
+        }
+        .navbar{
+            background-color: cadetblue;
+            width: 100%;
+            height: 130px;
+           
+        }
+        .ecom{
+            
+            width: 100%;
+            height: 550px;
+        }
+        .foot{
+            background-color: cadetblue;
+            width: 100%;
+            height: 80px;
+        }
+        ul{
+            list-style: none;
+            padding: 20px;
+            justify-content: center;
+        }
+       ul li{
+            display: flex;
+            float: left;
+            padding: 20px;
+           
+        }
+       
+        a{
+            text-decoration-line: none;
+            color: aliceblue;
+            border: 2px solid slategray;
+            padding: 15px;
+            background-color: crimson;
+            font: bold;
+        }
+        .contactus{
+            width: 100%;
+            height: 150px;
+            
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }   
+        .contactcard{
+           
+            margin-left: 5%;
+            width: 40%;
+            height: 130px;
+            background-color: cadetblue;
+
+        }
+        .reachus{
+            margin-left: 55%;
+            width: 40%;
+            background-color: cadetblue;
+        
+            height: 130px;
+            margin-top: -150px;
+        } 
+            
+
+       
+      
+   
+    </style>
+</head>
+<body>
+    <header class="head">
+        <h1>Product Menu</h1>
+    </header>
+    
+        <div class="navbar">
+         <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="product.html">Laptop</a></li>
+             <li><a href="mobile.html">Mobiles</a></li>
+             <li><a href="#contact">Contact Us</a></li>
+         </ul>
+        </div>
+    
+    <div class="sec1">
+        <img class="ecom" src="../images/laptopbanner.jpg">
+    </div>
+    
+    <section class="sec">
+        <div class="row">
+            <div class="column" style="background: #CCCCCC;">
+              <div class="product">
+                  <h1>Model:<span id="Mid" name="Modelname" value="Acer Aspire 5 A514-54 ">Acer Aspire 5 A514-54 </span></h1>
+                  <div class="line"></div>
+                  <div class="item">
+                    <img src="../images/Acer.jpg"><br>
+                      <h2>Rs:<span id="prs">45000</span></h2>
+                          <button class="primary-btn" onclick="topurchase(Mid,prs)">Buy</button>
+                          
+                  </div>
+              </div>
+            </div>
+            <div class="column" style="background: #CCCCCC;">
+
+                <div class="product">
+                    <h1>Product Description:</h1>
+                    <div class="line"></div>
+                    <ul>
+                        <li>Powerful Productivity: 11th Generation Intel Core i5-1135G7 processor delivers unmatched speed and intelligence, enabling impressive creating, productivity, and gaming experiences. With Turbo Boost Technology, get up to 4.2GHz for your high-demand applications
+                        </li><li>Visibly Stunning: Experience sharp details and crisp colors on the 14" Full HD IPS display with 81.6% screen-to-body, 16:9 aspect ratio and narrow bezels
+                        </li><li>Ergonomic Typing: Ergonomically-designed hinge lifts the keyboard for comfortable typing, improved cooling, and a better sound experience
+                        </li><li>Internal Specifications: 2*4 GB DDR4 memory - 4GB DDR4 on-board memory and 4 GB system memory, upgradable up to 20GB; Dual storage of about 1 TB HDD and SSD slot that supports up to 1 TB NVMe SSD available to store your files and media</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+       
+          <div class="row">
+            <div class="column" style="background: #CCCCCC;">
+                <div class="product">
+                    <h1>Model:<span id="Mid1" name="Modelname" value="HP 15 AMD Ryzen 3-3250 8 GB">HP 15 (2021) AMD Ryzen 3-3250 8 GB</span></h1>
+                    <div class="line"></div>
+                    <div class="item">
+                        <img src="../images/hp.jpg"><br>
+                        <button class="primary-btn" onclick="topurchase(Mid1,prs1)">Buy</button>
+        
+                        
+                            <h1>Rs:<span id="prs1" value="50000">50000</span></h1>
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="column" style="background: #CCCCCC;">
+
+                <div class="product">
+                    <h1>Product Description:</h1>
+                    <div class="line"></div>
+                    <ul>
+                        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered late 2021 into 2022. Timing varies by device. Certain features require specific hardware.
+</li>
+<li>Processor: AMD Ryzen 3 3250U (2.6 GHz base clock, up to 3.5 GHz max boost clock, 4 MB L3 cache, 2 cores)
+</li>
+<li>Operating System & Preinstalled Software: Pre-loaded Windows 10 Home with lifetime validity, FREE Upgrade to Windows 11* (when available, refer product description for more details) | Microsoft Office Home & Student 2019
+</li>
+<li>Display: 15.6-inch FHD (1920 x 1080), IPS, micro-edge, anti-glare, 250 nits, 45% NTSC
+</li>
+<li>Memory & Storage: 8 GB DDR4-2400 SDRAM (1 x 8 GB) | 256 GB PCIe NVMe M.2 SSD + 1TB HDD 5400 RPM
+</li>
+<li>Graphics: AMD Radeon Vega 6 Graphics</li>
+
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+            <div class="row">
+                <div class="column" style="background: #CCCCCC;">
+                    <div class="product">
+                        <h1>Model:<span id="Mid2" name="Modelname" value="Hcl L14 LM6005">Hcl L14 LM6005</span></h1>
+                        <div class="line"></div>
+                            <div class="item">
+                                <img src="../images/HCL1.jpg"><br>
+                                <button class="primary-btn" onclick="topurchase(Mid2,prs2)">Buy</button>
+                                
+                                    <h1>Rs:<span id="prs2" value="60000">60000</span></h1>
+                            </div>
+                        </div>
+                </div>
+                <div class="column" style="background: #CCCCCC;">
+    
+                    <div class="product">
+                        <h1>Product Description:</h1>
+                        <div class="line"></div>
+                        <ul>
+                            <li>2.6 GHz with Turbo Boost upto 3.2 GHz</li>
+                            <li>Intel Core i5-3230M 3rd Gen Processor</li>
+                            <li>Intel Core i5-3230M 3rd Gen Processor</li>
+                            <li>4GB RAM</li>
+                            <li>500GB Hard Drive</li>
+                            <li>HD LED Display</li> 
+                            <li>HD 4000 Graphics</li> 
+                            <li>DOS</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+             </div>
+             <div class="row">
+                <div class="column" style="background: #CCCCCC;">
+                    <div class="product">
+                        <h1>Model:<span id="Mid3" name="Modelname" value="Lenovo">Lenovo 3 11th Gen Intel Core i3  </span></h1>
+                        <div class="line"></div>
+                            <div class="item">
+                                <img src="../images/lenovo.jpg"><br>
+                                <button class="primary-btn" onclick="topurchase(Mid3,prs3)">Buy</button>
+                                <h1>Rs:<span id="prs3" value="35000">35000</span></h1>
+        
+                            </div>
+                            </div>
+                    
+                    
+                    
+                </div>
+                <div class="column" style="background: #CCCCCC;">
+    
+                    <div class="product">
+                        <h1>Product Description:</h1>
+                        <div class="line"></div>
+                        <ul>
+                           <li> Processor: Intel Core i3 - 1115G4 | Speed: 3.0 GHz (Base) - 4.1 GHz (Max) | 2 Cores | 6MB Cache
+</li><li>OS: Pre-Loaded Windows 11 Home with Lifetime Validity
+</li><li>Pre-Installed: MS Office Home and Student 2021
+</li><li>Memory and Storage: 8GB RAM DDR4 | 256GB SSD
+</li><li>Display: 14" FHD (1920x1080) | Brightness : 220nits | Anti-Glare
+</li><li>Design: 1.99 cm Thin and 1.5 kg Light | Narrow Bezel
+</li><li>Battery Life: 45Wh | Upto 7 Hours battery life</li>
+    
+                        </ul>
+                    </div>
+                </div>
+         </div>    
+
+            
+          
+       
+        
+        <!-- <div class="product">
+            <h1>Model:<span id="Mid" name="Modelname" value="Acer L5 M1504">Acer L5 M1504</span></h1>
+
+            <div class="item">
+                <img src="../images/Acer.jpg"><br>
+                
+                    <button class="primary-btn" onclick="topurchase(Mid,prs)">Buy</button>
+                    <h2>Rs:<span id="prs">45000</span></h2>
+            </div>
+            <div class="productdesc">
+                <h2>Product Description</h2>
+                <ul>
+                    <li>Item1</li>
+                    <li>Item1</li>
+                    <li>Item1</li>
+                    <li>Item1</li>
+                    <li>Item1</li>
+    
+                </ul>
+            </div>
+        </div>
+        <div class="product">
+            <h1>Model:<span id="Mid1" name="Modelname" value="Hcl L5 HM900">Hcl L5 HM900</span></h1>
+
+            <div class="item">
+                <img src="../images/Acer.jpg"><br>
+                <button class="primary-btn" onclick="topurchase(Mid1,prs1)">Buy</button>
+
+                
+                    <h1>Rs:<span id="prs1" value="50000">50000</span></h1>
+                
+                
+                
+                
+            </div>
+        </div>
+        
+        <div class="product">
+            <h1>Model:<span id="Mid2" name="Modelname" value="Hcl L14 LM6005">Hcl L14 LM6005</span></h1>
+
+                <div class="item">
+                    <img src="../images/Acer.jpg"><br>
+                    <button class="primary-btn" onclick="topurchase(Mid2,prs2)">Buy</button>
+                    
+                        <h1>Rs:<span id="prs2" value="60000">60000</span></h1>
+                </div>
+            </div>
+            <div class="product">
+                <h1>Model:<span id="Mid3" name="Modelname" value="Lenovo L14 L3509">Lenovo L14 L3509</span></h1>
+    
+                    <div class="item">
+                        <img src="../images/Acer.jpg"><br>
+                        <button class="primary-btn" onclick="topurchase(Mid3,prs3)">Buy</button>
+                        <h1>Rs:<span id="prs3" value="35000">35000</span></h1>
+
+                    </div>
+                </div> -->
+                <div id="contact" class="contactus">
+            
+                    <div class="contactcard">
+                        <h1>Address:</h1>
+                        <p>2/94,Pandian Nagar,Thirumangalam-625706,<br>Madurai</p>
+                    </div>
+                    <div class="reachus">
+                        <h1>Reach us</h1>
+                    </div>
+                </div>
+    </section>
+    
+    <footer class="foot">
+        <p style="text-align: center;justify-content: center;">Webdevelopmet@CopyRight 2022</p>
+    </footer>
+   
+   
+   
+    
+</body>
+<script>
+    // var model = document.getElementById('Mid').innerHTML;
+    // console.log(model);
+    // localStorage.setItem('varient',model);
+
+    // var pricetag = document.getElementById('prs').innerHTML;
+    // console.log(pricetag);
+    // localStorage.setItem('price',pricetag);
+
+
+     function topurchase(Mid,prs)
+     {
+         var model = Mid.innerHTML;
+         console.log(model);
+         localStorage.setItem('varient',model);
+
+         var pricetag = prs.innerHTML;
+         console.log(pricetag);
+         localStorage.setItem('price',pricetag);
+         
+         window.location.href="productform.html";
+     }
+    
+</script>
+</html>

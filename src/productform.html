@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookProduct</title>
+    <style>
+        .productform{
+            width:25%;
+            padding: 30px;
+            border: 2px solid salmon;
+            margin-left: 25%;
+            margin-top: 5%;
+            box-shadow: 5px 10px 8px salmon;
+        }
+      
+        input{
+            width: 290px;
+            height: 30px;
+            border-color: salmon;
+        }
+        label{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        th,td{
+            padding: 55px;
+        }
+        .tab,th{
+            border: 2px solid salmon;
+            box-shadow: 2px 5px 5px salmon;
+        }
+    </style>
+</head>
+<body onload="setval()">
+    <div class="productform">
+        <div class="container">
+        <form method="POST">
+            <div>
+                <label>CustomerName:</label><br>
+                <input type="text"  name="cusname" id="cid" value=""/><br>
+             </div>
+             <div>
+                <label>CustomerEmail:</label><br>
+                <input type="email" required  name="email" id="eid" value=""/><br>
+             </div>
+             
+             <div>
+                <label>MobileNO:</label><br>
+                <input type="text"  name="mobile" id="mno" value=""/><br>
+             </div>
+            <div>
+               <label>ModelName:</label><br>
+               <input type="text" readonly name="mname" id="mid" value=""/><br>
+            </div>
+            <div>
+                <label>Price:</label><br>
+                <input type="text" readonly name="price" id="mprice" value=""/><br>
+            </div>
+            <div>
+                <label name="order">Orders:</label><br>
+                <input type="number" name="purchase" min=1 max=40 step=1 title="How many want to Purchase" maxlength="3" id="counts" onchange="myfunc()"><br>
+            </div>
+            <div>
+                <label>TotalPrice:</label><br>
+                <input type="number" name="total" id="Totalprice" value=""/><br>
+            </div>
+            <div>
+                <label>Address:</label><br>
+                <input type="text"  name="Address" id="address" value=""/><br>
+             </div>
+             <div>
+                <label>City:</label><br>
+                <input type="text"  name="city" id="city" value=""/><br>
+             </div>
+             <div>
+                <label>Pincode:</label><br>
+                <input type="text"  name="pincode" id="pincode" value=""/><br>
+             </div><br>
+
+
+            <div>
+            <input type="submit" value="submit"/>
+
+            </div>
+        </form>
+        </div>
+    </div>
+    <div class="purchasedetails">
+        <h1>Purchase Details:</h1>
+        <table id="table"class="tab">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">MobileNO</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">City</th>
+                    <th scope="col">ModelName</th>
+                    <th scope="col">Price<br>in Rs</th>
+                    <th scope="col">Orders</th>
+                    <th scope="col">TotalPrice<br>in Rs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="data">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+<script>
+    var array = [];
+    function setval()
+    {
+    var mname = localStorage.getItem('varient');
+    var setval = document.getElementById('mid');
+    var setprice = localStorage.getItem('price');
+    var price = document.getElementById('mprice');
+    setval.value = mname;
+    price.value = setprice;
+    }
+            document.querySelector('form').addEventListener( 'submit', event => 
+			{
+                event.preventDefault();
+				var cusname = document.querySelector('#cid');
+                //const encrypted = btoa(array.value);
+                var cusmob = document.querySelector('#mno');
+                var cusaddress = document.querySelector('#address');
+                var cuscity = document.querySelector('#city');
+                var brandname = document.querySelector('#mid');
+                var eachprice = document.querySelector('#mprice');
+                var orders = document.querySelector('#counts');
+                var tprice = document.querySelector('#Totalprice');
+                console.log(eachprice.value);				
+                var array = [cusname.value,cusmob.value,cusaddress.value,cuscity.value,brandname.value,eachprice.value,orders.value,tprice.value];
+                console.log(array);
+                
+                var settabel = document.getElementById('table').rows[1].cells;
+                 for(var i=0;i<settabel.length;i++)
+                {
+                    settabel[i].innerHTML = array[i];
+                }
+			} ) ;
+   
+
+    
+
+    function myfunc()
+    {
+        var count = document.getElementById('counts').value;
+        var prs = document.getElementById('mprice').value;
+        console.log(count);
+        console.log(prs);
+         var setTotal = document.getElementById('Totalprice');
+         var total = prs * count;
+         setTotal.value = total;
+         console.log(total);
+        
+
+    }
+    function invoice()
+    {
+        console.log('Ajay');
+    }
+</script>
+</html>
