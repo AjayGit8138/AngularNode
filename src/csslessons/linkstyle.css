@@ -13,7 +13,7 @@ a:hover{
     display: none;
 }
 a:active{
-    color: crimson;
+    color: rgb(207, 220, 20);
 }
 h1::first-letter{
     font-size: 60px;

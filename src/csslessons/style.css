@@ -15,16 +15,14 @@
             background-color: brown;
             color: red;
         }
-        /* ul li{
-            background-color:rgb(106, 255, 80);
+        ul li{
             color: red;
-        } */
+        }
         ul>li{
-            background-color: darksalmon;
-            color: rgb(131, 16, 238);
+            color: rgb(16, 238, 116);
         }
         li{
-            color: black;
+            color: rgb(82, 105, 179);
         }
         h1,h3{
             color: white;

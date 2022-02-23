@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>childstyle</title>
+    <style>
+        /* p:nth-child(5n+1)
+        {
+            color: rgba(77, 27, 194, 0.924);
+            font-size: large;
+        } */
+        /* p:nth-child(even)
+        {
+            color: orange;
+            font-size: large;
+        } */
+        p:first-child{
+            color: brown;
+            font-size: large;
+        }
+        p:last-child{
+            color: coral;
+            font-size: large;
+        }
+        p:nth-child(1n+1)
+        {
+            color: rgba(77, 27, 194, 0.924);
+            font-size: large;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(165, 163, 42);
+        }
+        /* a:hover{
+            text-decoration: underline;
+            color: blue;
+        } */
+        #chennai{
+            color:rgb(237, 100, 100)
+        }
+        #madurai{
+            color:rgb(139, 0, 0)
+        }
+        /* a[href="https://chennai.nic.in"]{
+                color: rgb(20, 220, 103);
+        }
+        a[href="https://madurai.nic.in/"]{
+                color: rgb(70, 40, 46);
+        } */
+        a[href*="chennai.nic"]{
+                color: rgb(20, 220, 103);
+        }
+        a[href*="madurai.nic"]{
+                color: rgb(70, 40, 46);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <a id="chennai" href="https://example.com/">chennai</a>
+        <a id="Madurai" href="https://example.com/">Madurai</a>
+        -->
+        <a  href="https://chennai.nic.in">chennai</a>
+        <a  href="https://chennai.nic.in/">chennai</a>
+        <a href="https://madurai.nic.in/">madurai</a>
+        
+    <p id="first"> 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat perferendis saepe deserunt neque, repudiandae quibusdam a ipsa tenetur, fuga officia blanditiis nesciunt provident earum quae harum! Commodi molestiae adipisci facere.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae, nisi voluptatum iste saepe illo dolores optio ipsa consequatur aliquid ipsam voluptates praesentium. Error totam rem hic magnam aut ullam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius id tempore repellendus vero consectetur dolore laborum inventore ea, hic facilis numquam! Quo ullam libero, minima accusantium cupiditate laudantium aperiam odit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, eum amet optio porro illum ducimus id molestiae et at, totam ullam magni provident molestias, quidem tempora aut facere dolorem sint.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor eaque at iure dolore numquam voluptate ipsa minus asperiores hic, quidem neque? Sint voluptatibus praesentium magni sed. Aliquam, placeat non?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, corrupti quam. Accusamus eaque placeat porro doloremque ab veritatis nobis neque dicta vitae magni eos, fugit animi qui praesentium recusandae. Ab?</p>
+    <p id="first">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat perferendis saepe deserunt neque, repudiandae quibusdam a ipsa tenetur, fuga officia blanditiis nesciunt provident earum quae harum! Commodi molestiae adipisci facere.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae, nisi voluptatum iste saepe illo dolores optio ipsa consequatur aliquid ipsam voluptates praesentium. Error totam rem hic magnam aut ullam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius id tempore repellendus vero consectetur dolore laborum inventore ea, hic facilis numquam! Quo ullam libero, minima accusantium cupiditate laudantium aperiam odit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, eum amet optio porro illum ducimus id molestiae et at, totam ullam magni provident molestias, quidem tempora aut facere dolorem sint.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor eaque at iure dolore numquam voluptate ipsa minus asperiores hic, quidem neque? Sint voluptatibus praesentium magni sed. Aliquam, placeat non?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, corrupti quam. Accusamus eaque placeat porro doloremque ab veritatis nobis neque dicta vitae magni eos, fugit animi qui praesentium recusandae. Ab?</p>
+</div>
+</div>
+    
+</body>
+</html>

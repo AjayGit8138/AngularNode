@@ -1,0 +1,37 @@
+.box{
+    animation-name: anime2;
+    animation-duration: 5s;
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+    border: 20px salmon solid;
+    position: relative;
+}
+@keyframes anime2 {
+    0%{
+        top:0;
+        left: 0;
+        background-color: aliceblue;
+    
+    }
+    25%{
+        left: 500px;
+        top:0;
+        background-color: antiquewhite;
+    }
+    50%{
+        left: 500px;
+        top:500px;
+        background-color: burlywood;
+    }
+    75%{
+        left: 0px;
+        top:500px;
+        background-color: darkgray;
+    }
+    100%{
+        top:0;
+        left:0;
+        background-color: crimson;
+    }
+}
