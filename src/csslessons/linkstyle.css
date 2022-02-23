@@ -1,0 +1,30 @@
+a:link{
+    color: aqua;
+    text-decoration: none;
+
+}
+a:visited{
+    color: blueviolet;
+}
+a:hover{
+    color: palevioletred;
+}
+.dropcontent a{
+    display: none;
+}
+a:active{
+    color: crimson;
+}
+h1::first-letter{
+    font-size: 60px;
+    color: red;font-size: bold;
+}
+h1::before{
+    content: "This page";
+    color: green;
+}
+h1::after{
+    content:"end";
+    color: darkmagenta;
+    font-size: 40px;
+}

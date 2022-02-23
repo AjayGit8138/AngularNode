@@ -1,0 +1,15 @@
+section{
+    color: orange;
+}
+section>p{
+    color: goldenrod;
+}
+/* h1 + p{
+    background-color: chocolate;
+}
+h1 ~ p{
+    background-color: darkcyan;
+}
+h1 > p{
+    background-color: cornflowerblue;
+} */

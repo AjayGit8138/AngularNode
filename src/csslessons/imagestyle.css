@@ -1,0 +1,31 @@
+div{
+    width: 500px;
+    height: 500px;
+    color: aquamarine;
+    border: 2px solid saddlebrown;
+    background-image: url('../../images/image.png');
+    margin: 100px auto;
+
+    
+}
+#div1{
+    width: 500px;
+    height: 500px;
+    color: aquamarine;
+    border: 2px solid saddlebrown;
+    background-image: url('../../images/ecom.jpg');
+    margin: 100px auto;
+    background-size: 200px;
+}
+#div2{
+    width: 300px;
+    height: 500px;
+    color: aquamarine;
+    border: 2px solid saddlebrown;
+    background-image: url();
+    margin: 100px auto;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../images/president.jfif');
+}

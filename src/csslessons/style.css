@@ -1,0 +1,43 @@
+   
+        .center{
+            text-align: center;
+        }
+        .large{
+            text-align: large;
+        }
+        .medium{
+            text-align: medium;
+        }
+        .small{
+            text-align: small;
+        }
+        h3{
+            background-color: brown;
+            color: red;
+        }
+        /* ul li{
+            background-color:rgb(106, 255, 80);
+            color: red;
+        } */
+        ul>li{
+            background-color: darksalmon;
+            color: rgb(131, 16, 238);
+        }
+        li{
+            color: black;
+        }
+        h1,h3{
+            color: white;
+        }
+        .item{
+            color: blueviolet;
+        }
+        #listitem{
+            color: chartreuse;
+
+        }
+        input[type="email"],input[type="submit"]
+        {
+            background-color:yellow;
+            border: 10px solid yellow;
+        }

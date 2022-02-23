@@ -1,0 +1,21 @@
+div{
+    text-align: right;
+}
+p{
+    background-color: green;
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+}
+div p{
+    display: inline;
+    background-color: blanchedalmond;
+    color: rgb(116, 70, 14);
+    text-align: right;
+    font-size: 30px;
+
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
