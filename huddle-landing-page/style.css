@@ -256,6 +256,7 @@ font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: -290px;
     
 }
 .register h1{
@@ -277,7 +278,7 @@ font-family: 'Open Sans', sans-serif;
     height: 500px;
 }
 .footend{
-    margin-top: 800vh;
+    margin-top: 680vh;
    
 }
 .foot-one{
