@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+.checked{
+    color: orange;
+}
+body{
+    min-height: 100vh;
+    background-color:wheat;
+    font-family: 'Manrope', sans-serif;
+}
+h1{
+    margin: 10px;
+    color: var(--soft-Pink);
+}
+p{
+    color: var(--White);
+}
+
+.container{
+    height: 50vh;
+    width: 100%;
+  
+}
+.container-one{
+    height: 50vh;
+    width: 100%;
+   
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container-one img{
+    width: 100%;
+    height: 50vh;
+}
+.coloumn{
+    display: flex;
+    flex-direction: row;
+    margin-top: -50vh;
+    margin-left: 180px;
+    flex-wrap: wrap;
+    
+}
+.section{
+    width: 350px;
+    height: 80vh;
+    
+}
+.sec-one,.sec-two,.sec-three{
+    width: 350px;
+    height: 40vh;
+
+}
+.innersection{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    height: 200px;
+    width: 300px;
+    margin-top: 100px; 
+    background-color: var(--very-dark-magenta);
+    
+    
+    margin: 10px;
+}
+#cardone{
+    margin: 30px;
+}
+#cardtwo{
+    margin: 40px;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    
+}
+.stars p{
+    margin-left: 10px;
+    color: var(--very-dark-magenta);
+}
+.sec-one p,.card p{
+    margin: 10px;
+    color: var(--Light-Grayish-Magenta);
+    
+}
+#pimg{
+    height: 35px;
+    width: 35px;
+    margin: 2px;
+    border-radius: 40px;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+}

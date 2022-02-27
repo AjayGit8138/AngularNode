@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Dark-cyan: hsl(185, 62%, 67%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--Dark-cyan);
+    /* background-image: url('./images/bg-pattern-top.svg');
+    background-size: cover; */
+    font-family: 'Manrope', sans-serif;
+}
+
+.card{
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 35%;
+    box-shadow: 2px 3px 10px var(--Very-dark-desaturated-blue);
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    height: 50vh;
+    
+    
+}
+.container-one{
+    width: 50%;
+    height: 50vh;
+}
+.container-two{
+    width: 50%;
+    height: 50vh;
+}
+.main-one{
+    margin-top: 50vh;
+}
+.container-three{
+    width: 50%;
+    height: 50vh;
+}
+.container-three img{
+    height: auto;
+    width: auto;
+    margin-left: 600px;
+}
+.container img{
+    height: 100vh;
+    width: 50%;
+    margin-left: -140px;
+    margin-top: -200px;
+    
+}
+.container-one img{
+    height: 100vh;
+    width: 100%;
+    margin-left: 800px;
+}
+.cardimg{
+    width: 400px;
+    height: 150px;
+}
+.cot-img{
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;
+    margin-left: 160px;
+    margin-top: -40px;
+    border: 5px solid white;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    margin-top: 380px;
+    border-top: 1px solid var(--Very-dark-desaturated-blue);
+  
+}
+.row h2,p{
+    margin: 8px;
+    margin-left: 40px;
+  
+}

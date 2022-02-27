@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+ --Very-light-gray: hsl(0, 0%, 95%);
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--Transparent-white);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+}
+.row{
+    height: 500px;
+    width: 400px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.row img{
+    margin: 15px;
+}
+.row h1,p{
+    margin: 15px;
+    font-size: 25px;
+    color: var(--Transparent-white);
+}
+#lux{
+    background-color: var(--Very-dark-cyan);
+}
+#suv{
+    background-color: var(--Dark-cyan);
+}
+#sea{
+    background-color: var(--Bright-orange);
+}
+.btn{
+    background-color: var(--Transparent-white);
+    color:var(--Very-dark-cyan);
+    font-size: 30px;
+    margin: 15px;
+    height: 60px;
+    width: 180px;
+    border-radius: 30px;
+    border: 2px solid white;
+
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 3px 5px 8px whitesmoke;
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    font-family: 'Manrope', sans-serif
+}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+   
+}
+.list{
+    margin-left: auto;
+    
+}
+.list li{
+    display: inline;
+    list-style: none;
+    float: left;
+    margin: 30px;   
+}
+.sectionone,.sectiontwo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+    flex-wrap: wrap;
+}
+.sec-three h1{
+    margin: 30px;
+        font-size: 35px;
+        color: var(--Very-Dark-Blue);
+}
+.sec-three p{
+    margin: 30px;
+        font-size: 25px;
+        color: white;
+}
+.secone h1{
+        margin: 30px;
+        font-size: 35px;
+        color: var(--Very-Dark-Blue);
+}
+.secone p{
+    margin: 30px;
+    font-size: 25px;
+}
+.secone{
+    
+    width: 50%;
+    height: 500px;
+   
+    
+    
+}
+.sectwo{
+   
+    width: 50%;
+    height: 500px;
+    background-image: url('./images/illustration-1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+input[type='search']{
+    width: 300px;
+    height: 40px;
+    margin: 20px;
+}
+.sec-two-2{
+    height: 1000px;
+    width: 50%;
+    
+}
+.btn-started:hover{
+    cursor: pointer;
+    box-shadow: 2px 4px 8px #33b5e5;
+
+}
+.btn-started{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #33b5e5;
+    border: 2px solid #33b5e5;
+    color: white;
+    font-size: 16px;
+}
+.sec-two{
+    width: 50%;
+    height: 1000px;
+    background-image: url('./images/illustration-2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Light-Grayish-Blue);
+}
+a{
+    margin: 30px;
+}
+.sec-two-2 h1{
+    margin: 30px;
+        font-size: 35px;
+        color: var(--Very-Dark-Blue);
+}
+.sec-two-2 p{
+    margin: 30px;
+    font-size: 25px;
+}
+.sec-three{
+    display: flex;
+    flex-direction: row;
+}
+.secthree{
+    height: 300px;
+    background-color: var(--Desaturated-Blue);
+}
+.coloumn{
+    width: 50%;
+}
+.sectionfour{
+    background-color: var(--Very-Dark-Blue);
+    height: 300px;
+    
+}
+.sec-four img{
+    margin: 20px;
+}
+.sec-four{
+    display: flex; flex-direction: row;
+    color: white;
+}
+.contact{
+    height: 300px;
+    width: 50%;
+}
+.listfoot li{
+    list-style: none;
+    margin: 10px;
+}
+.social img{
+    height: 35px;
+    width: 20px;
+    
+}
