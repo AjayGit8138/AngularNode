@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: green;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+}
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+     --Bright-blue: hsl(245, 75%, 52%);
+}
+.containermain{
+    display: flex;
+    width: 100%;
+   height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+.summary{
+    flex-direction: row;
+    width: 32%;
+    height: 600px;
+    background-color: var(--Pale-blue);
+    display: flex;
+    border-radius: 10px;
+   
+}
+.summary img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: -2px;
+
+    
+}
+.quotes{
+    height: 130px;
+    width: 100%;
+    margin-top: 250px;
+    background-color: aqua;
+    margin-left: -100%;
+}
+.quotes h1{
+    text-align: center;
+    font-size: 18px;
+}
+.quotes p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.tag{
+    width: 100%;
+    height: 100px;
+    margin-top: 410px;
+    margin-left: -100%;
+    flex-direction: row;
+    display: flex;
+    
+}
+.price{
+    flex-direction: row;
+    width: 34%;
+    height: 100px;
+    background-color: brown;
+    position: relative;
+  
+
+}
+.price img{
+    width: 50px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: relative
+}
+.music{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    background-image: url('./images/icon-music.svg');
+    background-repeat: no-repeat;
+    margin-left: 70px;
+    margin-top: 20px;
+    background-size: cover;
+    position: relative;
+}
