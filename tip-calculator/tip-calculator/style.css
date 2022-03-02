@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Dark-grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  background-color: var(--Dark-grayish-cyan);
+  font-family: "Manrope", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid seagreen;
+  margin: 40px;
+  height: 540px;
+  margin-top: 55px;
+  background-color: white;
+  border-radius: 35px;
+}
+.section {
+  width: 40%;
+  height: 500px;
+  margin: 10px;
+}
+.tipbutton {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+h1 {
+  margin: 20px;
+}
+button {
+  margin: 10px;
+  height: 40px;
+  width: 120px;
+}
+input {
+  height: 40px;
+  width: 460px;
+  margin: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.bilimg {
+  background-image: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+.persons {
+  background-image: url("./images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+.tipdisplay {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+}
+.tipsection {
+  width: 50%;
+  height: 100px;
+}
+.bil,
+.tip,
+.people {
+  margin-top: 25px;
+}
+.rstbtn {
+  margin: 50px;
+  width: 350px;
+  background-color: var(--Strong-cyan);
+}
+button {
+  border-radius: 12px;
+  background-color: var(--Very-dark-cyan);
+  font-size: 25px;
+  color: white;
+}
+#display {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 25px;
+}
+button:focus {
+  background-color: var(--Dark-grayish-cyan);
+}

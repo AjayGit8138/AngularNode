@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="section">
+                
+                <div class="bill">
+                    <h1>Bill</h1>
+                    
+                    <input type="number" placeholder="Enter the Bill amount" class="bilimg" id="getbill" name="Bill">
+                </div>
+                <div class="tip">
+                    <h1>Select tip in %</h1>
+                    <div class="tipbutton">
+                        <button class="btn" onclick="calculatetip(5);">5%</button>
+                        <button class="btn" onclick="calculatetip(10);">10%</button>
+                        <button class="btn" onclick="calculatetip(15);">15%</button>
+                        <button class="btn" onclick="calculatetip(25);">25%</button>
+                        <button class="btn" onclick="calculatetip(50);">50%</button>
+                        <button class="btn" onclick="calculatetip(5);">custom</button>
+                    
+
+                    </div>
+                    <div class="people">
+                        <h1>Number Of People</h1><br>
+                        <input type="number" class="persons" id="Tperson" placeholder="Number of Persons" name="Nosperson"> 
+                    </div>
+                </div>
+            </div>
+            <div id="display" class="section">
+                <div class="tipdisplay">
+                    <div class="tipsection">
+                        <p>Tip Amount<br>
+                            / person</p>
+                    </div>
+                    <div class="tipsection">
+                       <div class="tipamt">
+                           <h1 id="tipamt">$0</h1>
+                       </div>
+                    </div>
+                    
+                </div>
+                <div class="tipdisplay">
+                    <div class="tipsection">
+                        <p>Total<br>
+                            / person</p>
+                    </div>
+                    <div class="tipsection">
+                        <div class="tipamt">
+                            <h1 id="totperson">$0</h1>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="rst">
+                    <button class="rstbtn" onclick="reset();">Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="Tipcalculation.js" type="text/javascript">
+
+</script>
+</html>
