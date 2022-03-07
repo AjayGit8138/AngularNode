@@ -20,18 +20,18 @@ tbody {
   border-collapse: collapse;
   width: 100px;
   background-color: #747480;
-  background-image: url("./assignment.jpg");
+  background-image: url("./homework.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 a {
-  color: rgb(71, 21, 80);
+  color: rgb(5, 58, 143);
   font-size: 25px;
   text-decoration-line: none;
 }
 
 td:hover {
-  background-color: darkorchid;
+  background-color: rgba(73, 70, 54, 0.616);
 }
 
 #customers td,
