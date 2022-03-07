@@ -76,6 +76,9 @@ input {
 .people {
   margin-top: 25px;
 }
+.btn {
+  flex-direction: row;
+}
 .rstbtn {
   margin: 50px;
   width: 350px;
@@ -95,7 +98,11 @@ button:focus {
   background-color: var(--Dark-grayish-cyan);
 }
 @media only screen and (max-width: 980px) {
-  .section {
-    width: 200px;
+  .section,
+  .container {
+    width: 1000px;
+    flex-direction: column;
+    margin-top: 290px;
+    height: 1500px;
   }
 }
