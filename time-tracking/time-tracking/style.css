@@ -22,8 +22,7 @@
   width: 1200px;
   border: 1px solid saddlebrown;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .container-one {
   height: 600px;
@@ -87,4 +86,11 @@ img {
   margin-left: 160px;
   height: 20px;
   width: 30px;
+}
+.firstrow {
+  height: 300px;
+  width: 1200px;
+  border: 1px solid seagreen;
+  display: flex;
+  flex-direction: row;
 }

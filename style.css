@@ -7,7 +7,6 @@ body {
   background-image: url("./blueback.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 /* th {
   border: 2px solid sandybrown;
@@ -27,7 +26,7 @@ tbody {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 25px;
-  Background-image: linear-gradient(#00A4CCFF, rgb(151, 92, 59));
+  background-image: linear-gradient(#00a4ccff, rgb(151, 92, 59));
 }
 a {
   color: rgb(14, 4, 37);
@@ -60,8 +59,8 @@ td:hover {
 
 #customers td,
 #customers th {
-  border: 0px solid #ddd; */
-   padding: 8px;
+  border: 0px solid #ddd;
+  padding: 8px;
 }
 
 #customers th {

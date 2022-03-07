@@ -94,3 +94,8 @@ button {
 button:focus {
   background-color: var(--Dark-grayish-cyan);
 }
+@media only screen and (max-width: 980px) {
+  .section {
+    width: 200px;
+  }
+}

@@ -1,0 +1,110 @@
+:root {
+  --Blue: hsl(246, 80%, 60%);
+
+  --Light-red: hsl(15, 100%, 70%);
+  --Soft-blue: hsl(195, 74%, 62%);
+  --Light-redone: hsl(348, 100%, 68%);
+  --Lime-green: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --Soft-orange: hsl(43, 84%, 65%);
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 290px 290px;
+  background-color: #2196f3;
+  padding: 10px;
+
+  margin-left: auto;
+  grid-gap: 20px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  /* padding: 20px; */
+  font-size: 30px;
+  text-align: center;
+  display: grid;
+  border-radius: 20px;
+}
+.one {
+  grid-row: span 2;
+  display: flex;
+  grid-column: span 1;
+  flex-direction: column;
+}
+.head {
+  height: 60px;
+  width: auto;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.heading {
+  width: 100%;
+  height: 60px;
+  border: 1px solid sienna;
+  display: flex;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.heading img {
+  height: 10px;
+  width: 30px;
+  margin-left: auto;
+  margin-top: 30px;
+}
+.heading h2 {
+  margin: 10px;
+}
+.profile {
+  height: 400px;
+  width: 200px;
+  border: 1px solid salmon;
+}
+ul li {
+  list-style: none;
+  margin: 20px;
+}
+.profile img {
+  height: 80px;
+  width: 80px;
+  margin: 30px;
+}
+#h1 {
+  background-color: var(--Light-red);
+}
+#h2 {
+  background-color: var(--Soft-blue);
+}
+#h3 {
+  background-color: var(--Light-redone);
+}
+#h4 {
+  background-color: var(--Lime-green);
+}
+#h5 {
+  background-color: var(--Violet);
+}
+#h6 {
+  background-color: var(--Soft-orange);
+}
+/* .sec2,
+.header {
+  background-color: var(--Very-dark-blue);
+} */
+
+.heading {
+  background-color: var(--Very-dark-blue);
+}
+.grid-item {
+  background-color: var(--Very-dark-blue);
+}
