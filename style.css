@@ -25,8 +25,13 @@ tbody {
   background-size: cover;
 }
 a {
-  color: crimson;
+  color: rgb(71, 21, 80);
   font-size: 25px;
+  text-decoration-line: none;
+}
+
+td:hover {
+  background-color: darkorchid;
 }
 
 #customers td,
