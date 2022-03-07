@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./images/bg-stars.svg");
+  width: 100%;
+  background-color: rgb(51, 31, 51);
+}
+:root {
+  --Grayish-blue: hsl(237, 18%, 59%);
+  --Soft-red: hsl(345, 95%, 68%);
+  --White: hsl(0, 0%, 100%);
+  --Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --Very-dark-blue: hsl(235, 16%, 14%);
+  --Very-dark-blue: hsl(234, 17%, 12%);
+}
+.container {
+  width: 100%;
+  margin-top: 55px;
+}
+.containerone {
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+  justify-content: center;
+}
+.row {
+  height: 180px;
+  width: 15%;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to bottom,
+    var(--Very-dark-blue),
+    var(--Grayish-blue)
+  );
+  border-radius: 25px;
+}
+h1 {
+  font-size: 105px;
+  margin: 40px;
+  color: var(--Soft-red);
+}
+.con {
+  height: 180px;
+  width: 100%;
+  border: 0px solid gray;
+  border-radius: 20px;
+  background-color: var(--Very-dark-blue);
+  background-image: linear-gradient(
+    to bottom,
+    var(--Very-dark-blue),
+    var(--Grayish-blue)
+  );
+}
+.time {
+  display: inline-flex;
+  margin-left: 280px;
+}
+.time h2 {
+  margin: 70px;
+  color: whitesmoke;
+}

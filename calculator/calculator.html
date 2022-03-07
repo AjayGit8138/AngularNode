@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="modechange">
+        <div class="container">
+            <div class="row">
+                <div class="mode">
+                    <input type="radio" id="the1"  onclick="themeone();" name="theme" value="theme1">
+                    <input type="radio" id="the2" onclick="themetwo();" name="theme" value="theme2">
+
+                </div>
+                <h1>calculator</h1>
+                <div class="screen">
+                    <div class="window">
+                        <div  id="empty">Enter Here</div>
+
+                        <h1 id="display"></h1>
+                        <h2 id="ans"></h2>
+                    </div>
+                </div>
+                <div style="margin-top: 30px;" class="button-row">
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(seven.innerHTML);" id="seven"  class="buttons">7</button>
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(eight.innerHTML);" id="eight" class="buttons">8</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(nine.innerHTML);" id="nine" class="buttons">9</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="deleteback();" id="rst" class="buttons">DEL</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(four.innerHTML);" id="four" class="buttons">4</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(five.innerHTML);" id="five" class="buttons">5</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(six.innerHTML);" id="six" class="buttons">6</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(add.innerHTML);" id="add" class="buttons">+</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(one.innerHTML);" id="one" class="buttons">1</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(two.innerHTML);" id="two" class="buttons">2</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(three.innerHTML);" id="three" class="buttons">3</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(minus.innerHTML);"  id="minus" class="buttons">-</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(dot.innerHTML);" id="dot" class="buttons">.</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(zero.innerHTML);" id="zero" class="buttons">0</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(divide.innerHTML);" id="divide" class="buttons">/</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="activate(mul.innerHTML);" id="mul" class="buttons">*</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="reset();" id="rst" class="buttons">RST</button>
+
+                    <!-- </div> -->
+                    <!-- <div class="buttons"> -->
+                        <button onclick="equals();"class="buttons">=</button>
+
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script type="text/javascript">
+    
+    function activate(buttonid)
+    {
+        var setEmpty = document.getElementById('empty');
+        console.log(setEmpty);
+        setEmpty.classList.add('text');
+        var displayNum = document.getElementById('display').innerHTML;
+        var concatNum = document.getElementById('display');
+   
+            concatNum.innerHTML = `${displayNum}` + `${buttonid}`;
+        console.log(buttonid);
+    }
+    function equals()
+    {
+       var exp = document.getElementById('display').innerHTML;
+        console.log(exp);
+        var Result = eval(exp);
+        console.log(Result);
+        var setresult = document.getElementById('ans');
+        setresult.innerHTML =`Ans: ${Result}`;
+    }
+    function reset()
+    {
+        window.location.reload();
+    }
+    function deleteback()
+    {
+        var exp = document.getElementById('display').innerHTML;
+        var Reduce = exp.slice(0,-1);
+        var length = Reduce.length;
+        var exp = document.getElementById('display');
+        exp.innerHTML = Reduce;
+        console.log(exp.innerHTML);
+       
+        
+    }
+    function themetwo()
+    {
+        var theme = document.getElementById('modechange');
+        theme.classList.remove("themeone");
+        theme.classList.add("themetwo");
+    }
+    function themeone()
+    {
+        var theme = document.getElementById('modechange');
+        theme.classList.remove("themetwo");
+
+        theme.classList.add("themeone");
+    }
+</script>
+</html>

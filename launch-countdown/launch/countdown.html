@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="containerone">
+            
+            <div class="row">
+               <h1 id="days"></h1>
+
+            </div>
+          
+            <div class="row">
+                <h1 id="hrs"></h1>
+            </div>
+            <div class="row">
+               <h1 id="minutes"></h1>
+               
+            </div>
+            <div class="row">
+                <h1 id="seconds"></h1>
+            </div>
+            
+        </div>
+        <div class="time">
+            <h2>Days</h2>
+            <h2>Hours</h2>
+            <h2>minutes</h2>
+            <h2>Seconds</h2>
+        </div>
+        <div class="container">
+            <img src="./images/pattern-hills.svg" alt="image">
+        </div>
+    </section>
+    
+</body>
+<script>
+    const count = ()=>{
+        const EndDate = new Date("March 15,2022 08:15:35");
+        console.log(EndDate);
+        const Now = new Date().getTime();
+        console.log(Now);
+        const Difference = EndDate - Now;
+        console.log(Difference);
+
+        var seconds = 1000;
+        var min = seconds * 60;
+        var hrs = min * 60;
+        var days = hrs * 24;
+
+        var launchdate = Math.floor(Difference/days);
+        var launchrs = Math.floor((Difference % days)/hrs);
+        var launchmin = Math.floor((Difference % hrs)/min);
+        var launchsec = Math.floor((Difference % min)/seconds);
+        console.log(launchdate);
+        console.log(launchrs);
+        console.log(launchmin);
+        console.log(launchsec);
+
+        document.getElementById('days').innerHTML = launchdate;
+        document.getElementById('hrs').innerHTML = launchrs;
+        document.getElementById('minutes').innerHTML = launchmin;
+        document.getElementById('seconds').innerHTML = launchsec;
+    }
+    setInterval(count,1000);
+    
+</script>
+</html>

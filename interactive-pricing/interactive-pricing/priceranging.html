@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priceranging</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="setval();">
+    <section>
+        <div class="bgsection">
+            <img src="./images/bg-pattern.svg" alt="img">
+            
+        </div>
+        <div style="margin-top: -30px;"class="head">
+         
+            <h1 style="text-align: center;">Simple, traffic-based pricing
+                Sign-up for our 30-day trial. No credit card required. </h1>
+            </div>
+        <div class="container">
+            
+            <div class="row">
+                <div class="row-one">
+                    <h1>100k Pageviews</h1>
+                    <h1>$<span id="price"></span>Month</h1>
+                </div>
+               
+                <div class="prsrange">
+                    <div class="circle">
+                    <!-- <span class="bar"><span class="fill"></span></span>
+                    <input type="range" value="70" min="0" max="100" id="slider" oninput="rangevalue.value=value"/></input>
+                    <output id="rangevalue">70</output> -->
+                    <form class="form">
+                        <input
+                          type="range"
+                          name="range-slider"
+                          id="range-slider"
+                          min="0"
+                          max="100"
+                          value="70"
+                          oninput="setval(rangevalue.value=value);"
+                        />
+                    <output class="output" id="rangevalue">70</output>
+
+                        <!-- <img
+                          src="./images/icon-slider.svg"
+                          alt=""
+                          class="slider-icon"
+                          draggable="true"
+                        /> -->
+                      </form>
+                      <div style="margin:10px;display: inline-flex;"class="billing">
+                          <h2>Monthly Billing</h2>
+
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                          <h2>yearly Billing</h2>
+                      </div>
+                      <div class="line"></div>
+                      <div class="foot">
+                        <ul style="margin-left: -90px;margin-top: -30px;"class="list">
+                            <li><img src="./images/icon-check.svg"> websites</li>
+                            <li><img src="./images/icon-check.svg"> 100% data ownership</li>
+                            <li><img src="./images/icon-check.svg"> reports</li>
+                        </ul>
+                        <button class="btn">start my Trail</button>
+                    </div>
+                    </div>
+                    <!-- <div id="select" class="selector">
+                      
+                        <div class="selcbtn">
+                            <img src="./images/icon-slider.svg">
+                        </div>
+                    </div> -->
+                </div>
+               
+            </div>
+            
+          
+        </div>
+        
+    </section>
+</body>
+<script>
+    function setval(value)
+    {
+    let priceset = document.getElementById('price');
+    let Getval = document.getElementById('rangevalue').value;
+    priceset.innerHTML = Getval;
+    console.log(value);
+    }
+</script>
+</html>
