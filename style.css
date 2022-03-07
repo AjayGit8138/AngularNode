@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: coral;
+}
+/* th {
+  border: 2px solid sandybrown;
+}
+thead {
+  margin: 400px;
+}
+tbody {
+  margin: 80px;
+} */
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100px;
+  background-color: #747480;
+  background-image: url("./assignment.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  color: crimson;
+  font-size: 25px;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0f04aa;
+  color: white;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1504aa;
+  color: white;
+}

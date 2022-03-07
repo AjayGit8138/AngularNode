@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@ body {
   background-image: url("./images/bg-stars.svg");
   width: 100%;
   background-color: rgb(51, 31, 51);
+  font-family: "Manrope", sans-serif;
 }
 :root {
   --Grayish-blue: hsl(237, 18%, 59%);
@@ -63,4 +65,17 @@ h1 {
 .time h2 {
   margin: 70px;
   color: whitesmoke;
+}
+h3 {
+  margin: 30px;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+.foot {
+  margin-top: -300px;
+  margin-left: 500px;
+}
+.foot img {
+  margin: 30px;
 }
