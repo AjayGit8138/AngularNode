@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  background-color: coral;
+  background-image: url("./blueback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 /* th {
   border: 2px solid sandybrown;
@@ -19,13 +22,15 @@ tbody {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100px;
-  background-color: #747480;
-  background-image: url("./homework.jpg");
+  background-color: #cecedf;
+  /* background-image: url("./web.jpeg"); */
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 25px;
+  Background-image: linear-gradient(#00A4CCFF, rgb(151, 92, 59));
 }
 a {
-  color: rgb(5, 58, 143);
+  color: rgb(14, 4, 37);
   font-size: 25px;
   text-decoration-line: none;
 }
@@ -55,8 +60,8 @@ td:hover {
 
 #customers td,
 #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
+  border: 0px solid #ddd; */
+   padding: 8px;
 }
 
 #customers th {
@@ -65,4 +70,7 @@ td:hover {
   text-align: left;
   background-color: #1504aa;
   color: white;
+}
+.container {
+  margin: 80px;
 }
