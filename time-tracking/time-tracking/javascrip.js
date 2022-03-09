@@ -47,7 +47,11 @@ function templatechange(timetrack)
     // console.log(timetrack);
     // var mydata = JSON.parse(data);
     // console.log(mydata);
-    
+    deactivate(timetrack);
+     var DefaultColor = document.getElementById(timetrack);
+     
+      DefaultColor.classList.add("active");
+    //   changeliststyle(timetrack);
      fetch(URL)
     .then((res) => res.json())
     .then((data) => {
@@ -91,21 +95,47 @@ function templatechange(timetrack)
      
          
      
-    var UpdateData = document.getElementsByClassName('header');
-    var length = UpdateData.length;
-    console.log(UpdateData);
-    console.log(TimeData["timeframes"]);
-    if(TimeData['title'] == timetrack)
-    {
-        console.log(TimeData[0]['title']);
-    }
-    else if(timetrack === 'Weekly')
-    {
-        console.log('else');
+    // var UpdateData = document.getElementsByClassName('header');
+    // var length = UpdateData.length;
+    // console.log(UpdateData);
+    // console.log(TimeData["timeframes"]);
+    // if(TimeData['title'] == timetrack)
+    // {
+    //     console.log(TimeData[0]['title']);
+    // }
+    // else if(timetrack === 'Weekly')
+    // {
+    //     console.log('else');
 
-    }
-    else
+    // }
+    // else
+    // {
+    //      console.log('else');
+    // }
+}
+function deactivate(timetrack)
+{
+    var DefaultColorweek = document.getElementById('Weekly');
+    var DefaultColorMonth = document.getElementById('Monthly');
+    var DefaultColorDaily = document.getElementById('Daily');
+
+    if(timetrack == 'Daily')
     {
-         console.log('else');
+        
+        DefaultColorweek.classList.remove("active");
+        DefaultColorMonth.classList.remove("active");
     }
+    else if(timetrack == 'Weekly'){
+        DefaultColorMonth.classList.remove("active");
+        DefaultColorDaily.classList.remove("active");
+    }
+    else if(timetrack == 'Monthly')
+    {
+        DefaultColorweek.classList.remove("active");
+        DefaultColorDaily.classList.remove("active");
+    }
+    else{
+        
+    }
+  
 }
