@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Our Pricing</h1>
+            <div class="toggleswich">
+                <h1>Annually</h1>
+            <!-- <label class="switch">
+                <input class="swtch" type="checkbox">
+                <span class="slider round"></span>
+              </label> -->
+              <div id="selectorbar">
+                  <div id="selectball">
+
+                  </div>
+              </div>
+              <h1>Monthly</h1>
+            </div>
+            <div class="box">
+            <div class="section first">
+                <p>Basic</p><br>
+                <h3 class="monthly">$19.99</h3>
+                <h4 class="yearly">$199.99</h4>
+                <div class="line"></div>
+                <h2><span>500&nbsp;</span>GB Storage</h2>
+                <div class="line"></div>
+                <h2><span>2&nbsp;</span>Users Allocated</h2>
+                <div class="line"></div>
+                <h2>Send up to&nbsp;<span>3</span>&nbsp;GB</h2>
+                <div class="line"></div>
+                <div class="btn-learn">
+                    <button class="btn">Learn More</button>
+               </div>
+                
+            </div>
+            <div class="section one">
+                <p>Professional</p><br>
+                <h3 class="monthly">$24.99</h3>
+                <h4 class="yearly">$249.99</h4>
+                <div class="line"></div>
+                <h2><span>1Tb&nbsp;</span>Storage</h2>
+                <div class="line"></div>
+                <h2><span>5&nbsp;</span>Users Allocated</h2>
+                <div class="line"></div>
+                <h2>Send up to&nbsp;<span>10</span>&nbsp;GB</h2>
+                <div class="line"></div>
+                <div class="btn-learn">
+                     <button class="btn">Learn More</button>
+                </div>
+            </div>
+            <div class="section three">
+                <p>Master</p><br>
+                <h3 class="monthly">$39.99</h1>
+                <h4 class="yearly">$399.99</h4>
+                <div class="line"></div>
+                <h2><span>2&nbsp;</span>TB Storage</h2>
+                <div class="line"></div>
+                <h2><span>10&nbsp;</span>Users Allocated</h2>
+                <div class="line"></div>
+                <h2>Send up to&nbsp;<span>20&nbsp;</span>GB</h2>
+                <div class="line"></div>
+                <div class="btn-learn">
+                    <button class="btn">Learn More</button>
+               </div>
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    const Monthly = ["19.99","24.99","39.99"];
+    let changeMode = document.getElementById('selectorbar');
+    changeMode.addEventListener("click",function(){
+        
+        var MonthlyRating = document.getElementsByTagName('h3');
+        var YearlyRating = document.getElementsByTagName('h4');
+        console.log(MonthlyRating);
+        console.log(YearlyRating);
+        var i;
+        var n;
+        // console.log(MonthlyRating.length);
+        // console.log(YearlyRating.length);
+        for(i=0;i<MonthlyRating.length;i++)
+        {
+            // console.log(i);
+            for(n=0;n<3;n++)
+            {
+                console.log(MonthlyRating[i].innerHTML);
+                if(MonthlyRating[i].style.display === "none")
+                {
+                    console.log(MonthlyRating[i].innerHTML);
+                    MonthlyRating[i].style.display = "block";
+                    YearlyRating[i].style.display = "none";
+                    changeMode.style.justifyContent = "flex-end"
+                }
+                else
+                {
+                    MonthlyRating[i].style.display = "none";
+                    YearlyRating[i].style.display = "block";
+                    changeMode.style.justifyContent = "flex-start"
+                }
+            }
+    }    
+   })
+    
+</script>
+</html>

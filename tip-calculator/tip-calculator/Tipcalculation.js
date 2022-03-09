@@ -12,6 +12,9 @@ function calculatetip(percent)
     console.log(TipEval); 
     console.log(Pcnt); 
 
+    var buttn = document.getElementById('btncol');
+    buttn.classList.remove("active");
+
 }
 function reset()
 {

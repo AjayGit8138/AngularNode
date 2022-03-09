@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--Soft-blue),
+    var(--Soft-violet)
+  );
+}
+h1 {
+  margin: 2px;
+  font-size: 1.5vw;
+}
+p {
+  font-size: 1vw;
+}
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 150px;
+  border-radius: 20px;
+  border: 1px solid var(-Very-dark-desaturated-blue);
+}
+.section {
+  height: 450px;
+  width: 35%;
+  background-image: url("./images/bg-pattern-desktop.svg"),
+    url("./images/illustration-woman-online-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: -140px 30px, -150px -10px;
+  background-color: var(--Light-grayish-blue);
+
+  /* background-image: url("./images/illustration-woman-online-desktop.svg"); */
+}
+.sectionone {
+  height: 450px;
+  width: 40%;
+  background-color: var(--Light-grayish-blue);
+}
+.section img {
+  height: 300px;
+  width: 100%;
+}
+/* .inner img {
+  margin-left: -90px;
+  margin-top: 40px;
+  overflow: hidden;
+} */
+#inner {
+  background-image: url("./images/illustration-woman-online-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -100px 30px;
+}
+#box {
+  height: 190px;
+  width: 150px;
+  transform: translateX(-50%);
+  margin-top: 150px;
+}
+.answer {
+  display: none;
+}
+.qs-tag {
+  cursor: pointer;
+}
+.ansexpand {
+  display: block;
+}
+.line {
+  width: 80%;
+  background-image: url("./images/icon-arrow-down.svg");
+  height: 0.5px;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+}
+.qs-tag:after {
+  background-image: url("./images/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 35px;
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.arrow {
+  transform: translateY(300%);
+  width: auto;
+  margin-left: 400px;
+  display: inline-flex;
+  height: auto;
+}
+.rotate {
+  transform: rotate(0deg);
+}
+
+@media only screen and (max-width: 1059px) {
+  .arrow {
+    margin-left: 300px;
+  }
+}
+@media only screen and (max-width: 911px) {
+  .arrow {
+    margin-left: 270px;
+  }
+}
+@media only screen and (max-width: 718px) {
+  .arrow {
+    margin-left: 220px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .sectionone {
+    width: 80%;
+  }
+}

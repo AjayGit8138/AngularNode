@@ -97,10 +97,10 @@ body {
 button {
   background-color: white;
   border-radius: 20px;
-  box-shadow: 2px 3px white;
+
   cursor: pointer;
   color: var(--Very-dark-desaturated-bluetwo);
-  font-size: 30px;
+  font-size: 35px;
   border: white;
   text-align: center;
 }
@@ -146,7 +146,11 @@ h2 {
   background-color: var(--Grayish-red);
 }
 #rst {
-  background-color: orangered;
+  background-color: var(--Desaturated-dark-blue);
+  width: 40%;
+}
+#equals {
+  width: 40%;
 }
 @media only screen and (max-width: 873px) {
   .button-row,

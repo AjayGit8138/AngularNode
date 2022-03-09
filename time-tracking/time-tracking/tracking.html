@@ -7,7 +7,7 @@
     <title>Tracking</title>
     <link rel="stylesheet" href="styling.css">
 </head>
-<body>
+<body onload="getconnection();">
     <section>
         <div class="container">
             <div class="grid-container">
@@ -17,9 +17,9 @@
                     </div>
                     <div class="option">
                         <ul>
-                            <li>Daily</li>
-                            <li>Weekly</li>
-                            <li>Monthly</li>
+                            <li onclick="templatechange('Daily');" id="Daily">Daily</li>
+                            <li onclick="templatechange('Weekly');">Weekly</li>
+                            <li onclick="templatechange('Monthly');">Monthly</li>
                         </ul>
                     </div>
                 </div>

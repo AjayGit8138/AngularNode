@@ -10,7 +10,7 @@
 <body>
     <section>
         <div class="container">
-            <div class="section">
+            <div class="section one">
                 
                 <div class="bill">
                     <h1>Bill</h1>
@@ -18,19 +18,21 @@
                     <input type="number" placeholder="Enter the Bill amount" class="bilimg" id="getbill" name="Bill">
                 </div>
                 <div class="tip">
-                    <h1>Select tip in %</h1>
+                    <br><br><br>
+                    <h2>Select tip in %</h2>
+                 
                     <div class="tipbutton">
-                        <button class="btn" onclick="calculatetip(5);">5%</button>
-                        <button class="btn" onclick="calculatetip(10);">10%</button>
-                        <button class="btn" onclick="calculatetip(15);">15%</button>
-                        <button class="btn" onclick="calculatetip(25);">25%</button>
-                        <button class="btn" onclick="calculatetip(50);">50%</button>
-                        <button class="btn" onclick="calculatetip(5);">custom</button>
+                        <button  class="btn" onclick="calculatetip(5);">5%</button>
+                        <button  class="btn" onclick="calculatetip(10);">10%</button>
+                        <button id="btncol" class="btn active" onclick="calculatetip(15);">15%</button>
+                        <button  class="btn" onclick="calculatetip(25);">25%</button>
+                        <button  class="btn" onclick="calculatetip(50);">50%</button>
+                        <button  class="btn" onclick="calculatetip(5);">custom</button>
                     
 
                     </div>
                     <div class="people">
-                        <h1>Number Of People</h1><br>
+                        <h1>Number Of People</h1>
                         <input type="number" class="persons" id="Tperson" placeholder="Number of Persons" name="Nosperson"> 
                     </div>
                 </div>
