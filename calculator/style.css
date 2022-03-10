@@ -157,4 +157,14 @@ h2 {
   .screen {
     width: 500px;
   }
+  .container {
+    margin-left: -30%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 500px;
+    margin-left: -40%;
+    margin-top: 100px;
+  }
 }

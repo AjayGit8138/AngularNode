@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DataLoading</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./themes/style.css">
 </head>
+
 <body>
     <section>
-       <div class="container">
-           
-           <div class="datload">
+        <div id="maincontainer" class="container">
+
+            <div id="dload" class="datload">
                 <div class="logo">
                     <img src="./images/logo.svg" alt="img">
                 </div>
                 <img src="./images/icon-document.svg" alt="img">
                 <img src="./images/icon-folder.svg" alt="img">
                 <img src="./images/icon-upload.svg" alt="img">
-           </div>
-          <div class="progress">
-              <p> You’ve used 815 GB of your storage</p>
-              <p id="statusthree">185 Gb Left</p>
-             
-
-            <div class="bar">
-                
-                <div class="innerbar">
-                   
-                    <div class="circle"></div>
-                    <p id="status">0 GB</p>
-                    <p id="statusone">1000 GB</p>
-                </div>
-                
             </div>
-          </div>  
-             
-       </div>
-       <div class="containerone">
-           
-    </div>
+            <div class="progress">
+                <div id="remainingdata">
+                    <h1>185 Gb Left</h1>
+                </div>
+                <p> You've used 815 GB of your storage</p>
+                <p id="statusthree">185 Gb Left</p>
+
+
+                <div id="outer" class="bar">
+
+                    <div id="inner" class="innerbar">
+
+                        <div class="circle"></div>
+                        <p id="status">0 GB</p>
+                        <p id="statusone">1000 GB</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="containerone">
+
+        </div>
 
     </section>
-    
+
 </body>
+
 </html>

@@ -33,26 +33,31 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 20px;
+  margin: 150px;
   margin-top: 150px;
+  width: 75%;
   border-radius: 20px;
+  border-radius: 15px;
+  background-color: aliceblue;
   border: 1px solid var(-Very-dark-desaturated-blue);
 }
 .section {
   height: 450px;
-  width: 35%;
+  width: 45%;
   background-image: url("./images/bg-pattern-desktop.svg"),
     url("./images/illustration-woman-online-desktop.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: -140px 30px, -150px -10px;
   background-color: var(--Light-grayish-blue);
+  border-radius: 15px;
 
   /* background-image: url("./images/illustration-woman-online-desktop.svg"); */
 }
 .sectionone {
   height: 450px;
-  width: 40%;
+  width: 60%;
+  border-radius: 15px;
   background-color: var(--Light-grayish-blue);
 }
 .section img {
@@ -113,6 +118,9 @@ p {
 .rotate {
   transform: rotate(0deg);
 }
+#bgimgmobile {
+  display: none;
+}
 
 @media only screen and (max-width: 1059px) {
   .arrow {
@@ -132,5 +140,27 @@ p {
 @media only screen and (max-width: 590px) {
   .sectionone {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    flex-direction: column;
+    margin: 50px;
+    margin-top: 30px;
+  }
+  .section {
+    display: none;
+  }
+  .qa {
+    margin: 20px;
+    padding: 10px;
+  }
+  .sectionone {
+    width: 100%;
+  }
+  #bgimgmobile {
+    display: block;
+    margin-top: -260px;
+    position: relative;
   }
 }
