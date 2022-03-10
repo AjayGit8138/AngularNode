@@ -1,28 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
-  font-family: "Manrope", sans-serif;
   background-image: linear-gradient(
     to bottom right,
     var(--Soft-blue),
     var(--Soft-violet)
   );
+  font-family: "Manrope", sans-serif;
 }
-h1 {
+h1,
+p {
   margin: 2px;
   font-size: 1.5vw;
-}
-p {
-  font-size: 1vw;
 }
 :root {
   --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
   --Soft-red: hsl(14, 88%, 65%);
-
   --Soft-violet: hsl(273, 75%, 66%);
   --Soft-blue: hsl(240, 73%, 65%);
   --Very-dark-grayish-blue: hsl(237, 12%, 33%);
@@ -30,20 +27,18 @@ p {
   --Light-grayish-blue: hsl(240, 5%, 91%);
 }
 .container {
+  border-radius: 20px;
+  border-radius: 15px;
+  background-color: aliceblue;
+  border: 1px solid var(-Very-dark-desaturated-blue);
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 150px;
   margin-top: 150px;
   width: 75%;
-  border-radius: 20px;
-  border-radius: 15px;
-  background-color: aliceblue;
-  border: 1px solid var(-Very-dark-desaturated-blue);
 }
 .section {
-  height: 450px;
-  width: 45%;
   background-image: url("./images/bg-pattern-desktop.svg"),
     url("./images/illustration-woman-online-desktop.svg");
   background-repeat: no-repeat, no-repeat;
@@ -51,24 +46,19 @@ p {
   background-position: -140px 30px, -150px -10px;
   background-color: var(--Light-grayish-blue);
   border-radius: 15px;
-
-  /* background-image: url("./images/illustration-woman-online-desktop.svg"); */
+  height: 450px;
+  width: 45%;
 }
 .sectionone {
-  height: 450px;
-  width: 60%;
   border-radius: 15px;
   background-color: var(--Light-grayish-blue);
+  height: 450px;
+  width: 60%;
 }
 .section img {
   height: 300px;
   width: 100%;
 }
-/* .inner img {
-  margin-left: -90px;
-  margin-top: 40px;
-  overflow: hidden;
-} */
 #inner {
   background-image: url("./images/illustration-woman-online-desktop.svg");
   background-repeat: no-repeat;
@@ -77,9 +67,9 @@ p {
 }
 #box {
   height: 190px;
-  width: 150px;
-  transform: translateX(-50%);
   margin-top: 150px;
+  transform: translateX(-50%);
+  width: 150px;
 }
 .answer {
   display: none;
@@ -91,32 +81,20 @@ p {
   display: block;
 }
 .line {
-  width: 80%;
-  background-image: url("./images/icon-arrow-down.svg");
-  height: 0.5px;
   background-color: gray;
+  background-image: url("./images/icon-arrow-down.svg");
   display: flex;
   flex-direction: row;
-}
-.qs-tag:after {
-  background-image: url("./images/icon-arrow-down.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 35px;
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
+  height: 0.5px;
+  width: 80%;
 }
 .arrow {
-  transform: translateY(300%);
-  width: auto;
-  margin-left: 400px;
   display: inline-flex;
   height: auto;
-}
-.rotate {
-  transform: rotate(0deg);
+  margin-left: 400px;
+  transform: translateY(300%);
+  width: auto;
+  position: relative;
 }
 #bgimgmobile {
   display: none;
@@ -145,8 +123,8 @@ p {
 @media only screen and (max-width: 400px) {
   .container {
     flex-direction: column;
-    margin: 50px;
-    margin-top: 30px;
+    margin: auto;
+    margin-top: 60%;
   }
   .section {
     display: none;

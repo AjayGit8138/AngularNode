@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,14 @@
     <title>FAQ</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section>
         <div class="container">
             <div class="section">
                 <img id="box" src="./images/illustration-box-desktop.svg" alt="img">
-                <!-- <img src="./images/bg-pattern-desktop.svg" alt="img"> -->
                 <div id="inner" class="inner">
-                    <!-- <img  class="overimg" src="./images/illustration-woman-online-desktop.svg" alt="img"> -->
-     
+
                 </div>
             </div>
             <div class="sectionone">
@@ -26,9 +26,9 @@
                 <div class="qa">
                     <img id="revfour" class="arrow" src="./images/icon-arrow-down.svg">
                     <h1 onclick="reverse(revfour);" class="qs-tag">How many team members can I invite?</h1>
-   
+
                     <div class="answer">
-                        <p class="ans">You can invite up to 2 additional users on the Free plan. There is no limit on 
+                        <p class="ans">You can invite up to 2 additional users on the Free plan. There is no limit on
                             team members for the Premium plan.</p>
                     </div>
                 </div>
@@ -37,8 +37,8 @@
                     <img id="revthree" class="arrow" src="./images/icon-arrow-down.svg">
                     <h1 onclick="reverse(revthree);" class="qs-tag">
                         What is the maximum file upload size?</h1>
-                       
-                       
+
+
                     <div class="answer">
                         <p class="ans">No more than 2GB. All files in your account must fit your allotted storage space.
                         </p>
@@ -49,7 +49,8 @@
                     <img id="revtwo" class="arrow" src="./images/icon-arrow-down.svg">
                     <h1 onclick="reverse(revtwo);" class="qs-tag">How do I reset my password?</h1>
                     <div class="answer">
-                        <p class="ans">Click “Forgot password” from the login page or “Change password” from your profile page.
+                        <p class="ans">Click “Forgot password” from the login page or “Change password” from your
+                            profile page.
                             A reset link will be emailed to you.</p>
                     </div>
                 </div>
@@ -68,80 +69,40 @@
                     <img id="rev" class="arrow" src="./images/icon-arrow-down.svg">
                     <h1 onclick="reverse(rev);" id="qstag" class="qs-tag"> Do you provide additional support?</h1>
                     <div class="answer">
-                        <p class="ans">Chat and email support is available 24/7. Phone lines are open during normal business hours..</p>
+                        <p class="ans">Chat and email support is available 24/7. Phone lines are open during normal
+                            business hours..</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
 </body>
 <script>
 
     let faq = document.getElementsByClassName('qs-tag');
     let i;
     let Globalid;
-
-    for(i=0;i<faq.length;i++)
-    {
-        faq[i].addEventListener('click',function(){
+    for (i = 0; i < faq.length; i++) {
+        faq[i].addEventListener('click', function () {
             console.log('Hai');
             var imgid = Globalid;
             console.log(imgid);
             var nextbody = this.nextElementSibling;
-            if(nextbody.style.display === "block")
-            {
-                //  var imgrotate = document.getElementById('reverse');
-                // imgrotate.classList.toggle("rotate");
+            if (nextbody.style.display === "block") {
                 imgid.style.transform = "rotate(0deg)";
                 console.log('hai');
                 nextbody.style.display = "none";
             }
-            else
-            {
+            else {
                 imgid.style.transform = "rotate(180deg)";
-
-                // var imgrotate = document.getElementById('reverse');
-                // imgrotate.classList.toggle("rotate");
                 nextbody.style.display = "block";
             }
         })
     }
-   function reverse(rev)
-   {
-       Globalid = rev;
-    // // let faq = ques;
-    //  console.log(ques);
-    // let faq = document.getElementsByClassName(ques);
-    // // let faq = ques;
-    // console.log(faq);
-    // let i;
-    
-    // console.log(nextbody);
-    // for(i=0;i<faq.length;i++)
-    // {
-    //     // faq[i].addEventListener('click',function(){
-    //         console.log('Hai');
-    //         var nextbody =faq[1].nextElementSibling;
-            
-    //         if(nextbody.style.display === "block")
-    //         {
-    //             //  var imgrotate = document.getElementById('reverse');
-    //             // imgrotate.classList.toggle("rotate");
-    //             document.getElementById("rev").style.transform = "rotate(0deg)";
-    //             console.log('hai');
-    //             nextbody.style.display = "none";
-    //         }
-    //         else
-    //         {
-    //             document.getElementById("rev").style.transform = "rotate(180deg)";
-
-    //             // var imgrotate = document.getElementById('reverse');
-    //             // imgrotate.classList.toggle("rotate");
-    //             nextbody.style.display = "block";
-    //         }
-    //     // })
-    // }
-   }
+    function reverse(rev) {
+        Globalid = rev;
+    }
 </script>
+
 </html>
