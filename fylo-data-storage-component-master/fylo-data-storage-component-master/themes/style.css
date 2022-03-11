@@ -4,10 +4,10 @@
   padding: 0;
 }
 :root {
-  --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
-  --pale-blue: hsl(243, 100%, 93%);
-  --grayish-blue: hsl(229, 7%, 55%);
   --dark-blue: hsl(228, 56%, 26%);
+  --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --pale-blue: hsl(243, 100%, 93%);
   --very-dark-blue: hsl(229, 57%, 11%);
 }
 body {
