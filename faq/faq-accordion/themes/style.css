@@ -39,8 +39,8 @@ p {
   width: 75%;
 }
 .section {
-  background-image: url("./images/bg-pattern-desktop.svg"),
-    url("./images/illustration-woman-online-desktop.svg");
+  background-image: url("../images/bg-pattern-desktop.svg"),
+    url("../images/illustration-woman-online-desktop.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: -140px 30px, -150px -10px;
@@ -60,7 +60,7 @@ p {
   width: 100%;
 }
 #inner {
-  background-image: url("./images/illustration-woman-online-desktop.svg");
+  background-image: url("../images/illustration-woman-online-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -100px 30px;
@@ -82,7 +82,7 @@ p {
 }
 .line {
   background-color: gray;
-  background-image: url("./images/icon-arrow-down.svg");
+  background-image: url("../images/icon-arrow-down.svg");
   display: flex;
   flex-direction: row;
   height: 0.5px;
@@ -120,17 +120,17 @@ p {
     width: 80%;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 520px) {
   .container {
     flex-direction: column;
     margin: auto;
-    margin-top: 60%;
+    margin-top: 50%;
   }
   .section {
     display: none;
   }
   .qa {
-    margin: 20px;
+    margin: 10px;
     padding: 10px;
   }
   .sectionone {
@@ -138,7 +138,7 @@ p {
   }
   #bgimgmobile {
     display: block;
-    margin-top: -260px;
+    margin-top: -340px;
     position: relative;
   }
 }
