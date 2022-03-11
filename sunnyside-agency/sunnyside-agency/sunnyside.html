@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnyside</title>
+    <link rel="stylesheet" href="./themes/styling.css">
+</head>
+
+<body>
+    <header>
+        <div class="headimage">
+            <nav>
+
+                <div id="lstmenu" class="listmenu">
+                    <div class="navcontainer">
+                        <div class="navcomponents">
+                            <h2>Sunnyside</h2>
+                        </div>
+                        <div class="listclsss">
+                            <ul id="lst" class="list">
+                                <li>About</li>
+                                <li>Services</li>
+                                <li>Projects</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                        <div class="expandicon">
+                            <img id="menu" src="./images/menu-icon-13.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="headerimg">
+                    <h1>WE ARE CREATIVES</h1><br>
+                    <img style="display: inline-block;margin-left: -50px;" src="./images/icon-arrow-down.svg">
+                </div>
+        </div>
+        </nav>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="section">
+
+                <h1>Transform your brand</h1>
+                <p>We are a full-service creative agency specializing in <br> helping brands grow fast.
+                    Engage your clients through <br>compelling visuals that do most of the marketing for you.</p>
+                <div class="btnlayout">
+                    <button class="btn">Learn more</button>
+                </div>
+            </div>
+            <div class="section">
+                <img src="./images/desktop/image-transform.jpg">
+            </div>
+
+        </div>
+        <div class="container containerone">
+            <div class="section">
+                <img src="./images/desktop/image-stand-out.jpg">
+            </div>
+            <div class="section">
+                <h1> Stand out to the right audience</h1><br>
+                <p>Using a collaborative formula of designers, researchers, photographers, videographers, and
+                    copywriters, we’ll build and extend your brand in digital places.</p>
+                <button style="background-color: orange;" class="btn">Learn more</button>
+
+            </div>
+
+        </div>
+        <div class="container containerone">
+            <div class="section four">
+
+                <div class="graphic">
+                    <h1>Graphic design</h1>
+                    <p>Great design makes you memorable. We deliver artwork that underscores your brand message and
+                        captures potential clients’ attention.</p>
+                </div>
+            </div>
+            <div class="section five">
+                <div class="graphic">
+                    <h1>Photography</h1>
+                    <p> Increase your credibility by getting the most stunning, high-quality photos that improve your
+                        business image.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container testimonials">
+            <h1 style="background-color: antiquewhite;letter-spacing: 5px;text-align: center;width: 100%;">CLIENT
+                TESTIMONIALS
+            </h1>
+        </div>
+        <div class="container testimonials">
+            <div class="section six">
+                <img id="profileimg" src="./images/image-emily.jpg">
+                <p> We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were
+                    always hit.
+                </p>
+                <p>Emily R.<br>
+                    Marketing Director</p>
+            </div>
+            <div class="section">
+                <img id="profileimg" src="./images/image-thomas.jpg">
+                <p> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying
+                    and enjoyable experience.</p>
+                <p> Thomas S.<br>
+                    Chief Operating Officer</p>
+            </div>
+            <div class="section">
+                <img id="profileimg" src="./images/image-jennie.jpg">
+                <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
+                    recommended!></p>
+                <p>Jennie F.<br>
+                    Business Owner</p>
+            </div>
+
+        </div>
+        <div class="container foursection">
+            <div class="section">
+
+                <img src="./images/desktop/image-gallery-milkbottles.jpg">
+            </div>
+            <div class="section">
+                <img src="./images/desktop/image-gallery-orange.jpg">
+            </div>
+            <div class="section">
+                <img src="./images/desktop/image-gallery-cone.jpg">
+            </div>
+            <div class="section">
+                <img src="./images/desktop/image-gallery-sugarcubes.jpg">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div style="justify-content: center;" class="footbar">
+            <div class="sec">
+                <h2 style="margin: 100px;">sunnyside</h2>
+                <ul class="footlist">
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>projects</li>
+                </ul><br><br>
+                <img src="./images/icon-facebook.svg">
+                <img src="./images/icon-instagram.svg">
+                <img src="./images/icon-twitter.svg">
+                <img src="./images/icon-pinterest.svg">
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var menudisplay = document.getElementById('menu');
+    menudisplay.addEventListener('click', function () {
+        var list = document.getElementById('lst');
+        console.log(list);
+        var menuDiv = document.getElementById('lstmenu');
+        menuDiv.classList.toggle("listmenuone");
+        if (list.style.display === "block") {
+            console.log("if");
+            var x = window.matchMedia("(max-width: 893px)")
+            myFunction(x)
+            x.addListener(myFunction)
+        }
+        else {
+            list.style.display = "block";
+            console.log("else");
+        }
+        menuDiv.style.display = "block";
+        function myFunction(x) {
+            if (x.matches) {
+                document.body.style.display = "black";
+                console.log("hai");
+                list.style.display = "none";
+            } else {
+                list.style.display = "block";
+            }
+        }
+    })
+</script>
+
+</html>
