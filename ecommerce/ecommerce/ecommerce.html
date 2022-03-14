@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,16 @@
     <title>E-commerce</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="nav-container">
                 <div class="logo">
-                <img src="./images/logo.svg" alt="img">
-              
+                    <img src="./images/logo.svg" alt="img">
+
                 </div>
-                <ul class="list">
+                <ul id="lst" class="list">
                     <li>Collections</li>
                     <li>Men</li>
                     <li>Women</li>
@@ -23,77 +25,105 @@
                     <li>Contact</li>
                 </ul>
                 <div class="cart">
-                    <img  onclick="cartdisplay();" src="./images/icon-cart.svg" alt="img">
+                    <img id="menu" src="./images/download.jpg" alt="img">
+
+                    <img onclick="cartdisplay();" src="./images/icon-cart.svg" alt="img">
                     <img class="avatar" src="./images/image-avatar.png" alt="img">
-            
-                    <!-- <div class="checkout">
-                        <p class="cartdisplay" id="prd"></p>
-                        <p id="cprs"><span id="cqty"></span><span id="ctotal"></span></p>
-                    </div> -->
                 </div>
             </div>
             <div class="containerone">
-            <div class="line"></div>
-            
-           
+                <div class="line"></div>
+
+
             </div>
         </nav>
     </header>
-    <section>
-        <!-- <div class="checkout">
-            <p class="cartdisplay" id="prd"></p>
-            <p id="cprs"><span id="cqty"></span><span id="ctotal"></span></p>
-        </div> -->
-            <div class="container">
-               
-                <div id="thumbnails" class="row">
-                   
-                    <div class="productimg">
-                        <img  onclick="closepopup();" id="close" style="display: none;" alt="image">
-                        <img onclick="popup();" id="pimg" src="./images/image-product-1-thumbnail.jpg" class="product-img">
-                    </div>
-                    <div class="opaimg">
-                        
-                        <img id="p1" class="setopacity" src="./images/image-product-1-thumbnail.jpg" onclick="colorchange(p1,src);" alt="img">
-                    
-                        <img id="p2" class="setopacity" src="./images/image-product-2-thumbnail.jpg" onclick="colorchange(p2,src);" alt="img">
-                        <img id="p3" class="setopacity" src="./images/image-product-3-thumbnail.jpg" onclick="colorchange(p3,src);" alt="img">
-                        <img id="p4" class="setopacity" src="./images/image-product-4-thumbnail.jpg" onclick="colorchange(p4,src);" alt="img">
-                    </div>
+    <main>
+        <div id="purchase" class="checkout">
+            <div id="empty" class="empty">
+                <p>Your cart is Empty</p>
+            </div>
+            <div class="caritems">
+                <table class="table">
+                    <tr>
+                        <th>Product</th>
+                        <th class="head">&nbsp;&nbsp;Price</th>
+                        <th class="head">&nbsp;&nbsp;orders</th>
+                        <th class="head">&nbsp;&nbsp;Total</th>
+                        <th>&nbsp;&nbsp;Delete</th>
+                    </tr>
+                    <tr>
+                        <td><span class="cartdisplay" id="prd"></span></td>
+                        <td><span id="cprs"></span></td>
+                        <td><span id="cqty"></span></td>
+                        <td><span id="ctotal"></span></td>
+                        <td><img id="setdelete"></td>
+                    </tr>
+
+                </table>
+
+                <div class="btncheckout">
+                    <button class="checkout-btn">Check out</button>
                 </div>
-                <div class="row">
-                     <div id="purchase" class="checkout">
-                         <div id="empty" class="empty">
-                             <p>Your cart is Empty</p>
-                         </div>
-                       <div class="caritems">
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="container">
+
+            <div id="thumbnails" class="row">
+
+                <div class="productimg">
+                    <img onclick="closepopup();" id="close" style="display: none;" alt="image">
+                    <img onclick="popup();" id="pimg" src="./images/image-product-1-thumbnail.jpg" class="product-img">
+                </div>
+                <div class="opaimg">
+
+                    <img id="p1" class="setopacity" src="./images/image-product-1-thumbnail.jpg"
+                        onclick="colorchange(p1,src);" alt="img">
+
+                    <img id="p2" class="setopacity" src="./images/image-product-2-thumbnail.jpg"
+                        onclick="colorchange(p2,src);" alt="img">
+                    <img id="p3" class="setopacity" src="./images/image-product-3-thumbnail.jpg"
+                        onclick="colorchange(p3,src);" alt="img">
+                    <img id="p4" class="setopacity" src="./images/image-product-4-thumbnail.jpg"
+                        onclick="colorchange(p4,src);" alt="img">
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- <div id="purchase" class="checkout">
+                    <div id="empty" class="empty">
+                        <p>Your cart is Empty</p>
+                    </div>
+                    <div class="caritems">
                         <table class="table">
                             <tr>
                                 <th>Product</th>
-                              <th class="head">&nbsp;&nbsp;Price</th>
-                              <th class="head">&nbsp;&nbsp;orders</th>
-                              <th class="head">&nbsp;&nbsp;Total</th>
-                              <th>&nbsp;&nbsp;Delete</th>
+                                <th class="head">&nbsp;&nbsp;Price</th>
+                                <th class="head">&nbsp;&nbsp;orders</th>
+                                <th class="head">&nbsp;&nbsp;Total</th>
+                                <th>&nbsp;&nbsp;Delete</th>
                             </tr>
                             <tr>
                                 <td><span class="cartdisplay" id="prd"></span></td>
-                              <td><span id="cprs"></span></td>
-                              <td><span id="cqty"></span></td>
-                              <td><span id="ctotal"></span></td>
-                              <td><img  id="setdelete"></td>
+                                <td><span id="cprs"></span></td>
+                                <td><span id="cqty"></span></td>
+                                <td><span id="ctotal"></span></td>
+                                <td><img id="setdelete"></td>
                             </tr>
-                            
-                          </table>
 
-                          <div class="btncheckout">
-                              <button class="checkout-btn">Check out</button>
-                          </div>
-                        <!-- <p><span id="cprs"></span><span id="cqty"></span><span id="ctotal"></span></p> -->
+                        </table>
+
+                        <div class="btncheckout">
+                            <button class="checkout-btn">Check out</button>
                         </div>
                     </div>
+                </div> -->
+                <div class="prod">
                     <p>Sneaker Company</p><br>
                     <h1 id="proditem">Fall Limited Edition Sneakers</h1><br>
-                    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
                         durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
 
                     <div class="pricetag">
@@ -101,108 +131,34 @@
                             <h1>$<span id="oriprice">125.00</span><span class="discount">50%</span></h1>
                             <p>$250.00</p>
                         </div>
-                        
+
                         <div class="counter">
                             <div class="coloumn">
                                 <button onclick="decreament();" class="count">-</button>
                             </div>
                             <div class="coloumn">
-                                <p  style="font-size: 25px;" id="qty">1</p>
+                                <p style="font-size: 25px;" id="qty">1</p>
                             </div>
                             <div class="coloumn">
                                 <button onclick="increament();" class="count">+</button>
                             </div>
                             <div id="btncart" class="coloumn btncart">
-                        <button class="btn-card" onclick="buyproduct(proditem,qty)"><img src="./images/icon-cart.svg">Add Cart</button>
+                                <button class="btn-card" onclick="buyproduct(proditem,qty)"><img
+                                        src="./images/icon-cart.svg">Add Cart</button>
 
                             </div>
                         </div>
-                        
                     </div>
-                    
-                   
                 </div>
-            </div>
-    </section>
-    
-</body>
-<script type="text/javascript">
-    function colorchange(changediv,source)
-    {
-        var Tempid = changediv;
-        changediv.style.opacity = "1";
-        
-        console.log(Tempid);
-        var element = document.getElementById('pimg');
-        element.src = source;
-        console.log(source);
-        
-    }
-    function increament()
-    {
-        var Qty = document.getElementById('qty').innerText;
-        var count = parseInt(Qty);
-        console.log(Qty);
-        count+=1;
-        document.getElementById('qty').innerHTML = count;
-    }
-    function decreament()
-    {
-        var Qty = document.getElementById('qty').innerText;
-        var count = parseInt(Qty);
-        console.log(Qty);
-        count-=1;
-        if(count >0)
-        {
-        document.getElementById('qty').innerHTML = count;
-        }
-    }
-    function buyproduct(pid,tqty)
-    {
-        var Productname = pid.innerHTML;
-        var Torder = tqty.innerHTML;
-        console.log(Productname);
-        console.log(Torder);
-        var Prodprice = document.getElementById('oriprice').innerHTML;
-        console.log(Prodprice);
-        var Prodprs = parseFloat(Prodprice);
-        var Tcost = Torder *(Prodprs * 100);
-        console.log(Tcost);
-        var prsdollar = Tcost * (0.01);
-        console.log(prsdollar);
-        var Ctitle = document.getElementById('prd');
-        Ctitle.innerHTML = Productname;
-        document.getElementById('cprs').innerHTML=`$${Prodprs}`;
-        document.getElementById('cqty').innerHTML = `x${Torder}`;
-        document.getElementById('ctotal').innerHTML = `$${prsdollar}`;
-        var RemoveEmpty = document.getElementById('empty');
-        RemoveEmpty.classList.add("empty-one");
 
-        var setImage =document.getElementById('setdelete');
-        setImage.src = "./images/icon-delete.svg";
-       
-    }
-    function cartdisplay()
-    {
-        console.log('hi');
-        var purchase = document.getElementById('purchase');
-        
-        purchase.classList.toggle("checkout-none");
-    }
-   function popup()
-   {
-       var Popup = document.getElementById('thumbnails');
-       Popup.classList.add("thumbnails");
-       var close = document.getElementById('close');
-       close.src = "./images/icon-close.svg";
-       close.style.display = "block";
-   }
-   function closepopup()
-   {
-       var ClosePopup = document.getElementById('thumbnails');
-       ClosePopup.classList.remove("thumbnails");
-       var close = document.getElementById('close');
-       close.style.display = "none";
-   }
+
+            </div>
+        </div>
+    </section>
+
+</body>
+<script type="text/javascript" src="./script/commerce.js">
+
 </script>
+
 </html>

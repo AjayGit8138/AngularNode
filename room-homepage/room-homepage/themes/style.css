@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@600&family=League+Gothic&family=Poppins:ital,wght@1,600&family=Smooch+Sans:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Smooch Sans", sans-serif;
+  font-size: 1.8vw;
+  height: 100vh;
+}
+h1,
+p {
+  margin: 10px;
+}
+:root {
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+.grid-nav,
+.navigationmenu,
+.toggleslide {
+  display: flex;
+  flex-direction: row;
+}
+.nav-item {
+  height: 500px;
+  position: relative;
+  width: 50%;
+}
+.one {
+  height: 300px;
+}
+.one img {
+  height: 300px;
+  max-width: 100%;
+}
+.list li {
+  display: inline-flex;
+  list-style: none;
+  padding: 10px;
+  padding-left: 30px;
+}
+#logo {
+  display: inline-flex;
+  margin: 10px;
+}
+#myslideone,
+#myslidetwo {
+  display: none;
+}
+.toggleslide {
+  height: 50px;
+  position: relative;
+}
+#bgimage {
+  background-image: url("../images/desktop-image-hero-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.listmenu {
+  background-color: antiquewhite;
+  height: 100px;
+  margin-top: -150px;
+  opacity: 0.5;
+  width: 100%;
+}
+#slide li {
+  background-color: black;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: end;
+  list-style: none;
+  height: 35px;
+  margin-top: 200px;
+  width: 30px;
+}
+#slide li:active {
+  opacity: 0.3;
+}
+#menu {
+  display: none;
+  height: 30px;
+  margin: 20px;
+  width: 30px;
+}
+.display {
+  left: -420px;
+}
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 5vw;
+  }
+  .grid-nav,
+  .navigationmenu,
+  .toggleslide {
+    flex-direction: column;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  #slide {
+    transform: translateY(-900%);
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 655px) {
+  .list {
+    background-color: rgb(157, 190, 106);
+    height: 60px;
+    margin-left: 420px;
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+  }
+  #menu {
+    display: block;
+  }
+}

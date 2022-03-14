@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
-  background-image: url("./images/bg-stars.svg");
-  width: 100%;
+  background-image: url("../images/bg-stars.svg");
   background-color: rgb(51, 31, 51);
   font-family: "Manrope", sans-serif;
+
+  width: 100%;
 }
 :root {
   --Grayish-blue: hsl(237, 18%, 59%);
@@ -42,7 +43,7 @@ body {
   border-radius: 25px;
 }
 h1 {
-  font-size: 105px;
+  font-size: 5vw;
   margin: 40px;
   color: var(--Soft-red);
 }
@@ -58,22 +59,19 @@ h1 {
     var(--Grayish-blue)
   );
 }
-.time {
-  display: inline-flex;
-  margin-left: 280px;
-}
-.time h2 {
-  margin: 70px;
+
+h2 {
+  margin: 10px;
   color: whitesmoke;
 }
 h3 {
   margin: 30px;
   color: white;
-  font-size: 35px;
+  font-size: 2vw;
   text-align: center;
 }
 .foot {
-  margin-top: -300px;
+  margin-top: -220px;
   margin-left: 500px;
 }
 .foot img {
