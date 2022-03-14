@@ -190,8 +190,10 @@ footer {
 .listmenuone ul {
   border: 1px solid whitesmoke;
   display: block;
-  margin-left: -40%;
-  margin-top: 30px;
+  margin-left: -100%;
+  margin-top: 80px;
+  position: relative;
+  width: 200%;
 }
 .footlist {
   margin-top: 10px;
