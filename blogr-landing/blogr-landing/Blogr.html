@@ -13,36 +13,38 @@
     <header>
         <nav class="navcontainer">
             <div class="navarea">
-                <h1>Blog</h1>
-                <ul class="list">
-                    <li>Product <img src="./images/icon-arrow-light.svg" height="15px" alt="img">
-                        <ul class="inner">
-                            <li> Overview</li>
-                            <li>Pricing</li>
-                            <li>Marketplace</li>
-                            <li>Features</li>
-                            <li>Integrations</li>
-                        </ul>
+                <img id="menu" src="./images/icon-hamburger.svg" alt="img">
+                <h1 style="font-size:30px;letter-spacing: 5px;">Blogr</h1>
+                <div class="lstbar">
+                    <ul id="lst" class="list">
+                        <li>Product <img src="./images/icon-arrow-light.svg" height="15px" alt="img">
+                            <ul class="inner">
+                                <li> Overview</li>
+                                <li>Pricing</li>
+                                <li>Marketplace</li>
+                                <li>Features</li>
+                                <li>Integrations</li>
+                            </ul>
 
-                    </li>
-                    <li>Company<img src="./images/icon-arrow-light.svg" height="15px" alt="img">
-                        <ul class="inner">
-                            <li>About</li>
-                            <li>Team</li>
-                            <li>Blog</li>
-                            <li>Careers</li>
-                        </ul>
-                    </li>
-                    <li>Connect<img src="./images/icon-arrow-light.svg" height="15px" alt="img">
-                        <ul class="inner">
-                            <li>Contact</li>
-                            <li>Newsletter</li>
-                            <li>LinkedIn</li>
-                        </ul>
-                    </li>
-                </ul>
+                        </li>
+                        <li>Company<img src="./images/icon-arrow-light.svg" height="15px" alt="img">
+                            <ul class="inner">
+                                <li>About</li>
+                                <li>Team</li>
+                                <li>Blog</li>
+                                <li>Careers</li>
+                            </ul>
+                        </li>
+                        <li>Connect<img src="./images/icon-arrow-light.svg" height="15px" alt="img">
+                            <ul class="inner">
+                                <li>Contact</li>
+                                <li>Newsletter</li>
+                                <li>LinkedIn</li>
+                            </ul>
+                        </li>
+                    </ul>
 
-
+                </div>
                 <div class="registration">
                     <button class="btn">Login</button>
                     <button class="btn">signup</button>
@@ -114,10 +116,10 @@
     <footer>
         <div class="sectwo footer">
             <div class="sectionfoot">
-                <h1>Blogr</h1>
+                <h1 style="font-size:30px;letter-spacing: 5px;">Blogr</h1>
                 <ul class="listfoot">
                     <li>Product
-                        <ul>
+                        <ul class="footinner">
                             <li> Overview</li>
                             <li>Pricing</li>
                             <li>Marketplace</li>
@@ -128,7 +130,7 @@
                 </ul>
                 <ul class="listfoot">
                     <li>Company
-                        <ul>
+                        <ul class="footinner">
                             <li>About</li>
                             <li>Team</li>
                             <li>Blog</li>
@@ -138,7 +140,7 @@
                 </ul>
                 <ul class="listfoot">
                     <li>Connect
-                        <ul>
+                        <ul class="footinner">
                             <li>Contact</li>
                             <li>Newsletter</li>
                             <li>LinkedIn</li>
@@ -150,5 +152,23 @@
     </footer>
 
 </body>
+<script>
+    let menubar = document.getElementById('menu');
+    let list = document.getElementById('lst');
+    menubar.addEventListener('click', function () {
+        list.classList.toggle("display");
+        console.log("hai");
+        var img1 = "file:///D:/Htmlrepo/AngularNode/blogr-landing/blogr-landing/images/icon-hamburger.svg";
+        var img2 = "file:///D:/Htmlrepo/AngularNode/blogr-landing/blogr-landing/images/icon-close.svg";
+        if (menubar.src == img1) {
+            console.log("hai");
+            menubar.src = "./images/icon-close.svg";
+        }
+        else if (menubar.src == img2) {
+            menubar.src = "./images/icon-hamburger.svg";
+
+        }
+    })
+</script>
 
 </html>

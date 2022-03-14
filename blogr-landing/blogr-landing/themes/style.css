@@ -52,7 +52,7 @@ p {
   margin-left: auto;
 }
 .btn {
-  background-color: rgb(223, 186, 117);
+  background-color: rgb(219, 241, 184);
   border-radius: 25px;
   font-size: 25px;
   height: 40px;
@@ -61,6 +61,8 @@ p {
 }
 .btn:hover {
   background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .bglap {
   background-image: url("../images/illustration-editor-desktop.svg");
@@ -117,14 +119,14 @@ p {
 .listfoot {
   display: inline-flex;
 
-  margin-left: 50px;
+  margin-left: 10px;
 
   list-style: none;
   padding-left: 100px;
 }
 .listfoot li {
   color: white;
-  font-size: 20px;
+  font-size: 2vw;
   list-style: none;
   padding: 5px;
 }
@@ -148,21 +150,84 @@ p {
   display: block;
 }
 .header {
-  margin-top: 300px;
+  margin-top: 200px;
   text-align: center;
+}
+#menu {
+  display: none;
+  height: 30px;
+  margin: 30px;
+  width: 30px;
+}
+.display {
+  top: 530px;
 }
 @media only screen and (max-width: 890px) {
   .list {
     border: 1px solid white;
-    height: 200px;
-    margin-top: 60px;
-
-    width: 100%;
+    background-color: var(--Light-red);
+    height: 400px;
+    margin-top: -420px;
+    position: relative;
+    width: 300%;
+  }
+  #menu {
+    display: block;
   }
   .list li {
     display: block;
   }
+
   .inner {
     margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sectionmain,
+  .sectwo,
+  .sectionlap,
+  .footer,
+  .registration {
+    flex-direction: column;
+  }
+  .secone,
+  .sectiontwo {
+    width: 100%;
+  }
+  h1,
+  p {
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 20px;
+  }
+  .sectwo {
+    height: 400px;
+  }
+  .listfoot {
+    display: flex;
+    flex-direction: column;
+  }
+  .listfoot li {
+    display: inline-flex;
+    margin: 10px;
+    list-style: none;
+  }
+  .foorinner li {
+    display: block;
+  }
+  .navcontainer {
+    background-image: url("../images/bg-pattern-intro-mobile.svg");
+  }
+  .bglap {
+    background-image: url("../images/illustration-editor-mobile.svg");
+  }
+  .bgmobile {
+    background-image: url("../images/illustration-phones.svg"),
+      url("../images/bg-pattern-circles.svg");
+    background-size: contain;
+    background-position: center;
+  }
+  .bglaptop {
+    background-image: url("../images/illustration-laptop-mobile.svg");
   }
 }
