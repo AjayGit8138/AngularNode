@@ -87,7 +87,7 @@ p {
   width: 30px;
 }
 .display {
-  left: -420px;
+  left: 800px;
 }
 @media only screen and (max-width: 450px) {
   body {
@@ -110,10 +110,11 @@ p {
   .list {
     background-color: rgb(157, 190, 106);
     height: 60px;
-    margin-left: 420px;
-    position: absolute;
+    margin-left: -800px;
+
+    position: fixed;
     top: 10vh;
-    width: 100%;
+    width: auto;
   }
   #menu {
     display: block;

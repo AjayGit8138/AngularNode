@@ -31,6 +31,18 @@ let list = document.getElementById('lst');
 let Mobilemenu = document.getElementById('menu');
 Mobilemenu.addEventListener('click',function(){
     list.classList.toggle("display");
+    console.log(Mobilemenu.src);
+    var img1 = "file:///D:/Htmlrepo/AngularNode/room-homepage/room-homepage/images/icon-hamburger.svg";
+    var img2 = "file:///D:/Htmlrepo/AngularNode/room-homepage/room-homepage/images/icon-close.svg";
+    if(Mobilemenu.src == img1)
+    {
+        console.log("hai");
+        Mobilemenu.src = "./images/icon-close.svg";
+    }
+    else if(Mobilemenu.src == img2){
+        Mobilemenu.src = "./images/icon-hamburger.svg";
+
+    }
 })
 
 
