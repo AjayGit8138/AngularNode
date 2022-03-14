@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,151 +8,104 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section id="modechange">
         <div class="container">
             <div class="row">
-                <div class="mode">
-                    <input type="radio" id="the1"  onclick="themeone();" name="theme" value="theme1">
+                <div style="display:inline-flex;margin-left: 400px;" class="mode">
+                    <input type="radio" id="the1" onclick="themeone();" name="theme" value="theme1">
                     <input type="radio" id="the2" onclick="themetwo();" name="theme" value="theme2">
+                    <input type="radio" id="the3" onclick="themethree();" name="theme" value="theme3">
 
                 </div>
                 <h1>calculator</h1>
                 <div class="screen">
                     <div class="window">
-                        <div  id="empty">Enter Here</div>
+                        <div id="empty">Enter Here</div>
 
                         <h1 id="display"></h1>
                         <h2 id="ans"></h2>
                     </div>
                 </div>
                 <div style="margin-top: 30px;" class="button-row">
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(seven.innerHTML);" id="seven"  class="buttons">7</button>
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(eight.innerHTML);" id="eight" class="buttons">8</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(nine.innerHTML);" id="nine" class="buttons">9</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="deleteback();" id="delone" class="buttons">DEL</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(four.innerHTML);" id="four" class="buttons">4</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(five.innerHTML);" id="five" class="buttons">5</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(six.innerHTML);" id="six" class="buttons">6</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(add.innerHTML);" id="add" class="buttons">+</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(one.innerHTML);" id="one" class="buttons">1</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(two.innerHTML);" id="two" class="buttons">2</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(three.innerHTML);" id="three" class="buttons">3</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(minus.innerHTML);"  id="minus" class="buttons">-</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(dot.innerHTML);" id="dot" class="buttons">.</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(zero.innerHTML);" id="zero" class="buttons">0</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(divide.innerHTML);" id="divide" class="buttons">/</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="activate(mul.innerHTML);" id="mul" class="buttons">*</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="reset();" id="rst" class="buttons">RST</button>
-
-                    <!-- </div> -->
-                    <!-- <div class="buttons"> -->
-                        <button onclick="equals();" id="equals" class="buttons">=</button>
-
-                    <!-- </div> -->
+                    <button onclick="activate(seven.innerHTML);" id="seven" class="buttons">7</button>
+                    <button onclick="activate(eight.innerHTML);" id="eight" class="buttons">8</button>
+                    <button onclick="activate(nine.innerHTML);" id="nine" class="buttons">9</button>
+                    <button onclick="deleteback();" id="delone" class="buttons">DEL</button>
+                    <button onclick="activate(four.innerHTML);" id="four" class="buttons">4</button>
+                    <button onclick="activate(five.innerHTML);" id="five" class="buttons">5</button>
+                    <button onclick="activate(six.innerHTML);" id="six" class="buttons">6</button>
+                    <button onclick="activate(add.innerHTML);" id="add" class="buttons">+</button>
+                    <button onclick="activate(one.innerHTML);" id="one" class="buttons">1</button>
+                    <button onclick="activate(two.innerHTML);" id="two" class="buttons">2</button>
+                    <button onclick="activate(three.innerHTML);" id="three" class="buttons">3</button>
+                    <button onclick="activate(minus.innerHTML);" id="minus" class="buttons">-</button>
+                    <button onclick="activate(dot.innerHTML);" id="dot" class="buttons">.</button>
+                    <button onclick="activate(zero.innerHTML);" id="zero" class="buttons">0</button>
+                    <button onclick="activate(divide.innerHTML);" id="divide" class="buttons">/</button>
+                    <button onclick="activate(mul.innerHTML);" id="mul" class="buttons">*</button>
+                    <button onclick="reset();" id="rst" class="buttons">RST</button>
+                    <button onclick="equals();" id="equals" class="buttons">=</button>
                 </div>
             </div>
         </div>
     </section>
-    
+
 </body>
 <script type="text/javascript">
-    
-    function activate(buttonid)
-    {
+
+    function activate(buttonid) {
         var setEmpty = document.getElementById('empty');
         console.log(setEmpty);
         setEmpty.classList.add('text');
         var displayNum = document.getElementById('display').innerHTML;
         var concatNum = document.getElementById('display');
-   
-            concatNum.innerHTML = `${displayNum}` + `${buttonid}`;
+
+        concatNum.innerHTML = `${displayNum}` + `${buttonid}`;
         console.log(buttonid);
     }
-    function equals()
-    {
-       var exp = document.getElementById('display').innerHTML;
+    function equals() {
+        var exp = document.getElementById('display').innerHTML;
         console.log(exp);
         var Result = eval(exp);
         console.log(Result);
         var setresult = document.getElementById('ans');
-        setresult.innerHTML =`Ans: ${Result}`;
+        setresult.innerHTML = `Ans: ${Result}`;
     }
-    function reset()
-    {
+    function reset() {
         window.location.reload();
     }
-    function deleteback()
-    {
+    function deleteback() {
         var exp = document.getElementById('display').innerHTML;
-        var Reduce = exp.slice(0,-1);
+        var Reduce = exp.slice(0, -1);
         var length = Reduce.length;
         var exp = document.getElementById('display');
         exp.innerHTML = Reduce;
         console.log(exp.innerHTML);
-       
-        
+
+
     }
-    function themetwo()
-    {
+    function themetwo() {
         var theme = document.getElementById('modechange');
         theme.classList.remove("themeone");
+        theme.classList.remove("themethree");
         theme.classList.add("themetwo");
     }
-    function themeone()
-    {
+    function themeone() {
         var theme = document.getElementById('modechange');
         theme.classList.remove("themetwo");
+        theme.classList.remove("themethree");
 
         theme.classList.add("themeone");
     }
+    function themethree() {
+        var theme = document.getElementById('modechange');
+        theme.classList.remove("themetwo");
+        theme.classList.remove("themeone");
+
+        theme.classList.add("themethree");
+    }
 </script>
+
 </html>

@@ -34,12 +34,14 @@ Mobilemenu.addEventListener('click',function(){
     console.log(Mobilemenu.src);
     var img1 = "file:///D:/Htmlrepo/AngularNode/room-homepage/room-homepage/images/icon-hamburger.svg";
     var img2 = "file:///D:/Htmlrepo/AngularNode/room-homepage/room-homepage/images/icon-close.svg";
-    if(Mobilemenu.src == img1)
+    var img3 = "https://html-lessons-six.vercel.app/room-homepage/room-homepage/images/icon-hamburger.svg";
+    var img4 = "https://html-lessons-six.vercel.app/room-homepage/room-homepage/images/icon-close.svg";
+    if(Mobilemenu.src == img1 || Mobilemenu.src == img3)
     {
         console.log("hai");
         Mobilemenu.src = "./images/icon-close.svg";
     }
-    else if(Mobilemenu.src == img2){
+    else if(Mobilemenu.src == img2 || Mobilemenu.src == img4){
         Mobilemenu.src = "./images/icon-hamburger.svg";
 
     }
