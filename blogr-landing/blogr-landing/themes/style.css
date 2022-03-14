@@ -181,6 +181,9 @@ p {
   .inner {
     margin-left: 40px;
   }
+  body {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .sectionmain,
@@ -189,10 +192,16 @@ p {
   .footer,
   .registration {
     flex-direction: column;
+    width: 100%;
   }
   .secone,
   .sectiontwo {
     width: 100%;
+  }
+
+  body {
+    width: 200%;
+    overflow-x: hidden;
   }
   h1,
   p {
