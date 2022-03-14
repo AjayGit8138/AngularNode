@@ -59,6 +59,7 @@ p {
   background-image: url("../images/desktop-image-hero-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: auto;
 }
 .listmenu {
   background-color: antiquewhite;
@@ -102,7 +103,7 @@ p {
     width: 100%;
   }
   #slide {
-    transform: translateY(-900%);
+    transform: translateY(-10%);
     margin-left: auto;
   }
 }
@@ -114,7 +115,7 @@ p {
 
     position: fixed;
     top: 10vh;
-    width: auto;
+    width: a;
   }
   #menu {
     display: block;
