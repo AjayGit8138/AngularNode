@@ -15,10 +15,12 @@ body {
   height: 250vh;
   width: 100%;
 }
-.sectionone {
+.sectionone,
+.mile {
   display: flex;
   flex-direction: row;
 }
+
 .section {
   color: white;
   font-size: 20px;
@@ -43,15 +45,25 @@ a {
 }
 .navsection {
   background-color: rgba(118, 117, 121, 0.301);
-  margin: 30px;
+
   width: 50%;
 }
-.list li {
+.list li,
+.listone li {
   color: white;
   display: inline-flex;
   letter-spacing: 1px;
   list-style: none;
   margin: 10px;
+}
+li {
+  cursor: pointer;
+}
+
+li:hover,
+li:focus {
+  border: 0px solid white;
+  border-bottom: 3px solid seashell;
 }
 #planetimg {
   height: auto;
@@ -104,6 +116,14 @@ a {
   font-weight: bold;
   font-size: 55px;
 }
+#menu {
+  display: none;
+  height: 50px;
+  width: 30px;
+}
+.display {
+  top: 500px;
+}
 @media only screen and (max-width: 700px) {
   .sectionone {
     flex-direction: column;
@@ -117,5 +137,29 @@ a {
   .next {
     margin-top: -10px;
     margin-left: 350px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .list {
+    margin-left: -150px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .list {
+    background-color: darkgray;
+    height: 400px;
+    margin-top: -420px;
+    position: absolute;
+    width: 150%;
+  }
+  .list li {
+    display: block;
+    padding: 30px;
+  }
+  .list li:hover {
+    background-color: turquoise;
+  }
+  #menu {
+    display: block;
   }
 }

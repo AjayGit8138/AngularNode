@@ -16,17 +16,6 @@
             display: block;
             margin: 20px;
         }
-
-        li {
-            cursor: pointer;
-
-        }
-
-        li:hover,
-        li:focus {
-            border: 0px solid white;
-            border-bottom: 3px solid seashell;
-        }
     </style>
 </head>
 
@@ -44,19 +33,22 @@
                         <li><a href="crew.html"><span>02</span>Crew</a></li>
                         <li><a href="technology.html"><span>03</span>Technology</a></li>
                     </ul>
+
                 </div>
+                <img id="menu" src="./shared/icon-hamburger.svg" alt="img">
+
             </div>
             </div>
         </nav>
 
         <div class="sectionone">
             <div class="section">
-                <h2>01 Pick Your Destination</h2>
+                <h2>01 Pick Your Destination</h2><br>
                 <img id="planetimg" src="./assets/destination/image-moon.webp" alt="img">
 
             </div>
             <div id="spacetour" class="section">
-                <ul id="findlength" class="list">
+                <ul id="findlength" class="listone">
                     <li id="sliding" onclick="slidechange(0);">Moon</li>
                     <li id="sliding" onclick="slidechange(1);">Mars</li>
                     <li id="sliding" onclick="slidechange(2);">Europa</li>
@@ -70,10 +62,14 @@
                 </p>
                 <div class="line"></div>
                 <div class="mile">
-                    <h2>Avg Distance</h2>
-                    <p id="distance">384,400 km</p>
-                    <h2>Distance Time</h2>
-                    <p id="time"> 3 days</p>
+                    <div class="Traveltime">
+                        <h2>Avg Distance</h2><br>
+                        <p id="distance">384,400 km</p>
+                    </div><br>
+                    <div class="Traveltime">
+                        <h2>Distance Time</h2>
+                        <p id="time"> 3 days</p>
+                    </div>
                 </div>
 
             </div>

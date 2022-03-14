@@ -17,7 +17,22 @@ fetch(URL)
     let bio = document.getElementById('bio');
     let Activeslide = document.getElementById('findlength').getElementsByClassName('circle');
     var slidelength = document.getElementById('findlength').getElementsByTagName('li').length;
+    let Menubar = document.getElementById('menu');
+    let Listmenu = document.getElementById('slideval');
     console.log(slidelength);
+
+    Menubar.addEventListener('click',function(){
+        var img1 = "file:///D:/Htmlrepo/AngularNode/space-tourism/space-tourism/starter-code/shared/icon-hamburger.svg";
+        var img2 = "file:///D:/Htmlrepo/AngularNode/space-tourism/space-tourism/starter-code/shared/icon-close.svg";
+        if(Menubar.src === img1)
+        {
+            Menubar.src = "./shared/icon-close.svg";
+        }
+        else{
+            Menubar.src = "./shared/icon-hamburger.svg";
+        }
+        Listmenu.classList.toggle('display');
+    })
 
     var initial = 0;
     var crewslide = 0;
@@ -44,7 +59,7 @@ function plusSlides(event)
 }
 function slidechange(event)
 {
-    
+
     if(currentpagename == 'destinations')
     {
     console.log(setSpace[currentpagename][event].images.webp);
