@@ -4,15 +4,23 @@ Navbar.addEventListener('click',function(){
     Menulist.classList.toggle("mobilemenu");
     console.log("Hai");
 })
-function colorchange(changediv, source) {
-    var Tempid = changediv;
-    changediv.style.opacity = "1";
-
-    console.log(Tempid);
+function colorchange(changediv) {
+    var opacityset = document.getElementById('opacityimg').getElementsByTagName('img');
+     changediv.style.opacity = "1";
     var element = document.getElementById('pimg');
-    element.src = source;
-    console.log(source);
-
+    element.src = changediv.src;
+    for(var i=0;i<=4;i++)
+    {
+        if(changediv.src)
+        {
+            changediv.style.opacity = "1";
+            console.log("Hai");
+            opacityset[i].style.opacity = "0.5";
+            console.log(i);
+        }
+       
+    }
+    
 }
 function increament() {
     var Qty = document.getElementById('qty').innerText;

@@ -26,14 +26,12 @@ p {
   flex-direction: row;
   margin: 30px;
 }
-.list {
-  margin-left: 40px;
-}
 ul li {
   display: inline;
   font-size: 25px;
   list-style: none;
   margin: 30px;
+  margin-left: 40px;
 }
 .cart img {
   height: 40px;
@@ -60,10 +58,9 @@ ul li {
 }
 .row {
   display: block;
-  width: 45%;
   height: 480px;
-  margin: 20px;
   left: 0;
+  margin: 20px;
   position: initial;
   top: 0;
   width: 45%;
@@ -79,12 +76,9 @@ ul li {
   margin: 20px;
   opacity: 0.5;
 }
-.opaimg img:hover {
-  cursor: pointer;
-  opacity: 1;
-}
-
+.opaimg img:hover,
 .opaimg img:focus {
+  cursor: pointer;
   opacity: 1;
 }
 .discount {
@@ -98,8 +92,6 @@ ul li {
 .pricetag {
   display: row;
   flex-direction: row;
-}
-.tag {
   width: 50%;
 }
 .counter {
@@ -118,16 +110,13 @@ ul li {
   height: 45px;
   width: 45px;
 }
-.btncart {
-  margin-left: 30px;
-  width: 220px;
-}
 .btn-card {
   background-color: var(--Orange);
   border-radius: 10px;
   cursor: pointer;
   font-size: 25px;
   height: 45px;
+  margin-left: 30px;
   width: 220px;
 }
 .cartdisplay p {
@@ -136,26 +125,12 @@ ul li {
 .checkout {
   border: 1px solid var(--Light-grayish-blue);
   background-color: var(--White);
-  display: flex;
   display: none;
   flex-direction: row;
   height: 200px;
   margin-left: 280px;
   margin-top: -150px;
   width: 250px;
-}
-.checkout-one {
-  border: 1px solid var(--Light-grayish-blue);
-  background-color: var(--White);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  display: flex;
-  flex-direction: row;
-  height: 200px;
-  margin-left: 280px;
-  margin-top: 200px;
-  width: 330px;
-  display: block;
-  overflow: hidden;
 }
 .containerone {
   height: 80px;
@@ -183,43 +158,39 @@ ul li {
   margin: 10px;
   width: 300px;
 }
-.btncheckou {
-  margin-top: -20px;
-}
 .checkout-none {
   border: 1px solid var(--Light-grayish-blue);
   background-color: var(--White);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  display: block;
   display: flex;
   flex-direction: row;
   height: 200px;
-  margin-left: 280px;
+  margin-left: auto;
   margin-top: -30px;
-  width: 330px;
+  width: 400px;
   overflow: hidden;
 }
 .empty-one {
   display: none;
 }
 .thumbnails {
-  bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
   cursor: pointer;
   display: block;
   height: 100%;
-  position: fixed;
-  width: 100%;
-  top: 0;
   left: 0;
+  position: fixed;
   right: 0;
+  top: 0;
+  width: 100%;
 }
 .thumbnails .opaimg {
   margin-left: 350px;
 }
 .thumbnails .productimg {
-  margin-top: 80px;
   margin-left: 350px;
+  margin-top: 80px;
 }
 #menu {
   display: none;
@@ -228,6 +199,7 @@ ul li {
 .mobilemenu {
   top: 340px;
 }
+
 @media only screen and (max-width: 1080px) {
   .container {
     flex-direction: column;
@@ -244,7 +216,7 @@ ul li {
   .empty,
   .caritems {
     margin-top: 20px;
-    margin-left: calc(100px - 10px);
+    margin-left: 20px;
     width: 80%;
   }
 }
@@ -254,12 +226,10 @@ ul li {
   }
   .list {
     background-color: antiquewhite;
-
     height: 200px;
     margin-top: -230px;
     margin-left: -20px;
     position: absolute;
-
     width: 120%;
   }
   .list li {

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./themes/style.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <nav>
             <div class="nav-container">
                 <div class="logo">
-                    <img src="./images/logo.svg" alt="img">
+                    <img src="./images/logo.svg" alt="headerlogo">
 
                 </div>
                 <ul id="lst" class="list">
@@ -25,23 +25,21 @@
                     <li>Contact</li>
                 </ul>
                 <div class="cart">
-                    <img id="menu" src="./images/download.jpg" alt="img">
+                    <img id="menu" src="./images/download.jpg" alt="menulogo">
 
-                    <img onclick="cartdisplay();" src="./images/icon-cart.svg" alt="img">
-                    <img class="avatar" src="./images/image-avatar.png" alt="img">
+                    <img onclick="cartdisplay();" src="./images/icon-cart.svg" alt="addcartimg">
+                    <img src="./images/image-avatar.png" alt="profileimg">
                 </div>
             </div>
             <div class="containerone">
                 <div class="line"></div>
-
-
             </div>
         </nav>
     </header>
     <main>
         <div id="purchase" class="checkout">
             <div id="empty" class="empty">
-                <p>Your cart is Empty</p>
+                <p>Your cart is Empty</p><br>
             </div>
             <div class="caritems">
                 <table class="table">
@@ -59,9 +57,7 @@
                         <td><span id="ctotal"></span></td>
                         <td><img id="setdelete"></td>
                     </tr>
-
                 </table>
-
                 <div class="btncheckout">
                     <button class="checkout-btn">Check out</button>
                 </div>
@@ -70,56 +66,23 @@
     </main>
     <section>
         <div class="container">
-
             <div id="thumbnails" class="row">
-
                 <div class="productimg">
-                    <img onclick="closepopup();" id="close" style="display: none;" alt="image">
+                    <img onclick="closepopup();" id="close" style="display: none;" alt="menucloseimg">
                     <img onclick="popup();" id="pimg" src="./images/image-product-1-thumbnail.jpg" class="product-img">
                 </div>
-                <div class="opaimg">
-
-                    <img id="p1" class="setopacity" src="./images/image-product-1-thumbnail.jpg"
-                        onclick="colorchange(p1,src);" alt="img">
-
-                    <img id="p2" class="setopacity" src="./images/image-product-2-thumbnail.jpg"
-                        onclick="colorchange(p2,src);" alt="img">
-                    <img id="p3" class="setopacity" src="./images/image-product-3-thumbnail.jpg"
-                        onclick="colorchange(p3,src);" alt="img">
-                    <img id="p4" class="setopacity" src="./images/image-product-4-thumbnail.jpg"
-                        onclick="colorchange(p4,src);" alt="img">
+                <div id="opacityimg" class="opaimg">
+                    <img id="p1" src="./images/image-product-1-thumbnail.jpg" onclick="colorchange(p1);"
+                        alt="thumbnailimg">
+                    <img id="p2" src="./images/image-product-2-thumbnail.jpg" onclick="colorchange(p2);"
+                        alt="thumbnailimg">
+                    <img id="p3" src="./images/image-product-3-thumbnail.jpg" onclick="colorchange(p3);"
+                        alt="thumbnailimg">
+                    <img id="p4" src="./images/image-product-4-thumbnail.jpg" onclick="colorchange(p4);"
+                        alt="thumbnailimg">
                 </div>
             </div>
-
             <div class="row">
-                <!-- <div id="purchase" class="checkout">
-                    <div id="empty" class="empty">
-                        <p>Your cart is Empty</p>
-                    </div>
-                    <div class="caritems">
-                        <table class="table">
-                            <tr>
-                                <th>Product</th>
-                                <th class="head">&nbsp;&nbsp;Price</th>
-                                <th class="head">&nbsp;&nbsp;orders</th>
-                                <th class="head">&nbsp;&nbsp;Total</th>
-                                <th>&nbsp;&nbsp;Delete</th>
-                            </tr>
-                            <tr>
-                                <td><span class="cartdisplay" id="prd"></span></td>
-                                <td><span id="cprs"></span></td>
-                                <td><span id="cqty"></span></td>
-                                <td><span id="ctotal"></span></td>
-                                <td><img id="setdelete"></td>
-                            </tr>
-
-                        </table>
-
-                        <div class="btncheckout">
-                            <button class="checkout-btn">Check out</button>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="prod">
                     <p>Sneaker Company</p><br>
                     <h1 id="proditem">Fall Limited Edition Sneakers</h1><br>
@@ -131,7 +94,6 @@
                             <h1>$<span id="oriprice">125.00</span><span class="discount">50%</span></h1>
                             <p>$250.00</p>
                         </div>
-
                         <div class="counter">
                             <div class="coloumn">
                                 <button onclick="decreament();" class="count">-</button>
@@ -144,21 +106,16 @@
                             </div>
                             <div id="btncart" class="coloumn btncart">
                                 <button class="btn-card" onclick="buyproduct(proditem,qty)"><img
-                                        src="./images/icon-cart.svg">Add Cart</button>
-
+                                        src="./images/icon-cart.svg" alt="addcartimg">Add Cart</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
-
 </body>
 <script type="text/javascript" src="./script/commerce.js">
-
 </script>
 
 </html>
