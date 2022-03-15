@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@600&family=League+Gothic&family=Poppins:ital,wght@1,600&family=Smooch+Sans:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+span {
+  color: red;
+  text-align: center;
+}
+h1,
+p {
+  color: white;
+  font-size: 2vw;
+  margin: 20px;
+}
+body {
+  background-image: url("../images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--Red);
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+  --Green: hsl(154, 59%, 51%);
+  --Red: hsl(0, 100%, 74%);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+.row {
+  height: 500px;
+  width: 30%;
+}
+a {
+  color: red;
+  text-decoration-line: none;
+}
+#submit {
+  background-color: var(--Green);
+  border-radius: 10px;
+  border: 1px solid green;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 40%;
+}
+.formtag {
+  border: 1px solid seashell;
+  background-color: var(--Blue);
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  width: 90%;
+}
+.inputtag {
+  border: 1px solid seashell;
+  background-color: white;
+  border-radius: 20px;
+  height: 400px;
+  margin: 10px;
+  width: 90%;
+}
+input {
+  height: 50px;
+  margin: 10px;
+  width: 95%;
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+  }
+  .row,
+  .form {
+    margin: 10px;
+    width: 100%;
+  }
+  .row {
+    height: 200px;
+  }
+}

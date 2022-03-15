@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signupform</title>
+    <link rel="stylesheet" href="./themes/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1>Learn to code by watching others</h1><br>
+                <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+                    but understanding how developers think is invaluable.</p>
+            </div>
+            <div class="form">
+                <div class="formtag">
+                    <p style="font-size:1vw;">Try it free 7 days then $20/mo. thereafter</p>
+                </div>
+                <div class="inputtag">
+                    <form id="form" name="myForm">
+                        <div>
+                            <input type="text" name="Fname" title="Enter You Name Here" placeholder="First Name"
+                                autocomplete="off" /><br>
+                            <span id="fstname"></span>
+                        </div>
+                        <div>
+                            <input type="text" name="Lname" title="Enter your Last Name Here" placeholder="Last Name"
+                                autocomplete="off" />
+                            <span id="lastname"></span>
+                        </div>
+                        <div>
+                            <input type="email" name="femail" id="emailconfirmation" title="Enter your Email Here"
+                                placeholder="Email Address" autocomplete="off" />
+                            <span id="erremail"></span>
+                        </div>
+                        <div>
+
+                            <input type="password" name="password" title="Password"
+                                placeholder="Enter Your Password Here" autocomplete="off">
+                            <span id="psw"></span>
+                        </div>
+                        <div>
+                            <input type="submit" id="submit" name="submit" value="CLAIM YOUR FREE TRIAL">
+                        </div>
+                        <div>
+                            <p style="color:black;font-size:1vw;margin:10px;">By clicking the button, you are agreeing
+                                to our <a href="#">Terms
+                                    and
+                                    Services</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script type="text/javascript" src="./script/validation.js"></script>
+
+</html>

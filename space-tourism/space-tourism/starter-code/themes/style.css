@@ -92,30 +92,6 @@ li:focus {
 .active li {
   background-color: rgb(2, 31, 2);
 }
-.prev {
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  font-size: 55px;
-  position: absolute;
-  top: 50%;
-  height: 60px;
-  width: auto;
-  padding: 16px;
-}
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  margin-left: 1300px;
-  height: 150px;
-
-  width: auto;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 55px;
-}
 #menu {
   display: none;
   height: 50px;
@@ -127,16 +103,24 @@ li:focus {
 @media only screen and (max-width: 700px) {
   .sectionone {
     flex-direction: column;
-    font-size: 50px;
+    font-size: 5vw;
     width: 100%;
   }
   .section {
+    font-size: 1.5vw;
     height: 200px;
-    font-size: 4vmin;
+    width: 80%;
   }
   .next {
     margin-top: -10px;
     margin-left: 350px;
+  }
+  .listone li {
+    display: inline-flex;
+  }
+
+  #planetimg {
+    height: 260px;
   }
 }
 @media only screen and (max-width: 980px) {
