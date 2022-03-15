@@ -11,7 +11,7 @@ body {
 h1,
 p {
   font-size: 1.4vw;
-  font-weight: bold;
+  font-weight: large;
   margin: 20px;
 }
 :root {
@@ -81,7 +81,6 @@ p {
   background-color: var(--Very-dark-grayish-blue);
   border-top-right-radius: 120px;
   border-bottom-left-radius: 120px;
-
   height: 400px;
 }
 .sectiontwo {
@@ -103,7 +102,6 @@ p {
   background-size: contain;
   background-position: -150%;
   height: 700px;
-
   width: 100%;
 }
 .sectionlap {
@@ -118,9 +116,7 @@ p {
 }
 .listfoot {
   display: inline-flex;
-
   margin-left: 10px;
-
   list-style: none;
   padding-left: 100px;
 }
@@ -149,6 +145,14 @@ p {
 .list li:hover > ul {
   display: block;
 }
+.list li:hover img {
+  transform: rotate(180deg);
+}
+#hoverdown {
+  height: 15px;
+  margin: 5px;
+  width: 10px;
+}
 .header {
   margin-top: 200px;
   text-align: center;
@@ -170,6 +174,12 @@ p {
     margin-top: -420px;
     position: relative;
     width: 300%;
+  }
+  h1,
+  p {
+    font-size: 1.8vw;
+    font-weight: large;
+    margin: 20px;
   }
   #menu {
     display: block;

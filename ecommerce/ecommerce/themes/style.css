@@ -34,6 +34,7 @@ ul li {
   margin-left: 40px;
 }
 .cart img {
+  cursor: pointer;
   height: 40px;
   margin-left: 20px;
   width: 35px;
@@ -71,13 +72,13 @@ ul li {
   margin: 30px;
   width: 500px;
 }
-.opaimg img {
+.productthumnails img {
   height: 80px;
   margin: 20px;
   opacity: 0.5;
 }
-.opaimg img:hover,
-.opaimg img:focus {
+.productthumnails img:hover,
+.productthumnails img:focus {
   cursor: pointer;
   opacity: 1;
 }
@@ -141,12 +142,13 @@ ul li {
   height: 80px;
   width: 5%;
 }
-.table {
-  margin: 20px;
+table,
+tr,
+th {
+  padding: auto;
+  padding-left: 8px;
 }
-.table .head {
-  margin-left: 30px;
-}
+
 .checkout-btn {
   border-radius: 10px;
   background-color: var(--Orange);
@@ -154,18 +156,21 @@ ul li {
   cursor: pointer;
   color: white;
   height: 20px;
-  margin-top: -10px;
+  margin-top: -20px;
+  margin-left: 50px;
   margin: 10px;
   width: 300px;
 }
 .checkout-none {
+  align-content: center;
   border: 1px solid var(--Light-grayish-blue);
   background-color: var(--White);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   height: 200px;
-  margin-left: auto;
+  margin-left: 60%;
   margin-top: -30px;
   width: 400px;
   overflow: hidden;
@@ -185,8 +190,8 @@ ul li {
   top: 0;
   width: 100%;
 }
-.thumbnails .opaimg {
-  margin-left: 350px;
+.thumbnails .productthumnails {
+  margin-left: 340px;
 }
 .thumbnails .productimg {
   margin-left: 350px;
@@ -212,12 +217,9 @@ ul li {
   .row {
     width: 100%;
   }
-  .checkout,
-  .empty,
-  .caritems {
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 80%;
+  .checkout {
+    margin-left: auto;
+    width: 70%;
   }
 }
 @media only screen and (max-width: 945px) {
@@ -241,5 +243,39 @@ ul li {
   }
   .cart {
     margin-left: auto;
+  }
+}
+@media only screen and (max-width: 415px) {
+  #menu {
+    display: block;
+  }
+  .list {
+    background-color: antiquewhite;
+    height: 200px;
+    margin-top: -230px;
+    margin-left: -20px;
+    position: absolute;
+    width: 120%;
+  }
+  .list li {
+    display: block;
+  }
+  .list li:hover {
+    background-color: var(--Orange);
+    cursor: pointer;
+  }
+  .cart {
+    margin-left: 200px;
+  }
+  .productthumnails {
+    width: 500px;
+  }
+  .checkout-none {
+    height: 400px;
+    width: 500px;
+  }
+  .thumbnails {
+    left: -400px;
+    width: 200%;
   }
 }
