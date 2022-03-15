@@ -26,6 +26,7 @@ fetch(URL)
         var img2 = "file:///D:/Htmlrepo/AngularNode/space-tourism/space-tourism/starter-code/shared/icon-close.svg";
         var img3 = "https://html-lessons-six.vercel.app/space-tourism/space-tourism/starter-code/shared/icon-hamburger.svg";
         var img4 = "https://html-lessons-six.vercel.app/space-tourism/space-tourism/starter-code/shared/icon-close.svg";
+        console.log(Menubar.src);
         if(Menubar.src === img1 || Menubar.src === img3)
         {
             Menubar.src = "./shared/icon-close.svg";
