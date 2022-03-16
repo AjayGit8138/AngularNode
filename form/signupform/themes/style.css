@@ -62,7 +62,7 @@ a {
   border-radius: 20px;
   color: white;
   font-size: 20px;
-  height: 50px;
+  height: 70px;
   margin: 10px;
   text-align: center;
   width: 90%;
@@ -71,7 +71,7 @@ a {
   border: 1px solid seashell;
   background-color: white;
   border-radius: 20px;
-  height: 400px;
+  height: 450px;
   margin: 10px;
   width: 90%;
 }
@@ -86,8 +86,10 @@ input {
     justify-content: center;
     margin: 10px;
   }
+
   .row,
   .form {
+    font-size: 20px;
     margin: 10px;
     width: 100%;
   }

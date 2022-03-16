@@ -6,6 +6,7 @@ FormSubmit.addEventListener('click', function (e) {
     var errlstname = document.getElementById('lastname');
     var erremail = document.getElementById('erremail');
     var errpsw = document.getElementById('psw');
+    var formsubmit = document.getElementById('submit');
     var fname = document.myForm.Fname;
     var femail = document.myForm.femail;
     var lstname = document.myForm.Lname;
@@ -19,12 +20,19 @@ FormSubmit.addEventListener('click', function (e) {
         return;
 
     }
+    else{
+        fname.style.border = "1px solid black";
+        errfname.style.display = "none";
+    }
     // lstname validation
     if (lstname.value === "") {
         lstname.focus();
         lstname.style.border = "1px solid red";
         errlstname.innerHTML = "Please Enter Your Last Name";
         return;
+    }
+    else{
+        errlstname.display = "none";
     }
     // Email validation Starts
     if (Email(femail.value)) {
@@ -47,6 +55,7 @@ FormSubmit.addEventListener('click', function (e) {
 
         Psw.focus();
         Psw.style.border = "1px solid red";
+        errpsw.innerHTML = "Password Field should be blank";
         return;
 
     }
@@ -56,6 +65,11 @@ FormSubmit.addEventListener('click', function (e) {
         errpsw.innerHTML = "Password should be minimum 8 characters and one special charactes and one number";
         return;
     }
+    else{
+        Psw.style.border = "1px solid black";
+        errpsw.style.display = "none";
+    }
+    
 })
 
 function Email(email) {
@@ -63,4 +77,8 @@ function Email(email) {
 }
 function passwordcheck(password) {
     return /[A-Za-z]*[0-9][A-Za-z]*/.test(password);
+}
+function submitform()
+{
+    document.getElementById('submit').submit();
 }

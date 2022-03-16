@@ -184,10 +184,13 @@ footer {
 .listmenuone ul li {
   background-color: yellow;
   display: block;
+  margin-left: 30%;
+  padding: 10px;
   text-align: center;
-  width: 90%;
+  width: 40%;
 }
 .listmenuone ul {
+  background-color: whitesmoke;
   border: 1px solid whitesmoke;
   display: block;
   margin-left: -100%;
