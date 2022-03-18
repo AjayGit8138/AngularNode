@@ -47,6 +47,9 @@ p {
 .btn-signup,
 .btn-getstarted {
   border-radius: 35px;
+  border: 1px solid var(--Very-Pale-Red);
+  background-color: var(--Bright-Red);
+  font-size: 20px;
   height: 60px;
   margin: 10px;
   left: 30%;
@@ -160,10 +163,16 @@ img {
 }
 .footlist li,
 .footlistone li {
+  color: white;
   list-style: none;
   left: 5px;
   position: relative;
   padding: 20px;
+}
+.footlist li:hover,
+.footlistone li:hover {
+  color: var(--Bright-Red);
+  cursor: pointer;
 }
 input[type="email"] {
   height: 40px;
