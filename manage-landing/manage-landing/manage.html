@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManageLandingPage</title>
+    <link rel="stylesheet" href="./themes/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="navigationmenu">
+
+                <img id="headerlogo" src="./images/logo.svg" alt="headerlogo">
+                <div class="navigationlist">
+                    <ul id="lst" class="listmenu">
+                        <li>Pricing</li>
+                        <li>Product</li>
+                        <li>Aboutus</li>
+                        <li>Careers</li>
+                        <li>Community</li>
+                    </ul>
+
+                </div>
+                <img id="menu" src="./images/icon-hamburger.svg" alt="menu">
+                <div class="signupsection">
+                    <button id="signup" class="btn-signup">signup</button>
+                </div>
+
+            </div>
+            <div class="headerdesc">
+                <div class="headercontent">
+                    <h1 style="font-size: 25px;">Bring everyone<br>together to build <br>better products.</h1><br>
+                    <p>Manage makes it simple for software teams to plan day-to-day
+                        tasks while keeping the larger team goals in view.</p>
+                </div>
+                <div class="headerillustration">
+                    <img src="./images/illustration-intro.svg" alt="illustrationlogo">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="sec-programs">
+            <h1>What's different about Manage?</h1><br>
+            <p>Manage provides all the functionality your team needs, without
+                the complexity. Our software is tailor-made for modern digital
+                product teams.</p>
+            <img id="pattern" src="./images/bg-tablet-pattern.svg" alt="patternimg">
+        </div>
+        <div class="manageprograms">
+
+
+            <h1><span id="sno">01</span>Track company-wide progress</h1><br>
+            <p>See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture again.</p><br>
+            <br>
+            <h1><span id="sno">02</span>Advanced built-in reports</h1><br>
+            <p>Set internal delivery estimates and track progress toward company
+                goals. Our customisable dashboard helps you build out the reports
+                you need to keep key stakeholders informed.</p><br>
+            <br>
+            <h1><span id="sno">03</span>Everything you need in one place</h1><br>
+            <p>Stop jumping from one service to another to communicate, store files,
+                track tasks and share documents. Manage offers an all-in-one team
+                productivity solution.</p>
+            <br>
+        </div>
+    </section>
+    <section class="testimonial-section">
+        <div class="testimonials">
+            <div class="testimonialcard">
+                <img src="./images/avatar-ali.png" alt="profileavatar">
+                <p>“Manage has supercharged our team’s workflow. The ability to maintain
+                    visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </div>
+            <div class="testimonialcard">
+                <img src="./images/avatar-anisha.png" alt="profileanisha">
+                <p>“We have been able to cancel so many other subscriptions since using
+                    Manage. There is no more cross-channel confusion and everyone is much
+                    more focused.”</p>
+            </div>
+            <div class="testimonialcard">
+                <img src="./images/avatar-richard.png" alt="profilerichard">
+                <p>“Manage allows us to provide structure and process. It keeps us organized
+                    and focused. I can’t stop recommending them to everyone I talk to!”</p>
+            </div>
+
+
+
+        </div>
+        <div class="slider">
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div class="getstart">
+            <button style="margin-left: 15%;" class="btn-getstarted">Getstarted</button>
+        </div>
+    </section>
+    <section class="managenews">
+        <div class="news">
+            <h1 style="font-size: 20px;">Simplify how your team works today.</h1>
+            <img id="newsbg" src="./images/bg-tablet-pattern.svg" alt="pattern">
+
+            <div class="getstarted">
+                <button class="btn-getstarted">Getstarted</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footsection">
+        <div class="foot">
+            <img style="padding: 60px;" src="./images/logo.svg" alt="logoimg">
+            <div class="social">
+                <img src="./images/fb.png" alt="facebook">
+                <img src="./images/youtube.png" alt="youtube">
+                <img src="./images/instagram.png" alt="instagram">
+                <img src="./images/pinterestlogo.png" alt="pinterest">
+                <img src="./images/twitter.png" alt="twitter">
+            </div>
+        </div>
+        <div class="foot">
+            <div class="list">
+                <ul class="footlistone">
+                    <li>Home</li>
+                    <li>Pricing</li>
+                    <li>Product</li>
+                    <li>Aboutus</li>
+                </ul>
+                <ul class="footlist">
+                    <li>Careers</li>
+                    <li>Community</li>
+                    <li>PrivacyPolicy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot">
+            <form name="myForm">
+                <input type="email" id="emailconfirmation" name="femail" required placeholder="updates in your box">
+                <button id="btngo" onclick="emailvalidation();" class="btn">Go</button><br>
+                <span style="color: red;" id="erremail"></span>
+
+
+            </form>
+            <p>Copyright 2022. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="./script/manage.js"></script>
+
+</html>
