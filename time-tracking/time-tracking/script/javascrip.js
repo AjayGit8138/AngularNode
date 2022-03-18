@@ -1,5 +1,3 @@
-
-
 let TimeData = new Object();
 const URL =
   "https://raw.githubusercontent.com/Fernando0654/Fernando0654/main/data.timeTracking.json";
@@ -11,8 +9,6 @@ function getconnection()
     console.log(UpdateData);
   
 }
-
-
 
 function templatechange(timetrack)
 {
@@ -61,11 +57,6 @@ function templatechange(timetrack)
             }
         }
     });
-     
-     
-         
-     
- 
 }
 function deactivate(timetrack)
 {
@@ -91,5 +82,4 @@ function deactivate(timetrack)
     else{
         
     }
-  
 }
