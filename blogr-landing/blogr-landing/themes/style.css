@@ -52,8 +52,10 @@ p {
   margin-left: auto;
 }
 .btn {
+  border: 2px solid rgb(219, 241, 184);
   background-color: rgb(219, 241, 184);
   border-radius: 25px;
+  cursor: pointer;
   font-size: 25px;
   height: 40px;
   margin: 10px;
@@ -70,7 +72,6 @@ p {
   background-size: contain;
   background-position: 150%;
   height: 700px;
-
   width: 100%;
 }
 .secone {
@@ -127,9 +128,9 @@ p {
   padding: 5px;
 }
 .inner {
-  display: none;
   background-color: whitesmoke;
   border: 1px solid snow;
+  display: none;
   height: 130px;
   margin-left: -80px;
   margin-top: 30px;
@@ -163,6 +164,9 @@ p {
   margin: 30px;
   width: 30px;
 }
+#login {
+  display: none;
+}
 .display {
   top: 530px;
 }
@@ -170,10 +174,12 @@ p {
   .list {
     border: 1px solid white;
     background-color: var(--Light-red);
-    height: 400px;
-    margin-top: -420px;
-    position: relative;
-    width: 300%;
+    height: 450px;
+    margin-top: -460px;
+    left: 10%;
+    position: absolute;
+    padding-left: 20%;
+    width: 80%;
   }
   h1,
   p {
@@ -187,12 +193,17 @@ p {
   .list li {
     display: block;
   }
-
   .inner {
     margin-left: 40px;
   }
   body {
     width: 100%;
+  }
+  #login {
+    display: block;
+  }
+  #register {
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -208,10 +219,12 @@ p {
   .sectiontwo {
     width: 100%;
   }
+  #login {
+    display: block;
+  }
 
   body {
     width: 200%;
-    overflow-x: hidden;
   }
   h1,
   p {
