@@ -1,57 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
-  background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+  background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: contain, auto;
   background-position: 1000px, -100px 330px;
   font-family: "Manrope", sans-serif;
 }
 :root {
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
   --Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
   --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
-  --Light-Grayish-Blue: hsl(234, 14%, 74%);
-  --Grayish-Blue: hsl(233, 13%, 49%);
-  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
 }
 .switch {
-  position: relative;
   display: inline-block;
-  width: 60px;
   height: 34px;
   margin: 20px;
+  position: relative;
+  width: 60px;
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
   height: 0;
+  width: 0;
+  opacity: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .slider:before {
-  position: absolute;
+  background-color: white;
+  bottom: 4px;
   content: "";
   height: 26px;
-  width: 26px;
   left: 4px;
-  bottom: 4px;
-  background-color: white;
+  position: absolute;
+  width: 26px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -65,8 +65,8 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
+  -webkit-transform: translateX(26px);
   transform: translateX(26px);
 }
 
@@ -79,30 +79,30 @@ input:checked + .slider:before {
 }
 h3 {
   display: block;
-  margin: 20px;
   font-size: 35px;
+  margin: 20px;
   text-align: center;
 }
 
 h1 {
-  margin: 20px;
   font-size: 30px;
+  margin: 20px;
   text-align: center;
 }
 h2 {
-  margin: 20px;
   font-size: 20px;
+  margin: 20px;
   text-align: center;
 }
 h4 {
-  margin: 20px;
-  font-size: 30px;
-  text-align: center;
   display: none;
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
 }
 p {
-  margin: 20px;
   font-size: 20px;
+  margin: 20px;
   text-align: center;
 }
 .container {
@@ -118,20 +118,20 @@ p {
   display: flex;
   flex-direction: row;
   margin: 50px;
-  justify-content: center;
   margin-top: 150px;
+  justify-content: center;
 }
 .section {
+  border-radius: 15px;
   height: 460px;
   width: 30%;
-  border-radius: 15px;
 }
 
 .line {
-  height: 2px;
-  width: 90%;
   background-color: gray;
+  height: 2px;
   margin: 10px;
+  width: 90%;
 }
 
 .first,
@@ -140,26 +140,26 @@ p {
   background-color: var(--Very-Light-Grayish-Blue);
 }
 .btn {
+  border-radius: 5px;
+  background-color: var(--Very-Light-Grayish-Blue);
+  cursor: pointer;
+  color: var(--Dark-Grayish-Blue);
+  font-size: 25px;
   height: 45px;
   width: 100%;
-  border-radius: 5px;
-  font-size: 25px;
-  cursor: pointer;
-  background-color: var(--Very-Light-Grayish-Blue);
-  color: var(--Dark-Grayish-Blue);
 }
 .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .one {
-  color: white;
-  height: 510px;
-  margin-top: -25px;
   background-image: linear-gradient(
     to right,
     hsl(236, 72%, 79%),
     hsl(237, 63%, 64%)
   );
+  color: white;
+  height: 510px;
+  margin-top: -25px;
 }
 .toggleswich {
   display: flex;
@@ -167,37 +167,37 @@ p {
   justify-content: center;
 }
 .btn-learn {
-  height: 30px;
-  width: 90%;
-  margin: 20px;
   background-color: aliceblue;
+  height: 30px;
+  margin: 20px;
+  width: 90%;
 }
 @media only screen and (max-width: 760px) {
   .box {
-    margin-left: -20px;
     flex-direction: column;
+    margin-left: -20px;
   }
   .section {
-    width: 100%;
     height: 500px;
     margin: 35px;
+    width: 100%;
   }
 }
 #selectorbar {
-  height: 40px;
-  width: 80px;
   background-color: blue;
   border-radius: 25px;
   display: flex;
-  justify-content: flex-end;
   flex-direction: row;
+  height: 40px;
+  width: 80px;
+  justify-content: flex-end;
 }
 #selectball {
-  height: 39px;
-  width: 40px;
-  background-color: white;
   border-radius: 30px;
+  background-color: white;
+  height: 39px;
   margin: 1px;
+  width: 40px;
 }
 #selectball:hover {
   opacity: 0.8;
