@@ -1,7 +1,7 @@
-let Navbar = document.getElementById('menu');
-let Menulist = document.getElementById('lst');
-Navbar.addEventListener('click',function(){
-    Menulist.classList.toggle("mobilemenu");
+let navbar = document.getElementById('menu');
+let menulist = document.getElementById('lst');
+navbar.addEventListener('click',function(){
+    menulist.classList.toggle("mobilemenu");
     console.log("Hai");
 })
 function colorchange(changediv) {
@@ -23,40 +23,40 @@ function colorchange(changediv) {
     
 }
 function increament() {
-    var Qty = document.getElementById('qty').innerText;
-    var count = parseInt(Qty);
-    console.log(Qty);
+    var qty = document.getElementById('qty').innerText;
+    var count = parseInt(qty);
+    console.log(qty);
     count += 1;
     document.getElementById('qty').innerHTML = count;
 }
 function decreament() {
-    var Qty = document.getElementById('qty').innerText;
-    var count = parseInt(Qty);
-    console.log(Qty);
+    var qty = document.getElementById('qty').innerText;
+    var count = parseInt(qty);
+    console.log(qty);
     count -= 1;
     if (count > 0) {
         document.getElementById('qty').innerHTML = count;
     }
 }
 function buyproduct(pid, tqty) {
-    var Productname = pid.innerHTML;
-    var Torder = tqty.innerHTML;
-    console.log(Productname);
+    var productname = pid.innerHTML;
+    var torder = tqty.innerHTML;
+    console.log(productname);
     console.log(Torder);
-    var Prodprice = document.getElementById('oriprice').innerHTML;
-    console.log(Prodprice);
-    var Prodprs = parseFloat(Prodprice);
-    var Tcost = Torder * (Prodprs * 100);
-    console.log(Tcost);
-    var prsdollar = Tcost * (0.01);
+    var prodprice = document.getElementById('oriprice').innerHTML;
+    console.log(prodprice);
+    var prodprs = parseFloat(prodprice);
+    var tcost = torder * (prodprs * 100);
+    console.log(tcost);
+    var prsdollar = tcost * (0.01);
     console.log(prsdollar);
-    var Ctitle = document.getElementById('prd');
-    Ctitle.innerHTML = Productname;
+    var ctitle = document.getElementById('prd');
+    ctitle.innerHTML = productname;
     document.getElementById('cprs').innerHTML = `$${Prodprs}`;
     document.getElementById('cqty').innerHTML = `x${Torder}`;
     document.getElementById('ctotal').innerHTML = `$${prsdollar}`;
-    var RemoveEmpty = document.getElementById('empty');
-    RemoveEmpty.classList.add("empty-one");
+    var removeEmpty = document.getElementById('empty');
+    removeEmpty.classList.add("empty-one");
 
     var setImage = document.getElementById('setdelete');
     setImage.src = "./images/icon-delete.svg";
@@ -69,15 +69,15 @@ function cartdisplay() {
     purchase.classList.toggle("checkout-none");
 }
 function popup() {
-    var Popup = document.getElementById('thumbnails');
-    Popup.classList.add("thumbnails");
+    var popup = document.getElementById('thumbnails');
+    popup.classList.add("thumbnails");
     var close = document.getElementById('close');
     close.src = "./images/icon-close.svg";
     close.style.display = "block";
 }
 function closepopup() {
-    var ClosePopup = document.getElementById('thumbnails');
-    ClosePopup.classList.remove("thumbnails");
+    var closePopup = document.getElementById('thumbnails');
+    closePopup.classList.remove("thumbnails");
     var close = document.getElementById('close');
     close.style.display = "none";
 }

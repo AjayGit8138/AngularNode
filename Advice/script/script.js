@@ -3,10 +3,10 @@ const advice = async()=>{
     const result = await data.json();
     console.log(result);
     var id = result.slip.id;
-    var quotes = result.slip.advice
+    var quotes = result.slip.advice;
     console.log(id);
     document.getElementById('advhead').innerHTML = 'Advice #' + id;
-    document.getElementById('adv').innerHTML ='"'+ quotes+'"';
+    document.getElementById('advtips').innerHTML ='"'+ quotes+'"';
 
 }
 advice();

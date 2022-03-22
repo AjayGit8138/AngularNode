@@ -11,3 +11,29 @@
   margin: auto;
   width: 100%;
 }
+.flipcontainer {
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+}
+.flipcard {
+  display: flex;
+  flex-direction: row;
+  width: 650px;
+  height: 300px;
+  padding: 20px;
+}
+.flipcardinner {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #d62a8e;
+  transition: transform 0.8s;
+  left: 40%;
+}
+.flipcard:hover .flipcardinner {
+  background-color: blueviolet;
+  transform: rotateY(180deg);
+}
