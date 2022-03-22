@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@600&family=League+Gothic&family=Manrope:wght@800&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,8 +29,8 @@ body {
   width: 40%;
 }
 a {
-  text-decoration-line: none;
   color: white;
+  text-decoration-line: none;
 }
 .btnexplore {
   border-radius: 110px;
