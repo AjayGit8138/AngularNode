@@ -174,8 +174,8 @@ p {
   .list {
     border: 1px solid white;
     background-color: var(--Light-red);
-    height: 450px;
-    margin-top: -460px;
+    height: 500px;
+    margin-top: -500px;
     left: 10%;
     position: absolute;
     padding-left: 20%;

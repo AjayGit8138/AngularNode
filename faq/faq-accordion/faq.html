@@ -37,8 +37,6 @@
                     <img id="revthree" class="arrow" src="./images/icon-arrow-down.svg" alt="arrowdown">
                     <h1 onclick="reverse(revthree);" class="qs-tag">
                         What is the maximum file upload size?</h1>
-
-
                     <div class="answer">
                         <p class="ans">No more than 2GB. All files in your account must fit your allotted storage space.
                         </p>
@@ -77,31 +75,6 @@
     </section>
 
 </body>
-<script>
-
-    let faq = document.getElementsByClassName('qs-tag');
-    let i;
-    let Globalid;
-    for (i = 0; i < faq.length; i++) {
-        faq[i].addEventListener('click', function () {
-            console.log('Hai');
-            var imgid = Globalid;
-            console.log(imgid);
-            var nextbody = this.nextElementSibling;
-            if (nextbody.style.display === "block") {
-                imgid.style.transform = "rotate(0deg)";
-                console.log('hai');
-                nextbody.style.display = "none";
-            }
-            else {
-                imgid.style.transform = "rotate(180deg)";
-                nextbody.style.display = "block";
-            }
-        })
-    }
-    function reverse(rev) {
-        Globalid = rev;
-    }
-</script>
+<script type="text/javascript" src="./script/script.js"></script>
 
 </html>

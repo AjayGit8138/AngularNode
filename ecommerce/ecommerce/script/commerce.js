@@ -6,7 +6,6 @@ navbar.addEventListener('click',function(){
 })
 function colorchange(changediv) {
     var opacityset = document.getElementById('opacityimg').getElementsByTagName('img');
-     changediv.style.opacity = "1";
     var element = document.getElementById('pimg');
     element.src = changediv.src;
     for(var i=0;i<=4;i++)
