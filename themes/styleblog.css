@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.content {
+  background-image: url("../images/web-developmentcover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin: auto;
+  width: 100%;
+}
