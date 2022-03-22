@@ -5,28 +5,27 @@
   padding: 0;
 }
 :root {
-  --Soft-red: hsl(7, 99%, 70%);
-  --Yellow: hsl(51, 100%, 49%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
   --Dark-desaturated-cyan: hsl(167, 40%, 24%);
   --Dark-blue: hsl(198, 62%, 26%);
-  --Dark-moderate-cyan: hsl(168, 34%, 41%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --Soft-red: hsl(7, 99%, 70%);
   --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
   --Very-dark-grayish-blue: hsl(213, 9%, 39%);
-  --Dark-grayish-blue: hsl(232, 10%, 55%);
-  --Grayish-blue: hsl(210, 4%, 67%);
   --White: hsl(0, 0%, 100%);
+  --Yellow: hsl(51, 100%, 49%);
 }
 body {
   font-family: "Manrope", sans-serif;
 }
 h1 {
-  margin: 20px;
   font-size: 25px;
+  margin: 20px;
   text-align: center;
 }
 p {
-  margin: 5px;
   font-size: 20px;
+  margin: 5px;
 }
 header {
   height: 950px;
@@ -38,9 +37,9 @@ header {
   background-size: cover;
   background-position: center;
   height: 950px;
-  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  -webkit-background-size: cover;
 }
 .innerbox {
   display: flex;
@@ -121,8 +120,8 @@ ul li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  -webkit-background-size: cover;
   -moz-background-size: cover;
+  -webkit-background-size: cover;
   -o-background-size: cover;
 }
 .five {
@@ -130,8 +129,8 @@ ul li {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
   -moz-background-size: cover;
+  -webkit-background-size: cover;
   -o-background-size: cover;
 }
 .btn {
@@ -257,20 +256,20 @@ footer {
   .headimage {
     background-image: url("../images/mobile/image-header.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
   }
   .headerimg {
     background-image: url("../images/icon-arrow-down.svg");
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: 45px;
     background-position: center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
   }
   .one {
     background-image: url("../images/mobile/image-transform.jpg");
