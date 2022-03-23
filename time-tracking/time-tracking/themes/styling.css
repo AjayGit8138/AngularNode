@@ -18,30 +18,30 @@ p {
   --Blue: hsl(246, 80%, 60%);
   --Dark-blue: hsl(235, 46%, 20%);
   --Desaturated-blue: hsl(235, 45%, 61%);
+  --Light-red: hsl(15, 100%, 70%);
   --Light-redone: hsl(348, 100%, 68%);
   --Lime-green: hsl(145, 58%, 55%);
-  --Light-red: hsl(15, 100%, 70%);
   --Pale-Blue: hsl(236, 100%, 87%);
-  --Soft-orange: hsl(43, 84%, 65%);
   --Soft-blue: hsl(195, 74%, 62%);
-  --Violet: hsl(264, 64%, 52%);
+  --Soft-orange: hsl(43, 84%, 65%);
   --Very-dark-blue: hsl(226, 43%, 10%);
+  --Violet: hsl(264, 64%, 52%);
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 255px auto auto auto;
   grid-gap: 30px;
-  margin: 130px;
-  margin-top: 100px;
+  grid-template-columns: 255px auto auto auto;
   margin-left: 100px;
+  margin-top: 100px;
+  margin: 130px;
   padding: 20px;
 }
 #activities {
   margin-left: 80px;
 }
 .grid-item {
-  border-radius: 20px;
   background-color: var(--Soft-orange);
+  border-radius: 20px;
   display: grid;
   font-size: 30px;
   text-align: center;
@@ -49,8 +49,8 @@ p {
 .one {
   display: flex;
   flex-direction: column;
-  grid-row: span 2;
   grid-column: span 1;
+  grid-row: span 2;
 }
 .head {
   border-top-left-radius: 10px;

@@ -41,7 +41,7 @@ function buyproduct(pid, tqty) {
     var productname = pid.innerHTML;
     var torder = tqty.innerHTML;
     console.log(productname);
-    console.log(Torder);
+    console.log(torder);
     var prodprice = document.getElementById('oriprice').innerHTML;
     console.log(prodprice);
     var prodprs = parseFloat(prodprice);
@@ -51,8 +51,8 @@ function buyproduct(pid, tqty) {
     console.log(prsdollar);
     var ctitle = document.getElementById('prd');
     ctitle.innerHTML = productname;
-    document.getElementById('cprs').innerHTML = `$${Prodprs}`;
-    document.getElementById('cqty').innerHTML = `x${Torder}`;
+    document.getElementById('cprs').innerHTML = `$${prodprs}`;
+    document.getElementById('cqty').innerHTML = `x${torder}`;
     document.getElementById('ctotal').innerHTML = `$${prsdollar}`;
     var removeEmpty = document.getElementById('empty');
     removeEmpty.classList.add("empty-one");
