@@ -45,22 +45,22 @@
     </section>
 </body>
 <script>
-    let Menubar = document.getElementById('menu');
-    let Listmenu = document.getElementById('slideval');
+    let menubar = document.getElementById('menu');
+    let listmenu = document.getElementById('slideval');
 
-    Menubar.addEventListener('click', function () {
+    menubar.addEventListener('click', function () {
         var img1 = "file:///D:/Htmlrepo/AngularNode/space-tourism/space-tourism/starter-code/shared/icon-hamburger.svg";
         var img2 = "file:///D:/Htmlrepo/AngularNode/space-tourism/space-tourism/starter-code/shared/icon-close.svg";
         var img3 = "https://html-lessons-six.vercel.app/space-tourism/space-tourism/starter-code/shared/icon-hamburger.svg";
         var img4 = "https://html-lessons-six.vercel.app/space-tourism/space-tourism/starter-code/shared/icon-close.svg";
-        console.log(Menubar.src);
-        if (Menubar.src === img1 || Menubar.src === img3) {
-            Menubar.src = "./shared/icon-close.svg";
+        console.log(menubar.src);
+        if (menubar.src === img1 || menubar.src === img3) {
+            menubar.src = "./shared/icon-close.svg";
         }
-        else if (Menubar.src === img2 || Menubar.src === img4) {
-            Menubar.src = "./shared/icon-hamburger.svg";
+        else if (menubar.src === img2 || menubar.src === img4) {
+            menubar.src = "./shared/icon-hamburger.svg";
         }
-        Listmenu.classList.toggle('display');
+        listmenu.classList.toggle('display');
     })
 </script>
 
