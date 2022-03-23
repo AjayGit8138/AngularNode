@@ -1,39 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@600&family=League+Gothic&family=Poppins:ital,wght@1,600&family=Smooch+Sans:wght@600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+body {
+  background-image: url("../images/SVGBackgrounds.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "League Gothic", sans-serif;
+}
 .content {
-  background-image: url("../images/web-developmentcover.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   margin: auto;
+  opacity: 0.9;
   width: 100%;
 }
-.flipcontainer {
+.content {
+  background-image: url("../images/CreativeWeb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.aboutus,
+.description {
+  animation: move 5s infinite;
+  background-image: url("../images/angular__Banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   display: flex;
-  margin-top: 10%;
+  flex-direction: row;
   justify-content: center;
+  margin-top: 100px;
 }
-.flipcard {
-  display: flex;
-  flex-direction: row;
-  width: 650px;
+.aboutdesc,
+.descriptionskill,
+.mentorchallenges {
+  border: 1px solid rgba(168, 142, 142, 0.418);
+  background-color: rgba(214, 187, 187, 0.418);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   height: 300px;
-  padding: 20px;
+  width: 600px;
 }
-.flipcardinner {
+.aboutdesc h1,
+.descriptionskill h1,
+.mentorchallenges h1 {
+  color: rgb(21, 34, 12);
+  letter-spacing: 4px;
+  margin: 40px;
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: rotateX(-30deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(60deg);
+  }
+}
+.challenges {
   display: flex;
   flex-direction: row;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: #d62a8e;
-  transition: transform 0.8s;
-  left: 40%;
+  margin-top: 100px;
+  justify-content: center;
+  animation: move 5s infinite;
 }
-.flipcard:hover .flipcardinner {
-  background-color: blueviolet;
-  transform: rotateY(180deg);
+.mentorchallenges {
+  height: 100px;
+  width: 600px;
+}
+#intern {
+  color: beige;
+  font-size: 80px;
+  margin: 170px;
+  letter-spacing: 6px;
+  text-align: center;
+}
+.text {
+  animation: popup 7s infinite;
+}
+a {
+  text-decoration-line: none;
+}
+@keyframes popup {
+  0% {
+    color: black;
+    margin-bottom: -30px;
+  }
+  30% {
+    letter-spacing: 20px;
+    margin-bottom: -20px;
+  }
+}
+.footbar {
+  height: 160px;
+  margin-top: 150px;
+  width: 100%;
+}
+#foottext {
+  font-size: 50px;
+  text-align: center;
 }

@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priceranging</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./themes/style.css">
 </head>
 
 <body onload="setval();">
     <section>
         <div class="bgsection">
-            <img src="./images/bg-pattern.svg" alt="img">
+            <img src="./images/bg-pattern.svg" alt="patternimg">
 
         </div>
         <div style="margin-top: -30px;" class="head">
@@ -27,22 +27,16 @@
                     <h1>100k Pageviews</h1>
                     <h1>$<span id="price"></span>Month</h1>
                 </div>
-
                 <div class="prsrange">
                     <div class="circle">
-                        <!-- <span class="bar"><span class="fill"></span></span>
-                    <input type="range" value="70" min="0" max="100" id="slider" oninput="rangevalue.value=value"/></input>
-                    <output id="rangevalue">70</output> -->
+
                         <form class="form">
                             <input type="range" name="range-slider" id="range-slider" min="0" max="100" value="70"
                                 oninput="setval(rangevalue.value=value);" />
                             <output class="output" id="rangevalue">70</output>
-
-
                         </form>
                         <div style="margin:10px;display: inline-flex;" class="billing">
                             <h2>Monthly Billing</h2>
-
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
@@ -52,9 +46,9 @@
                         <div class="line"></div>
                         <div class="foot">
                             <ul style="margin-left: -90px;margin-top: -30px;" class="list">
-                                <li><img src="./images/icon-check.svg"> websites</li>
-                                <li><img src="./images/icon-check.svg"> 100% data ownership</li>
-                                <li><img src="./images/icon-check.svg"> reports</li>
+                                <li><img src="./images/icon-check.svg" alt="iconcheck"> websites</li>
+                                <li><img src="./images/icon-check.svg" alt="iconcheck"> 100% data ownership</li>
+                                <li><img src="./images/icon-check.svg" alt="iconcheck"> reports</li>
                             </ul>
                             <button class="btn">start my Trail</button>
                         </div>
@@ -69,13 +63,6 @@
 
     </section>
 </body>
-<script>
-    function setval(value) {
-        let priceset = document.getElementById('price');
-        let Getval = document.getElementById('rangevalue').value;
-        priceset.innerHTML = Getval;
-        console.log(value);
-    }
-</script>
+<script type="text/javascript" src="./script/script.js"></script>
 
 </html>
