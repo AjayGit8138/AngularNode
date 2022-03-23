@@ -26,17 +26,13 @@ body {
   margin-bottom: 2px;
 }
 .divider img {
-  margin-top: 180px;
+  margin-top: -20px;
   width: 100%;
 }
 .text {
   height: 200px;
   margin-top: 30px;
   width: 100%;
-}
-.text p {
-  font-size: 30px;
-  line-height: 0.1px;
 }
 button {
   border-radius: 80px;
@@ -55,6 +51,7 @@ button {
 .text p {
   color: antiquewhite;
   font: bold;
+  font-size: 2vw;
   line-height: 1.5;
   margin-top: 20px;
 }
@@ -65,7 +62,7 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 600px;
+  height: 400px;
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
