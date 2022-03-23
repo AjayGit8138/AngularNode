@@ -1,5 +1,5 @@
 const count = () => {
-    const endDate = new Date("March 30,2022 08:15:35");
+    const endDate = new Date("April 15,2022 08:15:35");
     console.log(endDate);
     const now = new Date().getTime();
     console.log(now);
@@ -11,10 +11,10 @@ const count = () => {
     var hrs = min * 60;
     var days = hrs * 24;
 
-    var launchdate = Math.floor(Difference / days);
-    var launchrs = Math.floor((Difference % days) / hrs);
-    var launchmin = Math.floor((Difference % hrs) / min);
-    var launchsec = Math.floor((Difference % min) / seconds);
+    var launchdate = Math.floor(difference / days);
+    var launchrs = Math.floor((difference % days) / hrs);
+    var launchmin = Math.floor((difference % hrs) / min);
+    var launchsec = Math.floor((difference % min) / seconds);
     console.log(launchdate);
     console.log(launchrs);
     console.log(launchmin);

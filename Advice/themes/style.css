@@ -7,8 +7,8 @@
 :root {
   --Dark-Gray: hsl(217, 19%, 24%);
   --Gray-Blue: hsl(217, 19%, 38%);
-  --light-cyan: hsl(193, 38%, 86%);
   --Neon-green: hsl(150, 100%, 66%);
+  --light-cyan: hsl(193, 38%, 86%);
 }
 body {
   background-color: var(--Gray-Blue);
@@ -16,14 +16,14 @@ body {
 }
 .container {
   display: flex;
-  margin-top: 100px;
   justify-content: center;
   left: 100px;
+  margin-top: 100px;
 }
 .tips h1 {
   color: var(--Neon-green);
-  margin-top: 5px;
   margin-bottom: 2px;
+  margin-top: 5px;
 }
 .divider img {
   margin-top: -20px;
@@ -35,40 +35,38 @@ body {
   width: 100%;
 }
 button {
-  border-radius: 80px;
-  background-image: url("../images/icon-dice.svg");
   background-color: var(--Neon-green);
-  background-repeat: no-repeat;
+  background-image: url("../images/icon-dice.svg");
   background-position: 15px 15px;
+  background-repeat: no-repeat;
+  border-radius: 80px;
   height: 60px;
   width: 60px;
 }
-
 .divider {
   flex-direction: row;
   margin-top: 80px;
 }
 .text p {
   color: antiquewhite;
-  font: bold;
   font-size: 2vw;
+  font: bold;
   line-height: 1.5;
   margin-top: 20px;
 }
 .tips {
-  border: 2px solid var(--Dark-Gray);
-  border-radius: 15px;
   background-color: var(--Dark-Gray);
+  border-radius: 15px;
+  border: 2px solid var(--Dark-Gray);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 400px;
   justify-content: center;
-  margin-top: 30px;
   margin-bottom: 30px;
+  margin-top: 30px;
   width: 50%;
 }
-
 .dice {
   display: flex;
   flex-direction: row;
