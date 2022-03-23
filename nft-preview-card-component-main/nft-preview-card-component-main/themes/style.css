@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--very-dark-blue);
+  font-family: "Manrope", sans-serif;
+  overflow: hidden;
+}
+h1 {
+  color: var(--White);
+  margin: 10px;
+}
+p {
+  color: var(--soft-blue);
+  margin: 10px;
+}
+:root {
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --very-dark-blue: hsl(216, 50%, 16%);
+  --very-dark-blue: hsl(217, 54%, 11%);
+  --Very-dark-blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+.box {
+  background-color: var(--Very-dark-blue);
+  border-radius: 15px;
+  height: 600px;
+  margin-top: 10px;
+  width: 400px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.component {
+  border-radius: 10px;
+  height: 350px;
+  margin: 10px;
+  width: 300px;
+}
+.component img {
+  border-radius: 10px;
+  height: 300px;
+  width: 380px;
+}
+.contents {
+  margin-top: -20px;
+}
+.tag {
+  display: flex;
+  flex-direction: row;
+}
+.rows {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin: 10px;
+  width: 180px;
+}
+.rows img {
+  margin: 10px;
+}
+.rows p {
+  font-size: 20px;
+}
+#eth {
+  color: var(--cyan);
+}
+.footrow {
+  display: flex;
+}
+.foot-row {
+  display: flex;
+  height: 50px;
+  margin: 10px;
+  width: 280px;
+}
+.line {
+  background-color: var(--cyan);
+  height: 2px;
+  width: 400px;
+}
+.foot-row img {
+  height: 50px;
+  width: 50px;
+}
+.foot-row p {
+  margin: 10px;
+}

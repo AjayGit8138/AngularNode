@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  box-sizing: border-box;
+  height: 0;
+  margin: 0;
+}
+:root {
+  --Dark-cyan: hsl(185, 62%, 67%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+}
+body {
+  background-color: var(--Dark-cyan);
+  font-family: "Manrope", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+.card {
+  background-color: white;
+  box-shadow: 2px 3px 10px var(--Very-dark-desaturated-blue);
+  height: 450px;
+  margin-left: 35%;
+  margin-top: 10%;
+  width: 400px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  height: 50vh;
+  width: 100%;
+}
+.container-one {
+  height: 50vh;
+  width: 50%;
+}
+.container-two {
+  height: 50vh;
+  width: 50%;
+}
+.main-one {
+  margin-top: 50vh;
+}
+.container-three {
+  height: 50vh;
+  width: 50%;
+}
+.container-three img {
+  height: auto;
+  margin-left: 600px;
+  width: auto;
+}
+.container img {
+  height: 100vh;
+  margin-left: -140px;
+  margin-top: -200px;
+  width: 50%;
+}
+.container-one img {
+  height: 100vh;
+  margin-left: 800px;
+  width: 100%;
+}
+.cardimg {
+  height: 150px;
+  width: 400px;
+}
+.cot-img {
+  border-radius: 45px;
+  border: 5px solid white;
+  height: 90px;
+  margin-left: 160px;
+  margin-top: -40px;
+  width: 90px;
+}
+.socialcomments {
+  border-top: 1px solid var(--Very-dark-desaturated-blue);
+  display: flex;
+  flex-direction: row;
+  margin-top: 380px;
+}
+.row h2,
+p {
+  margin: 10px;
+  padding-left: 40px;
+}

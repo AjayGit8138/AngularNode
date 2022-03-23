@@ -49,8 +49,9 @@ body {
 }
 .btn-try:hover,
 .btn-join:hover {
+  cursor: pointer;
   box-shadow: 4px 3px 5px pink;
-  background-color: rgb(226, 218, 219);
+  background-color: rgb(134, 55, 105);
 }
 .navbtn {
   flex-direction: row;
@@ -60,12 +61,13 @@ body {
   width: 300px;
 }
 
-.maindescription {
-  color: rgb(192, 55, 20);
+.maindescription p {
+  color: rgb(38, 212, 52);
   flex-direction: row;
-  font-size: 35px;
+  font-size: 30px;
   height: 30vh;
   margin-left: 10%;
+  text-align: center;
   width: 80%;
 }
 
@@ -81,6 +83,8 @@ body {
   flex-direction: row;
   font-size: 25px;
   height: 70px;
+  left: 50%;
+  position: absolute;
   width: 270px;
 }
 
@@ -244,8 +248,9 @@ body {
   height: 200px;
   width: 100%;
 }
-.register h1 {
-  font-size: 24px;
+.register h1,
+.maindescription h1 {
+  font-size: 30px;
   margin-top: 30px;
   margin-bottom: 20px;
   text-align: center;
@@ -271,11 +276,14 @@ body {
   width: 100%;
 }
 .foot-one p {
-  font-size: 30px;
+  color: beige;
+  font-size: 20px;
   line-height: 1.5;
   margin-left: 15px;
 }
 .foot-one h1 {
+  color: white;
+  font-size: 35px;
   margin-left: 15px;
 }
 input[type="search"] {
@@ -313,7 +321,10 @@ input[type="search"] {
   }
 }
 @media only screen and (max-width: 770px) {
-  .dis-content-four {
+  .dis-content-four,
+  .dis-content {
+    border: 1px solid seagreen;
     flex-direction: column-reverse;
+    width: auto;
   }
 }

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Cyan: hsl(179, 62%, 43%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --Light-Gray: hsl(204, 43%, 93%);
+}
+body {
+  background-color: var(--Light-Gray);
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.community {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.joincommunity {
+  background-color: white;
+  height: 300px;
+  width: 700px;
+}
+.joincommunity h1 {
+  color: var(--Cyan);
+  font-size: 35px;
+}
+.joincommunity h2 {
+  color: var(--Bright-Yellow);
+}
+.Subscription {
+  background-color: var(--Cyan);
+  display: flex;
+  flex-direction: row;
+}
+.Subscription h1 {
+  color: white;
+  font-size: 25px;
+}
+.row {
+  height: 300px;
+  width: 350px;
+}
+h1,
+h2,
+p {
+  margin: 10px;
+}
+button {
+  background-color: var(--Bright-Yellow);
+  border-radius: 6px;
+  border: 1px solid var(--Bright-Yellow);
+  font-size: 20px;
+  height: 50px;
+  margin: 30px;
+  width: 200px;
+}
+button:hover {
+  box-shadow: 6px 3px 4px var(--Bright-Yellow);
+  cursor: pointer;
+}
