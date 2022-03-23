@@ -49,13 +49,13 @@ p {
   height: 450px;
   width: 45%;
 }
-.sectionone {
+.dropdownquestion {
   border-radius: 15px;
   background-color: var(--Light-grayish-blue);
   height: 450px;
   width: 60%;
 }
-.section img {
+.dropdownquestion img {
   height: 300px;
   width: 100%;
 }
@@ -116,7 +116,7 @@ p {
   }
 }
 @media only screen and (max-width: 590px) {
-  .sectionone {
+  .dropdownquestion {
     width: 80%;
   }
 }
@@ -133,7 +133,7 @@ p {
     margin: 10px;
     padding: 10px;
   }
-  .sectionone {
+  .dropdownquestion {
     width: 100%;
   }
   #bgimgmobile {
