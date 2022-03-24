@@ -10,7 +10,7 @@ const advice = async()=>{
 
 }
 advice();
-function changequote()
+function changequote() 
 {
     advice();
 }

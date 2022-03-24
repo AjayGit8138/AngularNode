@@ -59,6 +59,21 @@ function buyproduct(pid, tqty) {
 
     var setImage = document.getElementById('setdelete');
     setImage.src = "./images/icon-delete.svg";
+    setImage.style.cursor = "pointer";
+    setImage.addEventListener('click',function(){
+        torder -=1;
+        tcost = torder * (prodprs * 100);
+        prsdollar = tcost * (0.01);
+        console.log(tcost);
+        document.getElementById('cqty').innerHTML = `x${torder}`;
+        document.getElementById('ctotal').innerHTML = `$${prsdollar}`;
+        if(torder == 0)
+        {
+            var carttable = document.getElementById('itemsdisplay');
+            carttable.style.display = "none";
+            removeEmpty.classList.remove("empty-one");
+        }
+    })
 
 }
 function cartdisplay() {

@@ -12,10 +12,13 @@ body {
   );
   font-family: "Manrope", sans-serif;
 }
-h1,
-p {
+h1 {
   font-size: 1.5vw;
   margin: 2px;
+}
+p {
+  color: rgb(15, 87, 24);
+  font-size: 1.3vw;
 }
 :root {
   --Soft-red: hsl(14, 88%, 65%);
@@ -49,16 +52,16 @@ p {
   height: 450px;
   width: 45%;
 }
-.dropdownquestion {
+.sectionone {
   border-radius: 15px;
   background-color: var(--Light-grayish-blue);
   height: 450px;
   width: 60%;
 }
-.dropdownquestion img {
+/* .sectionone img {
   height: 300px;
   width: 100%;
-}
+} */
 #inner {
   background-image: url("../images/illustration-woman-online-desktop.svg");
   background-repeat: no-repeat;
@@ -92,7 +95,8 @@ p {
   display: inline-flex;
   height: auto;
   margin-left: 400px;
-  transform: translateY(300%);
+  top: 20px;
+  transform: translateY(10%);
   position: relative;
   width: auto;
 }
@@ -133,7 +137,7 @@ p {
     margin: 10px;
     padding: 10px;
   }
-  .dropdownquestion {
+  .sectionone {
     width: 100%;
   }
   #bgimgmobile {

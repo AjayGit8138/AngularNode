@@ -1,4 +1,4 @@
-const Contents = {
+const contents = {
     paragraph:{
         title:"Discover innovative ways to decorate",
         description:
@@ -24,25 +24,25 @@ const Contents = {
 let intialslide = 0;
 let slideHead = document.getElementById('title');
 let slidecontent = document.getElementById('paragraph');
-let Bgimage = document.getElementById('bgimage');
+let bgimage = document.getElementById('bgimage');
 let slidelength = 2;
 let navbar = document.getElementById('navigationarea');
 let list = document.getElementById('lst');
-let Mobilemenu = document.getElementById('menu');
-Mobilemenu.addEventListener('click',function(){
+let mobilemenu = document.getElementById('menu');
+mobilemenu.addEventListener('click',function(){
     list.classList.toggle("display");
-    console.log(Mobilemenu.src);
+    console.log(mobilemenu.src);
     var img1 = "file:///D:/Htmlrepo/AngularNode/room-homepage/room-homepage/images/icon-hamburger.svg";
     var img2 = "file:///D:/Htmlrepo/AngularNode/room-homepage/room-homepage/images/icon-close.svg";
     var img3 = "https://html-lessons-six.vercel.app/room-homepage/room-homepage/images/icon-hamburger.svg";
     var img4 = "https://html-lessons-six.vercel.app/room-homepage/room-homepage/images/icon-close.svg";
-    if(Mobilemenu.src == img1 || Mobilemenu.src == img3)
+    if(mobilemenu.src == img1 || mobilemenu.src == img3)
     {
         console.log("hai");
-        Mobilemenu.src = "./images/icon-close.svg";
+        mobilemenu.src = "./images/icon-close.svg";
     }
-    else if(Mobilemenu.src == img2 || Mobilemenu.src == img4){
-        Mobilemenu.src = "./images/icon-hamburger.svg";
+    else if(mobilemenu.src == img2 || mobilemenu.src == img4){
+        mobilemenu.src = "./images/icon-hamburger.svg";
 
     }
 })
@@ -57,22 +57,22 @@ function slideChange(event)
 {
     if(event == 0)
     {
-        slideHead.innerHTML = Contents.paragraph.title;
-        slidecontent.innerHTML = Contents.paragraph.description;
-        Bgimage.style.backgroundImage = "url('./images/desktop-image-hero-1.jpg')";
+        slideHead.innerHTML = contents.paragraph.title;
+        slidecontent.innerHTML = contents.paragraph.description;
+        bgimage.style.backgroundImage = "url('./images/desktop-image-hero-1.jpg')";
 
     }
     else if(event == 1)
     {
-        slideHead.innerHTML = Contents.paragraphone.title;
-        slidecontent.innerHTML = Contents.paragraphone.description;
-        Bgimage.style.backgroundImage = "url('./images/desktop-image-hero-2.jpg')";
+        slideHead.innerHTML = contents.paragraphone.title;
+        slidecontent.innerHTML = contents.paragraphone.description;
+        bgimage.style.backgroundImage = "url('./images/desktop-image-hero-2.jpg')";
     }
     else if(event == 2)
     {
-        slideHead.innerHTML= Contents.paragraphtwo.title;
-        slidecontent.innerHTML = Contents.paragraphtwo.description;
-        Bgimage.style.backgroundImage = "url('./images/desktop-image-hero-3.jpg')";
+        slideHead.innerHTML= contents.paragraphtwo.title;
+        slidecontent.innerHTML = contents.paragraphtwo.description;
+        bgimage.style.backgroundImage = "url('./images/desktop-image-hero-3.jpg')";
 
     }
     else
@@ -82,7 +82,7 @@ function slideChange(event)
 }
 
 let initial = 0;
-let Autoslide = setInterval(function()
+let autoslide = setInterval(function()
 {
     if(initial == slidelength)
     {

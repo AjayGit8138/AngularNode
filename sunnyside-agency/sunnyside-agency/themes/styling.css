@@ -5,9 +5,9 @@
   padding: 0;
 }
 :root {
-  --Dark-grayish-blue: hsl(232, 10%, 55%);
-  --Dark-desaturated-cyan: hsl(167, 40%, 24%);
   --Dark-blue: hsl(198, 62%, 26%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
   --Grayish-blue: hsl(210, 4%, 67%);
   --Soft-red: hsl(7, 99%, 70%);
   --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -32,14 +32,14 @@ header {
   width: 100%;
 }
 .headimage {
-  background-image: url("../images/desktop/image-header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 950px;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 950px;
 }
 .innerbox {
   display: flex;
@@ -52,33 +52,33 @@ header {
 }
 .headerimg {
   background-image: url("../images/icon-arrow-down.svg");
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: 35px;
-  background-position: 50%;
   margin-top: 15%;
 }
 .navcomponents {
   display: inline-flex;
   height: 100px;
-  margin: 10px;
-  width: 50%;
   left: 50px;
   margin: 10px;
+  margin: 10px;
   padding: 20px;
+  width: 50%;
 }
 ul li {
   align-content: flex-end;
   display: inline;
   list-style: none;
-  margin: 10px;
   margin-top: 30px;
+  margin: 10px;
   padding: 5px;
 }
 .listclsss {
   height: 100px;
   margin: 10px;
-  width: 50%;
   padding: 20px;
+  width: 50%;
 }
 .headerimg h1 {
   color: white;
@@ -116,42 +116,42 @@ ul li {
   background-size: contain;
 }
 .four {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   background-image: url("../images/desktop/image-graphic-design.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
 }
 .five {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   background-image: url("../images/desktop/image-photography.jpg");
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
+  background-size: cover;
 }
 .btn {
+  background-color: yellow;
   border-radius: 25px;
   border: 1px solid white;
-  background-color: yellow;
   cursor: pointer;
   font-size: 25px;
   height: 20px;
   letter-spacing: 10px;
-  margin: 20px;
   margin-top: 30px;
-  width: 300px;
+  margin: 20px;
   padding-bottom: 10px;
   text-align: -60px top;
+  width: 300px;
 }
 li:hover {
-  border: 2px solid var(--Dark-moderate-cyan);
   border-radius: 20px;
-  cursor: pointer;
+  border: 2px solid var(--Dark-moderate-cyan);
   color: white;
+  cursor: pointer;
 }
 .navcontainer img {
   width: 100%;
@@ -165,7 +165,6 @@ li:hover {
   margin: 80px;
   width: 130px;
 }
-
 footer {
   background-color: rgba(102, 174, 177, 0.644);
   height: 400px;
@@ -174,7 +173,6 @@ footer {
   height: 400px;
   width: 35%;
 }
-
 .listmenuone {
   height: 400px;
   opacity: 1;
@@ -254,22 +252,22 @@ footer {
 }
 @media only screen and (max-width: 415px) {
   .headimage {
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
     background-image: url("../images/mobile/image-header.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
   }
   .headerimg {
-    background-image: url("../images/icon-arrow-down.svg");
-    background-repeat: no-repeat;
-    background-size: 45px;
-    background-position: center;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
+    background-image: url("../images/icon-arrow-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45px;
   }
   .one {
     background-image: url("../images/mobile/image-transform.jpg");
