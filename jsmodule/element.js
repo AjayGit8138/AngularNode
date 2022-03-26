@@ -2,9 +2,7 @@ import { setcurrencies } from "./currencyoption.js";
 import { calculate } from "./currencyconversion.js";
 
 
-$( document ).ready(function() {
-    setcurrencies();
-});
+
 function setmoney()
 {
     console.log("Function call from element.jsfile");
