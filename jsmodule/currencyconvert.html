@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Module Implementaion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body onload="setmoney();">
+    <div class="container">
+        <form name="myForm">
+            <div class="gridcontainer">
+                <div class="coloumn">
+                    <input type="number" name="inputval" id="inputvalue" placeholder="Enter the amount to convert">
+                </div>
+                <div class="coloumn">
+                    <select name="currency" class="fromcurrency" id="money" onmouseout="this.size=1;">
+
+                    </select>
+                </div>
+                <div class="coloumn">
+                    <h1>in</h1>
+                </div>
+                <div class="coloumn">
+                    <select name="toconversion" class="showitem" id="toconversion" onmouseout="this.size=1;"></select>
+                </div>
+                <div class="in">
+                    <h1>is</h1>
+                </div>
+                <div class="convert">
+                    <input type="text" name="convertedmoney" id="converted" placeholder="$0">
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+<script type="module" src="./element.js"></script>
+
+</html>

@@ -56,11 +56,11 @@ body {
 @keyframes move {
   from {
     opacity: 0;
-    transform: rotateX(-30deg);
+    transform: rotateX(-10deg);
   }
   to {
     opacity: 1;
-    transform: rotateX(60deg);
+    transform: rotateX(30deg);
   }
 }
 .challenges {

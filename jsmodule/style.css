@@ -1,0 +1,58 @@
+.container {
+  background-color: rgb(92, 82, 56);
+  left: 20%;
+  padding: 60px;
+  position: relative;
+  top: 10%;
+  width: 60%;
+}
+.gridcontainer {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 300px 400px;
+  grid-template-rows: 100px 100px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+.coloumn,
+.in,
+.convert,
+.outputcontainer {
+  background-color: yellow;
+  height: 100px;
+  margin-top: 30px;
+  position: relative;
+}
+select,
+.fromcurrency {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: rgb(243, 200, 7);
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  overflow: scroll;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+input[type="number"],
+input[type="text"] {
+  background-color: rgb(243, 200, 7);
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  height: 30px;
+  margin: 30px;
+  outline: none;
+  padding: 10px;
+  width: 70%;
+}
