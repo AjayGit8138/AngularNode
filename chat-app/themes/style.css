@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+.box {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 1000px;
+}
+body {
+  font-family: "Manrope", sans-serif;
+}
+:root {
+  --light-magenta: hsl(293, 100%, 63%);
+  --light-violet: hsl(264, 100%, 61%);
+  --light-grayish-violet: hsl(270, 20%, 96%);
+  --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --Very-light-magenta: hsl(289, 100%, 72%);
+  --white: hsl(0, 0%, 100%);
+}
+.box-one {
+  border-bottom-right-radius: 400px;
+  border-bottom-left-radius: 380px 150px;
+  background: linear-gradient(
+    to right,
+    var(--light-magenta),
+    var(--light-violet)
+  );
+  height: 700px;
+  margin-left: 50px;
+  width: 400px;
+}
+.phone {
+  background-color: var(--light-grayish-violet);
+  border-radius: 25px;
+  border: solid var(--light-violet);
+  height: 600px;
+  margin-top: -650px;
+  margin-left: 400px;
+  width: 300px;
+}
+.layout {
+  background-color: var(--light-grayish-violet);
+  border-radius: 25px;
+  height: 580px;
+  margin: 10px;
+  width: 280px;
+}
+.head {
+  background: linear-gradient(
+    to right,
+    var(--light-magenta),
+    var(--light-violet)
+  );
+  border-radius: 12px;
+  height: 90px;
+  width: 150px;
+  width: 280px;
+}
+.space {
+  background-color: white;
+  border-radius: 10px;
+  height: 40px;
+  margin-left: 50px;
+  width: 170px;
+}
+.contact {
+  background: linear-gradient(
+    to right,
+    var(--light-magenta),
+    var(--light-violet)
+  );
+  height: 40px;
+  width: 280px;
+}
+.arrow {
+  border-radius: 5px;
+  height: 15px;
+  margin-left: 7px;
+  margin-top: 20px;
+  width: 13px;
+}
+.person {
+  border-radius: 15px;
+  height: 30px;
+  margin-left: 7px;
+  width: 43px;
+}
+#name {
+  font-size: 18px;
+  margin-left: 80px;
+  margin-top: -30px;
+}
+#reason {
+  font-size: 9px;
+  margin-left: 80px;
+  margin-top: -30px;
+}
+.dots {
+  margin-left: 230px;
+  margin-top: -45px;
+}
+.dots img {
+  height: 30px;
+}
+.chats {
+  display: flex;
+  flex-direction: column;
+}
+.chating {
+  background-color: rgb(182, 172, 172);
+  height: 50px;
+  margin: 8px;
+  width: 200px;
+}
+.chating p {
+  font-size: 10px;
+}
+.dogimg {
+  margin-left: 150px;
+}
+.dogimg img {
+  border-radius: 15px;
+  height: 35px;
+  width: 35px;
+}
+.chating-one {
+  background-color: rgb(182, 172, 172);
+  height: 30px;
+  margin-left: 80px;
+  width: 200px;
+}
+.chating-one,
+.chaththree p {
+  font-size: 12px;
+}
+.chaththree {
+  background-color: rgb(182, 172, 172);
+  height: 50px;
+  margin: 8px;
+  width: 200px;
+}
+input[type="search"] {
+  border-radius: 15px;
+  border: solid var(--very-dark-desaturated-violet);
+  height: 30px;
+  width: 240px;
+}
+#imp {
+  background: linear-gradient(
+    to right,
+    var(--light-magenta),
+    var(--light-violet)
+  );
+}
+#imptxt {
+  font-size: 20px;
+}
+#rightarrow {
+  height: 15px;
+}
+.information {
+  background-color: var(--light-grayish-violet);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 400px;
+  margin-left: 800px;
+  margin-top: -800px;
+  padding: 10px;
+  width: 500px;
+}
+.information p {
+  color: var(--very-dark-desaturated-violet);
+}
+.information h1 {
+  color: brown;
+}

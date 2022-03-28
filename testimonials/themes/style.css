@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.container {
+  display: flex;
+}
+.coloumn {
+  background-color: var(--moderate-violet);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  flex-direction: row;
+  height: 300px;
+  margin: 20px;
+  width: 700px;
+}
+.coloumn-one {
+  background-color: var(--very-dark-grayish-blue);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  flex-direction: row;
+  height: 300px;
+  margin: 20px;
+  width: 300px;
+}
+.coloumn-three {
+  background-color: var(--very-dark-grayish-blue);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  flex-direction: row;
+  height: 700px;
+  margin: 20px;
+  width: 400px;
+}
+.coloumn-four {
+  background-color: rosybrown;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  flex-direction: row;
+  height: 380px;
+  margin: 20px;
+  margin-top: -400px;
+  width: 300px;
+}
+.coloumn-five {
+  background-color: palevioletred;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  flex-direction: row;
+  height: 380px;
+  margin: 20px;
+  margin-left: 350px;
+  margin-top: -400px;
+  width: 600px;
+}
+
+.name {
+  height: 50px;
+  margin-left: 80px;
+  margin-top: -55px;
+  width: 260px;
+}
+.name p {
+  font-size: 20px;
+}
+.dan-img,
+.jona-img,
+.kira-img,
+.patrik-img,
+.har-img {
+  border-radius: 30px;
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 40px;
+}
+
+.name-three,
+.name-four,
+.name-two,
+.name-one {
+  height: 50px;
+  margin-left: 60px;
+  margin-top: -55px;
+  width: 160px;
+}
+.para,
+.para-1 {
+  font-size: 15px;
+  font: bold;
+  height: 40px;
+  margin: 35px;
+  width: 500px;
+}
+.para-five,
+.para-four,
+.para-three {
+  margin: 50px;
+}
+.para-two {
+  margin: 20px;
+}
+
+.head {
+  font-size: 20px;
+  font-weight: bold;
+}
+#highlight {
+  color: antiquewhite;
+  font-size: 20px;
+  font-weight: bold;
+}
+.quote {
+  height: 60px;
+  margin-top: -220px;
+  margin-left: 500px;
+  width: 60px;
+}

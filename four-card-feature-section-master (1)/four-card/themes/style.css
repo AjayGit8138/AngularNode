@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  box-sizing: border-box;
+  background-color: var(--Very-Light-Gray);
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  background-color: whitesmoke;
+  font-size: 35px;
+  margin: 20px;
+}
+p {
+  background-color: whitesmoke;
+  font-size: 15px;
+  margin: 20px;
+}
+:root {
+  --Blue: hsl(212, 86%, 64%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Orange: hsl(34, 97%, 64%);
+  --Red: hsl(0, 78%, 62%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body {
+  background-color: white;
+  font-family: "Manrope", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.row {
+  height: 600px;
+  margin-top: 130px;
+  padding: 30px;
+  width: 350px;
+}
+.card {
+  border: 1px solid rgb(235, 225, 219);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: whitesmoke;
+  height: 250px;
+  margin-top: 100px;
+  margin-left: 5px;
+  width: 330px;
+}
+.scard-1,
+.scard-2 {
+  border: 1px solid rgb(235, 225, 219);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: whitesmoke;
+  height: 250px;
+  margin: 15px;
+  margin-left: 5px;
+  width: 330px;
+}
+.line,
+.line-2,
+.line-3,
+.line-1 {
+  background-color: var(--Cyan);
+  height: 8px;
+  width: 330px;
+}
+.line-2 {
+  background-color: var(--Orange);
+}
+.line-3 {
+  background-color: var(--Blue);
+}
+.line-1 {
+  background-color: var(--Red);
+}
+.logo img {
+  border-radius: 40px;
+  height: 30px;
+  margin-left: 310px;
+  margin: 10px;
+}
+.logo {
+  border-radius: 40px;
+  margin-left: 260px;
+  margin-top: -10px;
+}
+.header {
+  background-color: var(--Very-Light-Gray);
+  text-align: center;
+}
