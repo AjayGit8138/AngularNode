@@ -200,7 +200,7 @@ th {
   height: 30px;
 }
 .mobilemenu {
-  top: 340px;
+  top: 1050px;
 }
 @media only screen and (max-width: 1080px) {
   .container {
@@ -230,17 +230,24 @@ th {
   }
   .list {
     background-color: antiquewhite;
-    height: 200px;
+    height: 900px;
     margin-left: -20px;
-    margin-top: -230px;
+    margin-top: -930px;
     position: absolute;
-    width: 120%;
+    width: 90%;
+    z-index: 4;
   }
   .list li {
     display: block;
+    padding: 40px;
   }
-  .list .cart {
-    margin-left: auto;
+  /* .list .cart {
+    margin-left: 70%;
+    position: absolute;
+  } */
+  .cart {
+    left: 50%;
+    position: absolute;
   }
 }
 @media only screen and (max-width: 415px) {
@@ -254,14 +261,16 @@ th {
   }
   .list {
     background-color: antiquewhite;
-    height: 200px;
+    height: 900px;
     margin-left: -20px;
-    margin-top: -230px;
+    margin-top: -930px;
     position: absolute;
-    width: 120%;
+    width: 90%;
+    z-index: 4;
   }
   .list li {
     display: block;
+    padding: 40px;
   }
   .list .cart {
     margin-left: 200px;

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pcrform</title>
+    <link rel="stylesheet" href="./themes/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="pcrtest">
+        <div class="pcrform">
+            <div class="pcr-dataentry">
+                <form id="myform" name="myForm">
+                    <h1 style="color: whitesmoke;">PCR-Test Form</h1>
+                    <div class="inputfield">
+                        <label for="name">Person Name:</label><br>
+                        <input type="text" placeholder="Enter your Name" id="pname" name="personname" required
+                            autocomplete="off">
+                    </div>
+                    <div class="inputfield">
+                        <label for="Aadhar_card_No:">Aadhar_No:
+                        </label><br>
+                        <input type="text" id="adharno" placeholder="Enter yout Aadhar No please" name="aadhar" required
+                            autocomplete="off">
+                    </div>
+                    <div class="inputfield">
+                        <label for="Dob">Enter Your Dateofbirth:</label><br>
+                        <input type="date" id="birthday" name="dateofbirth">
+                    </div>
+                    <div class="inputfield">
+                        <label for="city">select city:</label><br>
+                        <select name="city" id="displaycity">
+                            <option value="select city">Select city</option>
+                        </select>
+                    </div>
+                    <div class="inputfield">
+                        <label for="dateoftime">Dateoftest</label><br>
+                        <input type="date" id="dateoftest" name="dateoftest">
+                    </div>
+                    <div class="inputfield">
+                        <label for="timeoftest">Timeoftest:</label><br>
+                        <input type="time" id="time" min="09:00" max="18:00" name="currenttime">
+                    </div>
+                    <div class="inputfield">
+                        <label for="result">Result :</label>
+                        <input type="radio" name="result" id="gender1" value="positive">Positive</input>
+                        <input type="radio" name="result" id="gender2" value="negative">Negative</input>
+
+                    </div>
+                    <div class=" inputfield">
+                        <label for="labname">Labname:</label><br>
+                        <input type="text" id="lab" name="labname" placeholder="Enter the labname:">
+                    </div>
+                    <div class="inputfield">
+                        <label for="reportno">ReportNo:</label><br>
+                        <input type="text" id="rprno" name="reportno" placeholder="Enter the Reportno">
+                    </div>
+                    <div class="inputfield">
+                        <label for="gender">Gender :</label>
+                        <input type="radio" name="gender" id="gender1" value="male">Male</input>
+                        <input type="radio" name="gender" id="gender2" value="female">Female</input>
+                        <input type="radio" name="gender" id="gender3" value="others">Others</input>
+
+                    </div>
+                    <div class="inputfield">
+                        <input type="submit" id="submitdata" name="add" class="storedata" value="Adddata">
+                    </div>
+                    <div class="inputfield">
+                        <input type="submit" id="reset" name="resetform" value="Resetform">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="datatable">
+            <div class="displaydata">
+                <table id="displaying-data" class="tableview">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Aadharno</th>
+                            <th>Dob</th>
+                            <th>city</th>
+                            <th>dataoftest</th>
+                            <th>Testtime</th>
+                            <th>result</th>
+                            <th>labname</th>
+                            <th>Report</th>
+                            <th>Gender</th>
+                        </tr>
+                    <tbody>
+                        <tr id="formdata">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+
+                    </tbody>
+
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="search">
+
+            <input type="search" id="findval" placeholder="Type to search">
+            <input type="submit" id="valsearch" value="search">
+        </div>
+
+        <div id="resulttable" class="result">
+            <table id="result-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Aadharno</th>
+                        <th>Dob</th>
+                        <th>city</th>
+                        <th>dataoftest</th>
+                        <th>Testtime</th>
+                        <th>result</th>
+                        <th>labname</th>
+                        <th>Report</th>
+                        <th>Gender</th>
+                    </tr>
+                <tbody>
+                    <tr id="formdata">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+
+                </tbody>
+
+                </thead>
+            </table>
+        </div>
+
+    </section>
+
+</body>
+<script type="module" src="./script/formhandling.js"></script>
+
+</html>
