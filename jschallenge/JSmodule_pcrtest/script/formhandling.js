@@ -32,7 +32,6 @@ submitdata.addEventListener('click',function(e){
       console.log(pcrcollection);
       var printval = Object.values(pcrcollection);
       insertrecord(printval);
-      document.getElementById('myform').reset();
       count++;
     }
     else{
@@ -49,10 +48,7 @@ searchval.addEventListener("click",function(){
     finding(input.value);
 })
 
-resetform.addEventListener('click',()=>{
-    document.getElementById('myform').reset();
 
-})
 
 
 
