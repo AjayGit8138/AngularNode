@@ -80,7 +80,6 @@ input:hover {
 #displaying-data th,
 #result-table td,
 #result-table th {
-  border: 0.5px solid #ddd;
   padding: 8px;
 }
 #result-table,

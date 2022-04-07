@@ -1,5 +1,5 @@
-export let localdata = new Object();
-localdata = [
+export var TimeData = new Object();
+TimeData = [
     {
       "title": "Work",
       "timeframes": {
