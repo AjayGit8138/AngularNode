@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        header {
+            background-color: rgb(92, 57, 57);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+
+        nav {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: #ccc;
+            padding: 20px;
+        }
+
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Header Portion</h2>
+    <p>Html Have a Header portion and footer layout to design the webpage</p>
+
+
+    <header>
+        <h2>Header Title</h2>
+    </header>
+
+    <section>
+        <h1>Navbar</h1>
+        <nav>
+            <ul>
+                <li><a href="#">HTML/CSS</a></li>
+                <li><a href="#">Angular</a></li>
+                <li><a href="#">Nodejs</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Nodejs</h1>
+            <p>A common task for a web server can be to open a file on the server and return the content to the client.
+
+                Here is how PHP or ASP handles a file request:
+
+                Sends the task to the computer's file system.
+                Waits while the file system opens and reads the file.
+                Returns the content to the client.
+                Ready to handle the next request.
+                Here is how Node.js handles a file request:
+
+                Sends the task to the computer's file system.
+                Ready to handle the next request.
+                When the file system has opened and read the file, the server returns the content to the client.
+                Node.js eliminates the waiting, and simply continues with the next request.
+
+                Node.js runs single-threaded, non-blocking, asynchronous programming, which is very memory efficient.
+            </p>
+
+
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+        <nav>
+            <ul>
+                <li><a href="#">HTML/CSS</a></li>
+                <li><a href="#">Angular</a></li>
+                <li><a href="#">Nodejs</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

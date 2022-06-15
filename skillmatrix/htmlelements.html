@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HtmlElements</title>
+
+    <style>
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 25px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #04AA6D;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #04AA6D;
+            cursor: pointer;
+        }
+
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <h1>Video element</h1>
+                <video controls width="320" height="240" autoplay>
+                    <source src="./video/world.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="form-group">
+                <h1>Audio Element</h1>
+                <audio controls autoplay>
+
+                    <source src="./audio/remix.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="container">
+                <h1>Iframe Element</h1>
+                <iframe src="https://pbskids.org/" width="100%" height="300" style="border:1px solid black;">
+                </iframe>
+            </div>
+
+            <div class="container">
+                <label for="favcolor">Pickup your color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+                <button type="button" onclick="displaycolor(favcolor)">check</button>
+            </div>
+
+            <div class="container">
+                <h1>Emoji's</h1>
+                <p>&#128512;</p>
+
+                <p>&#128516;</p>
+                <p>&#128525;</p>
+                <p>&#128151;</p>
+            </div>
+            <div class="container">
+                <label for="disk_c">Disk usage C:</label>
+                <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+                <label for="disk_d">Disk usage D:</label>
+                <meter id="disk_d" value="0.6">60%</meter>
+            </div>
+            <div class="container">
+                <h1>Progress</h1>
+
+                <label for="file">Downloading progress:</label>
+                <progress id="file" value="32" max="100"> 32% </progress>
+            </div>
+            <div class="container">
+                <p>Custom range slider:</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+            <div class="container">
+                <h1>Star Rating</h1>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function displaycolor(display) {
+        alert("Your selected Color Code" + display.value);
+    }
+</script>
+
+</html>
