@@ -1,0 +1,46 @@
+Node js Version 16
+
+1.Updated browser support v8 engine js version 9
+
+2.updated platform support
+
+GCC version for Linux
+AIX platforms to 8.3
+Xcode version to 11
+
+3.Implemented Promise API calls
+
+Node js Introduces Promise Api calls and Implemented with import library class
+
+import {setTimeout} from 'timers/promises';
+
+
+4.Implemented Async Localstorage API
+
+
+
+Node Js Version 14
+
+1.Changes to Stream APIs
+
+Pass through file as chucks without Buffering into memory
+
+2.support of ECMA script Modules
+
+    {
+        "type": "module"
+    }
+
+3.V8 Engine Upgraded to Version 8.1
+
+4.Intl.DisplayNames
+
+        const zhLanguageNames = new Intl.DisplayNames(['zh-Hant'], { type: 'language' });
+        const enRegionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+        const itScriptNames = new Intl.DisplayNames(['it'], { type: 'script' });
+        const deCurrencyNames = new Intl.DisplayNames(['de'], {type: 'currency'});
+
+5.Object.fromEntries
+
+    Object.fromEntries([['key', 'value'], ['otherKey', 'otherValue']]);
+ { key: 'value', otherKey: 'otherValue' }

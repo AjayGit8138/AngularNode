@@ -1,0 +1,38 @@
+Angular 13 Features
+
+1.Typescript Update
+    Version ~4.4.1
+
+2.Nodejs support 
+
+Not supported version of node js olderthan <=12
+
+The angular 13 will support greater than version 12.
+
+3.Removal of IE 11 Support
+
+4.RxJS 7.4 version is updated in angular version 13
+
+5.Updated Abstractcontrol form Validators
+
+    abstractControl.setValidators
+
+    abstractControl.addValidators
+
+    abstractControl.removeValidators
+
+    abstractControl.hasValidtors
+
+Angular 11 Features
+
+    1.Moving to eSLint  - Angular developers appear to deprecate the utilization of the TSLint and rather prescribe relocation to ESLint.
+
+    2.supports Typescript - vesion 4.0 and dropped support of version 3.9
+
+    3.IE 9, 10, and IE mobile browser support is removed.
+
+    4.The value for an undefined input in the async pipe will not return null anymore.
+
+    5.The Angular Universal in Angular 11 vs Angular 12 needs to have the baseUrl parameter for using useAbsoluteUrl baseUrl for overriding the port.
+
+    6.Experimental Webpack 5 Support  The use of webpack 5 is supported in Angular 11 that fuses incalculable documents into a single group. 
